@@ -11,31 +11,31 @@ interface PortfolioItem {
 const portfolioItems: PortfolioItem[] = [
   {
     id: 1,
-    title: "Aurora Abalone",
-    category: "Branding",
+    title: "Robotics 101",
+    category: "Introduction",
     image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
-    link: "/project/aurora",
+    link: "/project/robotics101",
   },
   {
     id: 2,
-    title: "Betur Gert Campaign",
-    category: "Illustration",
+    title: "Basic Circuits",
+    category: "Electronics",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80",
-    link: "/project/betur",
+    link: "/project/basic-circuits",
   },
   {
     id: 3,
-    title: "Summer Vibes",
-    category: "Illustration",
+    title: "Programming Robots",
+    category: "Coding",
     image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80",
-    link: "/project/summer",
+    link: "/project/programming-robots",
   },
   {
     id: 4,
-    title: "Smoothie Brand",
-    category: "Branding",
+    title: "Advanced Robotics",
+    category: "Advanced",
     image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=800&q=80",
-    link: "/project/smoothie",
+    link: "/project/advanced-robotics",
   },
 ];
 
