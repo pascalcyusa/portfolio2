@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import PortfolioGrid from "@/components/PortfolioGrid";
+import Footer from "@/components/Footer";
 
 const Projects = () => {
   return (
@@ -9,6 +10,7 @@ const Projects = () => {
         <h1 className="text-4xl font-bold mb-8">My Projects</h1>
         <PortfolioGrid />
       </div>
+      <Footer />
     </div>
   );
 };
