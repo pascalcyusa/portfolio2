@@ -17,33 +17,33 @@ const Navigation = () => {
           <div className="flex space-x-8">
             <Link
               to="/"
-              className={`flex items-center space-x-2 ${isActive('/') ? 'text-purple-600' : 'text-gray-600 hover:text-gray-900'}`}
+              className={`text-gray-600 hover:text-gray-900 ${isActive('/') ? 'font-semibold' : ''}`}
             >
-              <span>Home</span>
+              Home
             </Link>
             <Link
               to="/projects"
-              className={`flex items-center space-x-2 ${isActive('/projects') ? 'text-purple-600' : 'text-gray-600 hover:text-gray-900'}`}
+              className={`text-gray-600 hover:text-gray-900 ${isActive('/projects') ? 'font-semibold' : ''}`}
             >
-              <span>Projects</span>
+              Projects
             </Link>
             <Link
-              to="/about"
-              className={`flex items-center space-x-2 ${isActive('/about') ? 'text-purple-600' : 'text-gray-600 hover:text-gray-900'}`}
+              to="/research"
+              className={`text-gray-600 hover:text-gray-900 ${isActive('/research') ? 'font-semibold' : ''}`}
             >
-              <span>About Me</span>
+              Research
             </Link>
             <Link
               to="/resume"
-              className={`flex items-center space-x-2 ${isActive('/resume') ? 'text-purple-600' : 'text-gray-600 hover:text-gray-900'}`}
+              className={`text-gray-600 hover:text-gray-900 ${isActive('/resume') ? 'font-semibold' : ''}`}
             >
-              <span>Resume</span>
+              Resume
             </Link>
             <Link
               to="/contact"
-              className={`flex items-center space-x-2 ${isActive('/contact') ? 'text-purple-600' : 'text-gray-600 hover:text-gray-900'}`}
+              className={`text-gray-600 hover:text-gray-900 ${isActive('/contact') ? 'font-semibold' : ''}`}
             >
-              <span>Contact Me</span>
+              Contact
             </Link>
           </div>
         </div>
