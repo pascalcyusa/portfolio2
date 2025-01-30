@@ -9,40 +9,30 @@ const Summary = () => {
         Thanks for checking out my portfolio! Whether you're a recruiter, fellow engineer, friend, or lost stranger, I hope you enjoy the ride.
       </p>
       
-      <div className="relative">
-        <div className="flex flex-col space-y-8">
-          <div className="flex flex-col md:flex-row items-start md:items-center">
-            <div className="w-full ml-0 md:ml-8">
-              <div className="h-0.5 bg-gray-200 relative">
-                {timelineData.map((item, index) => (
-                  <div 
-                    key={item.id} 
-                    className={`absolute transform ${
-                      index === 0 ? 'left-0' : 
-                      index === timelineData.length - 1 ? 'right-0' : 
-                      `left-[${(index / (timelineData.length - 1)) * 100}%]`
-                    }`}
-                  >
-                    <div className="relative">
-                      <div className={`min-w-[120px] px-3 py-2 -translate-x-1/2 text-center rounded-md shadow-md ${
-                        item.isActive ? 'bg-orange-500 text-white' : 'bg-green-200'
-                      }`}>
-                        {item.jobTitle}
-                      </div>
-                      <div className="text-sm text-gray-600 mt-1 text-center -translate-x-1/2 whitespace-normal">
-                        {item.phase}, {item.location}
-                      </div>
-                    </div>
-                  </div>
-                ))}
+      {/* Desktop Timeline */}
+      <div className="hidden md:block relative">
+        <div className="h-0.5 bg-gray-200 absolute top-10 left-0 right-0" />
+        <div className="flex justify-between relative">
+          {timelineData.map((item, index) => (
+            <div key={item.id} className="relative flex-1 px-2">
+              <div className={`absolute w-4 h-4 rounded-full ${
+                item.isActive ? 'bg-orange-500' : 'bg-green-200'
+              } left-1/2 top-[2.25rem] -translate-x-1/2 -translate-y-1/2`} />
+              <div className={`mt-16 p-4 rounded-lg shadow-md ${
+                item.isActive ? 'bg-orange-500 text-white' : 'bg-green-200'
+              }`}>
+                <h3 className="font-semibold text-lg">{item.jobTitle}</h3>
+                <p className={`text-sm mt-1 ${item.isActive ? 'text-white/90' : 'text-gray-600'}`}>
+                  {item.phase}, {item.location}
+                </p>
               </div>
             </div>
-          </div>
+          ))}
         </div>
       </div>
 
-      {/* Mobile Timeline View */}
-      <div className="md:hidden mt-8 space-y-6">
+      {/* Mobile Timeline */}
+      <div className="md:hidden space-y-4">
         {timelineData.map((item) => (
           <div 
             key={item.id}
@@ -50,7 +40,7 @@ const Summary = () => {
               item.isActive ? 'bg-orange-500 text-white' : 'bg-green-200'
             }`}
           >
-            <h3 className="font-semibold">{item.jobTitle}</h3>
+            <h3 className="font-semibold text-lg">{item.jobTitle}</h3>
             <p className={`text-sm mt-1 ${item.isActive ? 'text-white/90' : 'text-gray-600'}`}>
               {item.phase}, {item.location}
             </p>
