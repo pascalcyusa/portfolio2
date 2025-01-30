@@ -44,8 +44,16 @@ const PortfolioGrid = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {projects.map((item) => (
-          <div key={item.id} className="portfolio-item">
+        {projects.map((item, index) => (
+          <div 
+            key={item.id} 
+            className="portfolio-item"
+            style={{
+              animation: `fade-in 0.5s ease-out ${index * 0.2}s`,
+              opacity: 0,
+              animationFillMode: 'forwards'
+            }}
+          >
             <img
               src={item.image}
               alt={item.title}
