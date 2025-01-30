@@ -35,10 +35,13 @@ const Projects = () => {
                   <p className="mb-2">Embedded Systems / Data Automation</p>
                   <p className="mb-4">2024</p>
                   <a 
-                    href="https://github.com/pascalcyusa/tdk-ch101"
+                    href="https://github.com/pascalcyusa/wind-tunnel"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center text-purple-600 hover:text-purple-700"
+                    className="inline-flex items-center"
+                    style={{ color: '#a5c8cf', transition: 'color 0.2s ease' }}
+                    onMouseOver={(e) => e.currentTarget.style.color = '#e3cdb8'}
+                    onMouseLeave={(e) => e.currentTarget.style.color = '#a5c8cf'}
                   >
                     GitHub <ArrowUpRight className="ml-1 h-4 w-4" />
                   </a>
@@ -94,7 +97,10 @@ const Projects = () => {
                     href="https://github.com/pascalcyusa/tdk-ch101"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center text-purple-600 hover:text-purple-700"
+                    className="inline-flex items-center"
+                    style={{ color: '#a5c8cf', transition: 'color 0.2s ease' }}
+                    onMouseOver={(e) => e.currentTarget.style.color = '#e3cdb8'}
+                    onMouseLeave={(e) => e.currentTarget.style.color = '#a5c8cf'}
                   >
                     GitHub <ArrowUpRight className="ml-1 h-4 w-4" />
                   </a>
@@ -133,7 +139,10 @@ const Projects = () => {
                     href="https://robotics-lab.example.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center text-purple-600 hover:text-purple-700"
+                    className="inline-flex items-center"
+                    style={{ color: '#a5c8cf', transition: 'color 0.2s ease' }}
+                    onMouseOver={(e) => e.currentTarget.style.color = '#e3cdb8'}
+                    onMouseLeave={(e) => e.currentTarget.style.color = '#a5c8cf'}
                   >
                     Demo <ArrowUpRight className="ml-1 h-4 w-4" />
                   </a>
@@ -188,7 +197,10 @@ const Projects = () => {
                     href="https://github.com/pascalcyusa/wind-tunnel"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center text-purple-600 hover:text-purple-700"
+                    className="inline-flex items-center"
+                    style={{ color: '#a5c8cf', transition: 'color 0.2s ease' }}
+                    onMouseOver={(e) => e.currentTarget.style.color = '#e3cdb8'}
+                    onMouseLeave={(e) => e.currentTarget.style.color = '#a5c8cf'}
                   >
                     GitHub <ArrowUpRight className="ml-1 h-4 w-4" />
                   </a>
@@ -227,6 +239,17 @@ const Projects = () => {
                     href="https://smart-manufacturing.example.com"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="inline-flex items-center"
+                    style={{ color: '#a5c8cf', transition: 'color 0.2s ease' }}
+                    onMouseOver={(e) => e.currentTarget.style.color = '#e3cdb8'}
+                    onMouseLeave={(e) => e.currentTarget.style.color = '#a5c8cf'}
+                  >
+                    GitHub <ArrowUpRight className="ml-1 h-4 w-4" />
+                  </a>
+                  <a 
+                    href="https://github.com/pascalcyusa/smart-manufacturing"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center text-purple-600 hover:text-purple-700 mr-6"
                   >
                     Demo <ArrowUpRight className="ml-1 h-4 w-4" />
@@ -236,6 +259,9 @@ const Projects = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center text-purple-600 hover:text-purple-700"
+                    style={{ color: '#a5c8cf', transition: 'color 0.2s ease' }}
+                    onMouseOver={(e) => e.currentTarget.style.color = '#e3cdb8'}
+                    onMouseLeave={(e) => e.currentTarget.style.color = '#a5c8cf'}
                   >
                     GitHub <ArrowUpRight className="ml-1 h-4 w-4" />
                   </a>

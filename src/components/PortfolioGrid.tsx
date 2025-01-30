@@ -26,18 +26,6 @@ const projects = [
     category: "Industrial Automation",
     image: "https://images.unsplash.com/photo-1565514020179-026b92b84bb6?auto=format&fit=crop&w=800&q=80",
   },
-  {
-    id: "autonomous-robot",
-    title: "Autonomous Mobile Robot",
-    category: "Robotics / AI",
-    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    id: "vibration-monitoring",
-    title: "Vibration Monitoring Platform",
-    category: "Mechanical Systems",
-    image: "https://images.unsplash.com/photo-1581094271901-8022df4466f9?auto=format&fit=crop&w=800&q=80",
-  },
 ];
 
 const PortfolioGrid = () => {

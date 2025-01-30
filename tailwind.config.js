@@ -46,17 +46,16 @@ export default {
                     DEFAULT: "hsl(var(--card))",
                     foreground: "hsl(var(--card-foreground))",
                 },
-            },
-            borderRadius: {
-                lg: "var(--radius)",
-                md: "calc(var(--radius) - 2px)",
-                sm: "calc(var(--radius) - 4px)",
+                custom: {
+                    blue: '#a5c8cf',
+                    beige: '#e3cdb8',
+                },
             },
         },
     },
     plugins: [
-        require("tailwindcss-animate"),
-        function({ addUtilities }) {
+        import('tailwindcss-animate'),
+        ({ addUtilities }) => {
             addUtilities({
                 '.perspective-1000': {
                     'perspective': '1000px'

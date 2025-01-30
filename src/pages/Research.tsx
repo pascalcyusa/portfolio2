@@ -37,8 +37,16 @@ const Research = () => {
               <div className="text-gray-600">
                 <p className="mb-2">Microscale Sensors and Systems Lab</p>
                 <p className="mb-4">Jun 2024 - Present</p>
-                <a href="#" className="inline-flex items-center text-purple-600 hover:text-purple-700">
-                  Learn more <ArrowUpRight className="ml-1 h-4 w-4" />
+                <a 
+                  href="[your-research-link]" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center"
+                  style={{ color: '#a5c8cf', transition: 'color 0.2s ease' }}
+                  onMouseOver={(e) => e.currentTarget.style.color = '#e3cdb8'}
+                  onMouseLeave={(e) => e.currentTarget.style.color = '#a5c8cf'}
+                >
+                  View Research <ArrowUpRight className="ml-1 h-4 w-4" />
                 </a>
               </div>
             </div>

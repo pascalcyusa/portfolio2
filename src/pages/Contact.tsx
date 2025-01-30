@@ -13,7 +13,6 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
     window.location.href = `mailto:cyusashyakapascal@gmail.com?subject=Portfolio Contact&body=${message}`;
     setEmail("");
     setMessage("");
@@ -23,66 +22,39 @@ const Contact = () => {
     <div className="min-h-screen flex flex-col">
       <Navigation />
       
-      <div className="flex-grow contact-card-container">
-        <div className={`contact-card ${isFlipped ? 'flipped' : ''}`}>
+      <div className="flex-grow contact-card-container flex flex-col items-center">
+        <div 
+          className={`contact-card ${isFlipped ? 'flipped' : ''}`}
+          onMouseEnter={() => setIsFlipped(true)}
+          onMouseLeave={() => setIsFlipped(false)}
+        >
           {/* Front of the card */}
           <div className="contact-card-face contact-card-front">
             <div className="contact-avatar">
               <img 
-                src="/lovable-uploads/d5aae0a1-2acb-4656-8995-dc6744eccbbe.png" 
+                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&h=400&q=80" 
                 alt="Profile" 
                 className="w-full h-full object-cover"
               />
             </div>
             <h2 className="text-2xl font-bold">Pascal Cyusa</h2>
-            <span className="contact-badge">DILUC</span>
-            <div className="flex items-center gap-4 mt-4">
-              <a 
-                href="https://linkedin.com/in/pascal-cyusa" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-purple-600 hover:text-purple-700"
-              >
-                <Linkedin className="h-6 w-6" />
-              </a>
-              <a 
-                href="https://github.com/pascalcyusa" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-purple-600 hover:text-purple-700"
-              >
-                <Github className="h-6 w-6" />
-              </a>
-            </div>
-            <button 
-              className="contact-button mt-8"
-              onClick={() => setIsFlipped(true)}
-            >
-              CONTACT ME
-            </button>
+            <span className="contact-badge">(781) 539-9412</span>
           </div>
 
-          {/* Back of the card */}
+          {/* Back of the card remains the same */}
           <div className="contact-card-face contact-card-back">
-            <button 
-              onClick={() => setIsFlipped(false)}
-              className="back-button"
-            >
-              <ChevronLeft className="h-6 w-6" />
-            </button>
-            
             <div className="h-full flex flex-col">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 rounded-full overflow-hidden">
                   <img 
-                    src="/lovable-uploads/d5aae0a1-2acb-4656-8995-dc6744eccbbe.png" 
+                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&h=400&q=80" 
                     alt="Profile" 
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div>
                   <h2 className="font-bold">Pascal Cyusa</h2>
-                  <span className="contact-badge text-xs">DILUC</span>
+                  <span className="contact-badge text-xs">cyusashyakapascal@gmail.com</span>
                 </div>
               </div>
 
@@ -111,6 +83,31 @@ const Contact = () => {
               </form>
             </div>
           </div>
+        </div>
+
+        <div className="flex items-center gap-4 mt-8">
+          <a 
+            href="https://linkedin.com/in/pascal-cyusa" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-flex items-center"
+            style={{ color: '#a5c8cf', transition: 'color 0.2s ease' }}
+            onMouseOver={(e) => e.currentTarget.style.color = '#e3cdb8'}
+            onMouseLeave={(e) => e.currentTarget.style.color = '#a5c8cf'}
+          >
+            <Linkedin className="h-6 w-6" />
+          </a>
+          <a 
+            href="https://github.com/pascalcyusa" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-flex items-center"
+            style={{ color: '#a5c8cf', transition: 'color 0.2s ease' }}
+            onMouseOver={(e) => e.currentTarget.style.color = '#e3cdb8'}
+            onMouseLeave={(e) => e.currentTarget.style.color = '#a5c8cf'}
+          >
+            <Github className="h-6 w-6" />
+          </a>
         </div>
       </div>
       
