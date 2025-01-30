@@ -48,7 +48,7 @@ const Projects = () => {
                   <p className="mb-2">Mechanical Design / Robotics</p>
                   <p className="mb-4">2024</p>
                   <a 
-                    href="https://github.com/yourusername/pokemon-gripper"
+                    href=""
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center"
@@ -89,7 +89,7 @@ const Projects = () => {
                   <p className="mb-2">Sensors / Data Automation</p>
                   <p className="mb-4">Summer 2024</p>
                   <a 
-                    href="https://github.com/yourusername/tdk-ch101-automation"
+                    href=""
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center"
@@ -148,7 +148,7 @@ const Projects = () => {
                   <p className="mb-2">Education / Robotics</p>
                   <p className="mb-4">Summer 2023</p>
                   <a 
-                    href="https://github.com/yourusername/lego-arduino-education"
+                    href=""
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center"
@@ -191,7 +191,7 @@ const Projects = () => {
                   <p className="mb-2">C++ / Game Development</p>
                   <p className="mb-4">Spring 2023</p>
                   <a 
-                    href="https://github.com/yourusername/splendor-game"
+                    href=""
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center"
@@ -250,7 +250,7 @@ const Projects = () => {
                   <p className="mb-2">Web Development</p>
                   <p className="mb-4">Sept 2022</p>
                   <a 
-                    href="https://github.com/yourusername/personal-website"
+                    href="https://github.com/pascalcyusa/myportfolio1"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center"

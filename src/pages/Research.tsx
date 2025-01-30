@@ -33,7 +33,7 @@ const Research = () => {
                 <p className="mb-2">Microscale Sensors and Systems Lab</p>
                 <p className="mb-4">Jun 2024 - Present</p>
                 <a 
-                  href="https://github.com/yourusername/ultrasonic-anemometer" 
+                  href="" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center"
@@ -85,7 +85,7 @@ const Research = () => {
                 <p className="mb-2">Tufts Center for Engineering Education and Outreach</p>
                 <p className="mb-4">Mar 2023 - Present</p>
                 <a 
-                  href="https://ceeo.tufts.edu" 
+                  href="https://sites.tufts.edu/pebl/2023/10/02/rwandan-tufts-students-return-home-to-inspire-young-makers/" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center"
