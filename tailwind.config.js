@@ -9,6 +9,9 @@ export default {
             animation: {
                 'spin-slow': 'spin 3s linear infinite',
             },
+            perspective: {
+                '1000': '1000px',
+            },
             colors: {
                 border: "hsl(var(--border))",
                 input: "hsl(var(--input))",
@@ -51,5 +54,23 @@ export default {
             },
         },
     },
-    plugins: [import("tailwindcss-animate")],
+    plugins: [
+        require("tailwindcss-animate"),
+        function({ addUtilities }) {
+            addUtilities({
+                '.perspective-1000': {
+                    'perspective': '1000px'
+                },
+                '.transform-style-3d': {
+                    'transform-style': 'preserve-3d'
+                },
+                '.backface-hidden': {
+                    'backface-visibility': 'hidden'
+                },
+                '.rotate-y-180': {
+                    'transform': 'rotateY(180deg)'
+                }
+            })
+        }
+    ],
 }
