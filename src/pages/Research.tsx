@@ -9,11 +9,6 @@ const Research = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 pt-24">
         
         <div className="mb-16">
-          <p className="text-xl text-gray-700 max-w-3xl">
-            Research experiences focused on innovative sensor technology and educational outreach, 
-            combining technical expertise with practical applications to create meaningful impact 
-            in both engineering and education sectors.
-          </p>
         </div>
                 {/* Microscale Sensors Lab Section */}
                 <div className="mb-20">

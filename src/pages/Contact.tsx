@@ -23,6 +23,8 @@ const Contact = () => {
       <Navigation />
       
       <div className="flex-grow contact-card-container flex flex-col items-center">
+      <div className="mb-16">
+      </div>
         <div 
           className={`contact-card ${isFlipped ? 'flipped' : ''}`}
           onMouseEnter={() => setIsFlipped(true)}

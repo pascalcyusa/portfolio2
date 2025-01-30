@@ -7,7 +7,9 @@ const Projects = () => {
     <div className="min-h-screen flex flex-col justify-between">
       <div>
         <Navigation />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">          
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">    
+        <div className="mb-16">
+        </div>      
           {/* First project - Right side */}
           <div className="mb-20">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-8">
