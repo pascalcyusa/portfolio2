@@ -15,30 +15,30 @@ const Research = () => {
             in both engineering and education sectors.
           </p>
         </div>
-
-        {/* Microscale Sensors Lab Section */}
-        <div className="mb-20">
+                {/* Microscale Sensors Lab Section */}
+                <div className="mb-20">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-8">
             <div>
-              <h2 className="text-3xl font-bold mb-4">Ultrasonic Sensor Research</h2>
+              <h2 className="text-3xl font-bold mb-4">Ultrasonic Anemometer Development</h2>
               <p className="text-gray-700 mb-4">
-                Development and optimization of miniature ultrasonic anemometer technology, 
-                pushing the boundaries of sensor accuracy and reliability for high-altitude UAV applications. 
-                This research established new benchmarks in wind velocity measurements and distance sensing precision.
+                Played a key role in the development of a miniature ultrasonic anemometer using the TDK CH101 sensor 
+                for potential applications in Navy high-altitude UAVs. Achieved significant breakthroughs in measurement 
+                accuracy and system optimization.
               </p>
               <div className="bg-gray-50 p-4 rounded-lg max-w-md mb-6">
                 <h3 className="font-semibold mb-2 text-sm">Key Achievements</h3>
                 <ul className="space-y-1 text-gray-600 text-sm">
-                  <li>• Achieved ± 0.1878 mm precision in distance measurements</li>
-                  <li>• Reduced wind velocity errors to ± 0.6454 m/s</li>
-                  <li>• Targeting future accuracy of ±0.05 m/s</li>
+                  <li>• Distance measurements within ± 0.1878 mm error margin</li>
+                  <li>• Wind velocity measurements at ± 0.6454 m/s accuracy</li>
+                  <li>• Developed ToF-airflow relationship analysis</li>
+                  <li>• Working towards ±0.05 m/s wind velocity accuracy</li>
                 </ul>
               </div>
               <div className="text-gray-600">
                 <p className="mb-2">Microscale Sensors and Systems Lab</p>
                 <p className="mb-4">Jun 2024 - Present</p>
                 <a 
-                  href="[your-research-link]" 
+                  href="https://github.com/yourusername/ultrasonic-anemometer" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center"
@@ -51,8 +51,8 @@ const Research = () => {
               </div>
             </div>
             <div className="bg-gray-100 rounded-lg h-[400px] flex items-center justify-center">
-              <img 
-                src="https://images.unsplash.com/photo-1517420879524-86d64ac2f339?auto=format&fit=crop&w=800&q=80"
+            <img 
+                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
                 alt="Ultrasonic Sensor Research"
                 className="w-full h-full object-cover rounded-lg"
               />
@@ -65,32 +65,40 @@ const Research = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="bg-gray-100 rounded-lg h-[400px] flex items-center justify-center order-2 md:order-1">
               <img 
-                src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80"
-                alt="Educational Innovation"
+                src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80"
+                alt="STEM Education Outreach"
                 className="w-full h-full object-cover rounded-lg"
               />
             </div>
             <div className="order-1 md:order-2">
-              <h2 className="text-3xl font-bold mb-4">Educational Innovation</h2>
+              <h2 className="text-3xl font-bold mb-4">STEM Education Innovation</h2>
               <p className="text-gray-700 mb-4">
-                Pioneering STEM education initiatives through the development of hands-on 
-                engineering curricula and establishment of maker spaces, creating lasting 
-                impact on international education communities through technology integration 
-                and practical learning approaches.
+                Developed comprehensive STEM curricula for K-12 students, focusing on practical engineering 
+                applications using LEGO and Arduino projects. Led the implementation of maker spaces across 
+                Rwanda, significantly impacting student engagement and learning outcomes.
               </p>
               <div className="bg-gray-50 p-4 rounded-lg max-w-md mb-6">
-                <h3 className="font-semibold mb-2 text-sm">Impact Metrics</h3>
+                <h3 className="font-semibold mb-2 text-sm">Key Achievements</h3>
                 <ul className="space-y-1 text-gray-600 text-sm">
-                  <li>• Established 20+ maker spaces in Rwanda</li>
+                  <li>• Established maker spaces in 20+ Rwandan schools</li>
                   <li>• Impacted 769 students directly</li>
-                  <li>• Increased student engagement by 37%</li>
+                  <li>• Increased engagement by 37%</li>
+                  <li>• Created interactive engineering curricula</li>
                 </ul>
               </div>
               <div className="text-gray-600">
                 <p className="mb-2">Tufts Center for Engineering Education and Outreach</p>
                 <p className="mb-4">Mar 2023 - Present</p>
-                <a href="#" className="inline-flex items-center text-purple-600 hover:text-purple-700">
-                  Learn more <ArrowUpRight className="ml-1 h-4 w-4" />
+                <a 
+                  href="https://ceeo.tufts.edu" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center"
+                  style={{ color: '#a5c8cf', transition: 'color 0.2s ease' }}
+                  onMouseOver={(e) => e.currentTarget.style.color = '#e3cdb8'}
+                  onMouseLeave={(e) => e.currentTarget.style.color = '#a5c8cf'}
+                >
+                  Learn More <ArrowUpRight className="ml-1 h-4 w-4" />
                 </a>
               </div>
             </div>

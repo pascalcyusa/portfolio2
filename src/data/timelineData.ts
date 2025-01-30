@@ -2,44 +2,32 @@ export interface TimelineItem {
   id: number;
   jobTitle: string;
   phase: string;
-  location: string;
   isActive: boolean;
 }
 
 export const timelineData: TimelineItem[] = [
   {
     id: 1,
-    jobTitle: "Baseball Star",
-    phase: "Farmer Phase",
-    location: "Vietnam",
+    jobTitle: "Science enthusiast",
+    phase: "Young Dreamer",
     isActive: false
   },
   {
     id: 2,
-    jobTitle: "Computer Builder",
-    phase: "Being Useless Phase",
-    location: "WA",
+    jobTitle: "I thought I had it figured out",
+    phase: "College Freshman",
     isActive: false
   },
   {
     id: 3,
-    jobTitle: "Astrophysicist",
-    phase: "College Phase",
-    location: "WA",
-    isActive: false
-  },
-  {
-    id: 4,
-    jobTitle: "Electrical Engineer",
-    phase: "Being Useful Phase",
-    location: "MA",
-    isActive: false
+    jobTitle: "Aspiring Mech engineer and professional screwup",
+    phase: "Junior",
+    isActive: true
   },
   {
     id: 5,
     jobTitle: "Mechanical Engineer",
-    phase: "Being Useful Phase",
-    location: "MA",
-    isActive: true
+    phase: "This is the dream",
+    isActive: false
   }
 ];

@@ -32,7 +32,7 @@ const Contact = () => {
           <div className="contact-card-face contact-card-front">
             <div className="contact-avatar">
               <img 
-                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&h=400&q=80" 
+                src="/profile.jpg" 
                 alt="Profile" 
                 className="w-full h-full object-cover"
               />
@@ -47,7 +47,7 @@ const Contact = () => {
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 rounded-full overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&h=400&q=80" 
+                    src="/profile.jpg"
                     alt="Profile" 
                     className="w-full h-full object-cover"
                   />

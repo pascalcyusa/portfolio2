@@ -9,37 +9,18 @@ declare global {
 }
 
 const Resume = () => {
-  useEffect(() => {
-    const loadPDF = async () => {
-      if (window.AdobeDC) {
-        const adobeDCView = new window.AdobeDC.View({
-          clientId: "379080b5f6734b29879803bea6831657",
-          divId: "pdf-viewer"
-        });
-        
-        adobeDCView.previewFile({
-          content: { location: { url: "/resume.pdf" } },
-          metaData: { fileName: "Resume.pdf" }
-        });
-      }
-    };
-    
-    if (window.AdobeDC) {
-      loadPDF();
-    } else {
-      document.addEventListener("adobe_dc_view_sdk.ready", loadPDF);
-    }
-    
-    return () => {
-      document.removeEventListener("adobe_dc_view_sdk.ready", loadPDF);
-    };
-  }, []);
-
   return (
     <div className="min-h-screen flex flex-col">
       <Navigation />
-      <div className="flex-grow">
-        <div id="pdf-viewer" className="w-full h-[calc(100vh-4rem)]" />
+      {/* Added pt-20 to create space below navigation */}
+      <div className="flex-grow pt-20">
+        <div className="container mx-auto px-4">
+          <iframe
+            src="/resume.pdf"
+            className="w-full h-[calc(100vh-120px)]"
+            title="Resume PDF"
+          />
+        </div>
       </div>
       <Footer />
     </div>

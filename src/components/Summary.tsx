@@ -26,14 +26,14 @@ const Summary = () => {
               }}
             >
               <div className={`absolute w-4 h-4 rounded-full ${
-                item.isActive ? 'bg-orange-500' : 'bg-green-200'
+                item.isActive ? 'bg-[#e3cdb8]' : 'bg-[#a5c8cf]'
               } left-1/2 top-[2.25rem] -translate-x-1/2 -translate-y-1/2`} />
               <div className={`mt-16 p-4 rounded-lg shadow-md ${
-                item.isActive ? 'bg-orange-500 text-white' : 'bg-green-200'
+                item.isActive ? 'bg-[#e3cdb8] text-white' : 'bg-[#a5c8cf]'
               }`}>
                 <h3 className="font-semibold text-lg">{item.jobTitle}</h3>
                 <p className={`text-sm mt-1 ${item.isActive ? 'text-white/90' : 'text-gray-600'}`}>
-                  {item.phase}, {item.location}
+                  {item.phase}
                 </p>
               </div>
             </div>
@@ -46,8 +46,9 @@ const Summary = () => {
         {timelineData.map((item, index) => (
           <div 
             key={item.id}
+            // ... and in the mobile version:
             className={`p-4 rounded-lg shadow-md ${
-              item.isActive ? 'bg-orange-500 text-white' : 'bg-green-200'
+              item.isActive ? 'bg-[#e3cdb8] text-white' : 'bg-[#a5c8cf]'
             }`}
             style={{
               animation: `fade-in 0.5s ease-out ${index * 0.2}s`,
@@ -57,7 +58,7 @@ const Summary = () => {
           >
             <h3 className="font-semibold text-lg">{item.jobTitle}</h3>
             <p className={`text-sm mt-1 ${item.isActive ? 'text-white/90' : 'text-gray-600'}`}>
-              {item.phase}, {item.location}
+              {item.phase}
             </p>
           </div>
         ))}

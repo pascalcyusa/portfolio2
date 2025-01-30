@@ -3,13 +3,12 @@ import { Cog } from "lucide-react";
 const Hero = () => {
   return (
     <div className="relative h-[63vh] w-full overflow-hidden">
-      <iframe
-        className="absolute top-0 left-0 w-full h-full object-cover"
-        src="https://www.youtube.com/embed/_pSYopTb36M?autoplay=1&mute=1&loop=1&playlist=_pSYopTb36M&controls=0&showinfo=0&start=5&end=15"
+        <iframe
+        className="absolute top-0 left-0 w-full h-full object-cover scale-150"
+        src="https://www.youtube.com/embed/pyFECO1Sebo?autoplay=1&mute=1&loop=1&playlist=pyFECO1Sebo&controls=0&showinfo=0&start=0&end=20"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      ></iframe>
-      
+        allowFullScreen>
+        </iframe>
       <div className="absolute inset-0 bg-black/30" />
       
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center">
