@@ -1,44 +1,12 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-
-const projects = [
-  {
-    id: "pokemon-gripper",
-    title: "Pokémon Ball Gripper",
-    category: "Mechanical Design / Robotics",
-    image: "https://images.unsplash.com/photo-1535378620166-273708d44e4c?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    id: "tdk-ch101",
-    title: "TDK CH101 Ultrasonic Sensor Automation",
-    category: "Sensors / Data Automation",
-    image: "https://images.unsplash.com/photo-1517420879524-86d64ac2f339?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    id: "lego-arduino",
-    title: "LEGO & Arduino Education",
-    category: "Education / Robotics",
-    image: "https://images.unsplash.com/photo-1551103782-8ab07afd45c1?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    id: "splendor-game",
-    title: "Splendor Game",
-    category: "C++ / Game Development",
-    image: "https://images.unsplash.com/photo-1611996575749-79a3a250f948?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    id: "personal-website",
-    title: "Personal Website",
-    category: "Web Development",
-    image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
-  },
-];
+import { portfolioData } from "@/data/portfolioData";
 
 const PortfolioGrid = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {projects.map((item, index) => (
+        {portfolioData.map((item, index) => (
           <div 
             key={item.id} 
             className="portfolio-item"
