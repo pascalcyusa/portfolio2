@@ -15,7 +15,7 @@ const Research = () => {
           <div key={project.id}>
             <div className="mb-20">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-8">
-                <div className={index % 2 === 1 ? "order-2 md:order-1" : ""}>
+                <div className={`${index % 2 === 0 ? "md:order-1" : "md:order-2"}`}>
                   <h2 className="text-3xl font-bold mb-4">{project.title}</h2>
                   <p className="text-gray-700 mb-4">{project.description}</p>
                   
@@ -47,7 +47,7 @@ const Research = () => {
                   </div>
                 </div>
                 <div className={`bg-gray-100 rounded-lg h-[400px] flex items-center justify-center ${
-                  index % 2 === 1 ? "order-1 md:order-2" : ""
+                  index % 2 === 0 ? "md:order-2" : "md:order-1"
                 }`}>
                   <img 
                     src={project.image}
