@@ -1,10 +1,20 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { ArrowUpRight } from "lucide-react";
-import { researchData } from "@/data/researchData";
+import { researchData, ResearchProject } from "@/data/researchData";  // Add ResearchProject here
 import { Separator } from "@/components/ui/separator";
+import { useState } from "react";
+import { ResearchModal } from "@/components/ResearchModal";
 
 const Research = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState<ResearchProject | null>(null);
+
+  const handleLearnMore = (project: ResearchProject) => {
+    setSelectedProject(project);
+    setIsModalOpen(true);
+  };
+
   return (
     <div className="min-h-screen flex flex-col justify-between">
       <Navigation />
@@ -31,19 +41,30 @@ const Research = () => {
                   <div className="text-gray-600">
                     <p className="mb-2">{project.lab}</p>
                     <p className="mb-4">{project.period}</p>
-                    {project.link && (
-                      <a 
-                        href={project.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                    <div className="flex items-center gap-4">
+                      {project.link && (
+                        <a 
+                          href={project.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center"
+                          style={{ color: '#a5c8cf', transition: 'color 0.2s ease' }}
+                          onMouseOver={(e) => e.currentTarget.style.color = '#e3cdb8'}
+                          onMouseLeave={(e) => e.currentTarget.style.color = '#a5c8cf'}
+                        >
+                          Article <ArrowUpRight className="ml-1 h-4 w-4" />
+                        </a>
+                      )}
+                      <button
+                        onClick={() => handleLearnMore(project)}
                         className="inline-flex items-center"
                         style={{ color: '#a5c8cf', transition: 'color 0.2s ease' }}
                         onMouseOver={(e) => e.currentTarget.style.color = '#e3cdb8'}
                         onMouseLeave={(e) => e.currentTarget.style.color = '#a5c8cf'}
                       >
                         Learn More <ArrowUpRight className="ml-1 h-4 w-4" />
-                      </a>
-                    )}
+                      </button>
+                    </div>
                   </div>
                 </div>
                 <div className={`bg-gray-100 rounded-lg h-[400px] flex items-center justify-center ${
@@ -64,6 +85,12 @@ const Research = () => {
         ))}
       </div>
       <Footer />
+
+      <ResearchModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        project={selectedProject}
+      />
     </div>
   );
 };

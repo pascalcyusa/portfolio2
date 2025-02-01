@@ -8,6 +8,7 @@ export interface PortfolioItem {
   features: string[];
   year: string;
   githubUrl?: string;
+  detailsUrl?: string; // Add this new field
 }
 
 export const portfolioData: PortfolioItem[] = [
@@ -24,7 +25,9 @@ export const portfolioData: PortfolioItem[] = [
       "2ft transport capability",
       "Non-contact ball manipulation"
     ],
-    year: "2024"
+    year: "Spring 2025",
+    githubUrl: "https://github.com/pascalcyusa/Pokmon-Gripper",
+    detailsUrl: "/projects/pokemon-gripper"
   },
   {
     id: "tdk-ch101",
@@ -85,6 +88,7 @@ export const portfolioData: PortfolioItem[] = [
       "Netlify deployment"
     ],
     year: "Sept 2022",
-    githubUrl: "https://github.com/pascalcyusa/myportfolio1"
+    githubUrl: "https://github.com/pascalcyusa/myportfolio1",
+    detailsUrl: "/projects/personal-website"
   }
 ];
