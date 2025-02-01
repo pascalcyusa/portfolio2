@@ -19,15 +19,15 @@ export const portfolioDetails: PortfolioDetail[] = [
     content: "The Pokémon Ball Gripper project represents an innovative approach to robotic manipulation, specifically designed for handling spherical objects with precision. This project combines mechanical engineering principles with modern control systems to create a reliable and efficient gripping mechanism.",
     images: [
       {
-        url: "/images/pokemon-gripper/mechanism.jpg",
+        url: "https://images.unsplash.com/photo-1535378620166-273708d44e4c?auto=format&fit=crop&w=800&q=80",
         caption: "CAD design of the gripper mechanism"
       },
       {
-        url: "/images/pokemon-gripper/assembly.jpg",
+        url: "https://images.unsplash.com/photo-1561144257-e32e8efc6c4f?auto=format&fit=crop&w=800&q=80",
         caption: "Final assembled gripper system"
       },
       {
-        url: "/images/pokemon-gripper/control-system.jpg",
+        url: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80",
         caption: "Control system implementation"
       }
     ],
@@ -66,15 +66,15 @@ export const portfolioDetails: PortfolioDetail[] = [
     content: "This project focused on developing an automated data collection system for TDK's CH101 ultrasonic sensors, streamlining the testing and validation process through sophisticated software integration.",
     images: [
       {
-        url: "/images/tdk-ch101/setup.jpg",
+        url: "https://images.unsplash.com/photo-1517420879524-86d64ac2f339?auto=format&fit=crop&w=800&q=80",
         caption: "Testing setup with multiple sensors"
       },
       {
-        url: "/images/tdk-ch101/interface.jpg",
+        url: "https://images.unsplash.com/photo-1580894908361-967195033215?auto=format&fit=crop&w=800&q=80",
         caption: "LabVIEW interface design"
       },
       {
-        url: "/images/tdk-ch101/data-visualization.jpg",
+        url: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
         caption: "Real-time data visualization"
       }
     ],
@@ -113,15 +113,15 @@ export const portfolioDetails: PortfolioDetail[] = [
     content: "An innovative educational initiative combining LEGO Mindstorms with Arduino technology to create engaging STEM learning experiences for students. The project focused on hands-on learning and practical application of programming concepts.",
     images: [
       {
-        url: "/images/lego-arduino/robot-assembly.jpg",
+        url: "https://images.unsplash.com/photo-1551103782-8ab07afd45c1?auto=format&fit=crop&w=800&q=80",
         caption: "Students assembling robots"
       },
       {
-        url: "/images/lego-arduino/programming-session.jpg",
+        url: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80",
         caption: "Programming workshop in action"
       },
       {
-        url: "/images/lego-arduino/final-projects.jpg",
+        url: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80",
         caption: "Student project showcase"
       }
     ],
@@ -160,15 +160,15 @@ export const portfolioDetails: PortfolioDetail[] = [
     content: "A comprehensive C++ implementation of the popular board game Splendor, featuring a terminal-based interface and robust game mechanics. The project demonstrates strong object-oriented programming principles and game state management.",
     images: [
       {
-        url: "/images/splendor/gameplay.jpg",
+        url: "https://images.unsplash.com/photo-1611996575749-79a3a250f948?auto=format&fit=crop&w=800&q=80",
         caption: "Terminal gameplay interface"
       },
       {
-        url: "/images/splendor/class-diagram.jpg",
+        url: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=80",
         caption: "Game architecture diagram"
       },
       {
-        url: "/images/splendor/save-system.jpg",
+        url: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=800&q=80",
         caption: "Save/Load system implementation"
       }
     ],
@@ -207,15 +207,15 @@ export const portfolioDetails: PortfolioDetail[] = [
     content: "A modern, responsive portfolio website built using React and TypeScript, showcasing professional experience and projects. The site features a clean, user-friendly design with optimal performance and accessibility considerations.",
     images: [
       {
-        url: "/images/website/homepage.jpg",
+        url: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
         caption: "Homepage design"
       },
       {
-        url: "/images/website/portfolio.jpg",
+        url: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
         caption: "Portfolio section"
       },
       {
-        url: "/images/website/mobile-view.jpg",
+        url: "https://images.unsplash.com/photo-1526498460520-4c246339dccb?auto=format&fit=crop&w=800&q=80",
         caption: "Mobile responsive design"
       }
     ],
