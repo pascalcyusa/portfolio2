@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { ArrowUpRight } from "lucide-react";
+import { Separator } from "@/components/ui/separator";
 
 const Projects = () => {
   return (
@@ -8,8 +9,8 @@ const Projects = () => {
       <div>
         <Navigation />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">    
-        <div className="mb-16">
-        </div>      
+          <div className="mb-16">
+          </div>      
           {/* First project - Right side */}
           <div className="mb-20">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-8">
@@ -62,8 +63,11 @@ const Projects = () => {
               </div>
             </div>
           </div>
-                    {/* Second project - Left side */}
-                    <div className="mb-20">
+
+          <Separator className="my-16 opacity-30" />
+          
+          {/* Second project - Left side */}
+          <div className="mb-20">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-8">
               <div>
                 <h2 className="text-3xl font-bold mb-4">TDK CH101 Ultrasonic Sensor Automation</h2>
@@ -110,6 +114,8 @@ const Projects = () => {
               </div>
             </div>
           </div>
+
+          <Separator className="my-16 opacity-30" />
 
           {/* Third project - Right side */}
           <div className="mb-20">
@@ -163,6 +169,8 @@ const Projects = () => {
             </div>
           </div>
 
+          <Separator className="my-16 opacity-30" />
+
           {/* Fourth project - Left side */}
           <div className="mb-20">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-8">
@@ -212,6 +220,8 @@ const Projects = () => {
               </div>
             </div>
           </div>
+
+          <Separator className="my-16 opacity-30" />
 
           {/* Fifth project - Right side */}
           <div className="mb-20">
