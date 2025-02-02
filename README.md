@@ -2,8 +2,6 @@
 
 A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS, showcasing my professional journey and technical projects.
 
-![Portfolio Preview](public/images/website/homepage.jpg)
-
 ## 🌟 Featured Projects
 
 - **Pokémon Ball Gripper** - Robotic automation project
