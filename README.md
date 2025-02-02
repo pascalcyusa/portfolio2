@@ -25,10 +25,44 @@ A modern, responsive portfolio website built with React, TypeScript, and Tailwin
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/pascalcyusa/myportfolio1.git
    cd myportfolio1
    ```
+2. **Install dependencies**
 
-```
+   ```bash
+   npm install
+   ```
 
-```
+3. **Set up environment variables**
+
+   ```bash
+   cp .env.example .env
+   ```
+
+   Then edit `.env` with your configuration
+
+4. **Start development server**
+
+   ```bash
+   npm run dev
+   ```
+
+   The site will be available at `http://localhost:5173`
+
+5. **Build for production**
+
+   ```bash
+   npm run build
+   ```
+
+6. **Preview production build**
+
+   ```bash
+   npm run preview
+   ```
+
+7. **Run tests**
+   ```bash
+   npm run test
+   ```

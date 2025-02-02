@@ -19,32 +19,28 @@ export const portfolioDetails: PortfolioDetail[] = [
     content: "The Pokémon Ball Gripper is a simple robot designed to securely grip and move a Poké Ball using a stepper motor mechanism.",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1535378620166-273708d44e4c?auto=format&fit=crop&w=800&q=80",
+        url: "/images/pokemon-gripper/cad.png",
         caption: "CAD design of the gripper mechanism"
       },
       {
-        url: "https://images.unsplash.com/photo-1561144257-e32e8efc6c4f?auto=format&fit=crop&w=800&q=80",
+        url: "/images/pokemon-gripper/gripper.jpeg",
         caption: "Final assembled gripper system"
       },
       {
-        url: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80",
-        caption: "Control system implementation"
+        url: "/images/pokemon-gripper/gripper.jpeg",
+        caption: "Gripper in action"
       }
     ],
     technicalDetails: [
       "Custom-designed 3D printed components using PLA material",
-      "Arduino Mega 2560 microcontroller implementation",
+      "Raspberry Pi 4 Model B",
       "NEMA 17 stepper motors with 1.8° step angle",
-      "Custom PCB design for control circuitry",
-      "Force feedback sensors for grip pressure monitoring",
-      "2-foot linear rail system for horizontal movement"
+      "Custom pulley system for closing and opening the gripper cups",
     ],
     challenges: [
-      "Achieving precise grip pressure without damaging the balls",
-      "Implementing smooth acceleration and deceleration profiles",
       "Maintaining consistent grip during horizontal movement",
       "Minimizing system weight while ensuring structural integrity",
-      "Calibrating force feedback sensors for various ball sizes"
+      "Calibrating the stepper motors to make sure they operate correctly",
     ],
     outcomes: [
       "Successfully achieved 99% grip reliability rate",
@@ -56,8 +52,7 @@ export const portfolioDetails: PortfolioDetail[] = [
     futureImprovements: [
       "Integration with computer vision for autonomous operation",
       "Wireless control capabilities",
-      "Enhanced grip force feedback system",
-      "Material optimization for reduced weight"
+      "Adding wheels to the system to make the robot move on its own"
     ]
   },
   {

@@ -20,7 +20,7 @@ export const timelineData: TimelineItem[] = [
   },
   {
     id: 3,
-    jobTitle: "Aspiring Mech engineer and professional screwup",
+    jobTitle: "Aspiring Mechanical engineer",
     phase: "Junior",
     isActive: true
   },

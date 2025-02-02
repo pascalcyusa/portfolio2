@@ -16,8 +16,8 @@ export const portfolioData: PortfolioItem[] = [
     id: "pokemon-gripper",
     title: "Pokémon Ball Gripper",
     category: "Mechanical Design / Robotics",
-    image: "https://images.unsplash.com/photo-1535378620166-273708d44e4c?auto=format&fit=crop&w=800&q=80",
-    description: "Mechanical gripper system designed to safely handle and transport Poké Balls using stepper motor actuation.",
+    image: "/images/pokemon-gripper/gripper.jpeg",
+    description: "Mechanical gripper system designed to safely handle and transport a Poké Ball using stepper motor actuation.",
     longDescription: "Engineered a custom mechanical gripper incorporating both linkages and gears, capable of precisely grabbing and transporting Poké Balls. The system features stepper motor actuation and meets strict design constraints for controlled manipulation without direct ball contact.",
     features: [
       "Custom-designed linkage and gear system",
@@ -33,7 +33,7 @@ export const portfolioData: PortfolioItem[] = [
     id: "tdk-ch101",
     title: "TDK CH101 Ultrasonic Sensor Automation",
     category: "Sensors / Data Automation",
-    image: "https://images.unsplash.com/photo-1517420879524-86d64ac2f339?auto=format&fit=crop&w=800&q=80",
+    image: "/images/tdk-ch101/ch101sensor.jpeg",
     description: "Data collection automation system for ultrasonic sensors using C and LabVIEW integration.",
     longDescription: "Tasked with learning and configuring the TDK CH101 chip's source code in C for efficient data collection from ultrasonic sensors. Integrated C code with LabVIEW to automate the data collection process, improving speed and accuracy in sensor data acquisition.",
     features: [
