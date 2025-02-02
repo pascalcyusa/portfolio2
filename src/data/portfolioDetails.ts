@@ -16,7 +16,7 @@ export const portfolioDetails: PortfolioDetail[] = [
   {
     id: "pokemon-gripper",
     title: "Pokémon Ball Gripper",
-    content: "The Pokémon Ball Gripper project represents an innovative approach to robotic manipulation, specifically designed for handling spherical objects with precision. This project combines mechanical engineering principles with modern control systems to create a reliable and efficient gripping mechanism.",
+    content: "The Pokémon Ball Gripper is a simple robot designed to securely grip and move a Poké Ball using a stepper motor mechanism.",
     images: [
       {
         url: "https://images.unsplash.com/photo-1535378620166-273708d44e4c?auto=format&fit=crop&w=800&q=80",
