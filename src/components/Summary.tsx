@@ -7,7 +7,7 @@ const Summary = () => {
       <div className="animate-fade-in">
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 sm:mb-8">SUMMARY</h2>
         <p className="text-center text-base sm:text-lg text-gray-600 mb-8 sm:mb-12">
-          Thanks for checking out my portfolio! Whether you're a recruiter, fellow engineer, friend, or lost stranger, I hope you enjoy the ride.
+          Thanks for checking out my portfolio! 
         </p>
       </div>
       
