@@ -7,10 +7,10 @@ export interface PortfolioItem {
   features: string[];
   year: string;
   githubUrl?: string;
-  detailsUrl?: string; // Add this new field
 }
 
 export const portfolioData: PortfolioItem[] = [
+  // Project 1
   {
     id: "pokemon-gripper",
     title: "Pokémon Ball Gripper",
@@ -25,13 +25,13 @@ export const portfolioData: PortfolioItem[] = [
     ],
     year: "Spring 2025",
     githubUrl: "https://github.com/pascalcyusa/Pokmon-Gripper",
-    detailsUrl: "/projects/pokemon-gripper"
   },
+  // Project 2
   {
     id: "pokemon-ball-sorter",
     title: "Pokémon Ball Sorter",
     category: "ME 35 / Simple Robotics",
-    image: "/images/pokemon-gripper/gripper.jpeg",
+    image: "/images/pokemon-ball-sorter/cad2.png",
     description: "A robot that automatically detects and sorts colored balls using color detection and servo positioning.",
     features: [
       "Continuous ball feeding using threaded stepper motor control",
@@ -42,8 +42,8 @@ export const portfolioData: PortfolioItem[] = [
     ],
     year: "Spring 2025",
     githubUrl: "https://github.com/pascalcyusa/Pokemon-Ball-Sorter",
-    detailsUrl: "/projects/pokemon-ball-sorter"
   },
+  // Project 3
   {
     id: "tdk-ch101",
     title: "TDK CH101 Ultrasonic Sensor Automation",
@@ -58,6 +58,7 @@ export const portfolioData: PortfolioItem[] = [
     ],
     year: "Summer 2024"
   },
+  // Project 4
   {
     id: "lego-arduino",
     title: "LEGO & Arduino Education",
@@ -72,6 +73,7 @@ export const portfolioData: PortfolioItem[] = [
     ],
     year: "Summer 2023"
   },
+  // Project 5
   {
     id: "splendor-game",
     title: "Splendor Game",
@@ -86,6 +88,7 @@ export const portfolioData: PortfolioItem[] = [
     ],
     year: "Spring 2023"
   },
+  // Project 6
   {
     id: "personal-website",
     title: "Personal Website",
@@ -99,7 +102,6 @@ export const portfolioData: PortfolioItem[] = [
       "Netlify deployment"
     ],
     year: "Sept 2022",
-    githubUrl: "https://github.com/pascalcyusa/myportfolio1",
-    detailsUrl: "/projects/personal-website"
+    githubUrl: "https://github.com/pascalcyusa/portfolio2",
   }
 ];

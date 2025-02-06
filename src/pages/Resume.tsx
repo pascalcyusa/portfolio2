@@ -2,11 +2,11 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { useEffect } from 'react';
 
-declare global {
-  interface Window {
-    AdobeDC: AdobeDC;
-  }
-}
+// declare global {
+//   interface Window {
+//     AdobeDC: AdobeDC;
+//   }
+// }
 
 const Resume = () => {
   return (

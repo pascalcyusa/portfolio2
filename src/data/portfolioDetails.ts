@@ -63,16 +63,16 @@ export const portfolioDetails: PortfolioDetail[] = [
     content: "A robot that automatically detects and sorts colored balls using color detection and servo positioning.",
     images: [
       {
-        url: "/images/pokemon-gripper/cad.png",
-        caption: "CAD design of the gripper mechanism"
+        url: "/images/pokemon-ball-sorter/cad1.png",
+        caption: "CAD design of the ball sorter mechanism"
       },
       {
-        url: "/images/pokemon-gripper/gripper.jpeg",
+        url: "/images/pokemon-ball-sorter/cad2.png",
+        caption: "Another angle of the CAD design"
+      },
+      {
+        url: "/images/pokemon-ball-sorter/cad2.png",
         caption: "Final assembled gripper system"
-      },
-      {
-        url: "/images/pokemon-gripper/gripper.jpeg",
-        caption: "Gripper in action"
       }
     ],
     technicalDetails: [
