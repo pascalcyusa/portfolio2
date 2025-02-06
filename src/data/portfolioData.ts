@@ -86,7 +86,8 @@ export const portfolioData: PortfolioItem[] = [
       "File handling system",
       "Terminal-based UI"
     ],
-    year: "Spring 2023"
+    year: "Spring 2023",
+    githubUrl: "https://github.com/pascalcyusa/cs11",
   },
   // Project 6
   {
