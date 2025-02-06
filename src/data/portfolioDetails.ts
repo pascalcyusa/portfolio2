@@ -148,15 +148,15 @@ export const portfolioDetails: PortfolioDetail[] = [
     content: "An innovative educational initiative combining LEGO Mindstorms with Arduino technology to create engaging STEM learning experiences for students. The project focused on hands-on learning and practical application of programming concepts.",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1551103782-8ab07afd45c1?auto=format&fit=crop&w=800&q=80",
+        url: "/images/lego-arduino/ceeo1.jpg",
         caption: "Students assembling robots"
       },
       {
-        url: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80",
+        url: "/images/lego-arduino/ceeo2.jpg",
         caption: "Programming workshop in action"
       },
       {
-        url: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80",
+        url: "/images/lego-arduino/ceeo2.jpg",
         caption: "Student project showcase"
       }
     ],

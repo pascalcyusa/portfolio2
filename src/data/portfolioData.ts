@@ -63,7 +63,7 @@ export const portfolioData: PortfolioItem[] = [
     id: "lego-arduino",
     title: "LEGO & Arduino Education",
     category: "Education / Robotics",
-    image: "https://images.unsplash.com/photo-1551103782-8ab07afd45c1?auto=format&fit=crop&w=800&q=80",
+    image: "/images/lego-arduino/ceeo1.jpg",
     description: "Educational robotics projects using LEGO Mindstorms and Arduino.",
     features: [
       "LEGO Mindstorms integration",
