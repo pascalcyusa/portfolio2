@@ -13,10 +13,11 @@ export interface PortfolioDetail {
 }
 
 export const portfolioDetails: PortfolioDetail[] = [
+  // Project 1
   {
     id: "pokemon-gripper",
     title: "Pokémon Ball Gripper",
-    content: "The Pokémon Ball Gripper is a simple robot designed to securely grip and move a Poké Ball using a stepper motor mechanism.",
+    content: "Mechanical gripper system designed to safely handle and transport a Poké Ball using stepper motor actuation.",
     images: [
       {
         url: "/images/pokemon-gripper/cad.png",
@@ -55,6 +56,44 @@ export const portfolioDetails: PortfolioDetail[] = [
       "Adding wheels to the system to make the robot move on its own"
     ]
   },
+  // Project 2
+  {
+    id: "pokemon-ball-sorter",
+    title: "Pokémon Ball Sorter",
+    content: "A robot that automatically detects and sorts colored balls using color detection and servo positioning.",
+    images: [
+      {
+        url: "/images/pokemon-gripper/cad.png",
+        caption: "CAD design of the gripper mechanism"
+      },
+      {
+        url: "/images/pokemon-gripper/gripper.jpeg",
+        caption: "Final assembled gripper system"
+      },
+      {
+        url: "/images/pokemon-gripper/gripper.jpeg",
+        caption: "Gripper in action"
+      }
+    ],
+    technicalDetails: [
+      "Reads RGB values from color sensor",
+      "Classifies colors based on RGB intensity ratios",
+      "Currently detects: Red, Green, Blue, Yellow",
+      "Stepper motor runs in separate thread for continuous operation",
+      "Servo motor moves to specific angles based on detected color",
+      "Servo returns to rest position after each sort"
+    ],
+    challenges: [
+      "Calibrating the color sensor to work in most lighting conditions",
+      "Implementing a very accurate sorting mechanism",
+      "Making sure all processes are running smoothly and that the ball feeding mechanism doesn't jam"
+    ],
+    outcomes: undefined,
+    futureImprovements: [
+      "Currently the robot doesn't accurately place balls to the corresponfing color bin. We plan to calibrate the servo to make sure it moves each ball to the correct slot"
+    ]
+  },
+  // Project 3
   {
     id: "tdk-ch101",
     title: "TDK CH101 Ultrasonic Sensor Automation",
@@ -102,6 +141,7 @@ export const portfolioDetails: PortfolioDetail[] = [
       "Mobile app development for remote control"
     ]
   },
+  // Project 4
   {
     id: "lego-arduino",
     title: "LEGO & Arduino Education",
@@ -149,6 +189,7 @@ export const portfolioDetails: PortfolioDetail[] = [
       "Extended hardware compatibility"
     ]
   },
+  // Project 5
   {
     id: "splendor-game",
     title: "Splendor Game",
@@ -196,6 +237,7 @@ export const portfolioDetails: PortfolioDetail[] = [
       "Additional game modes"
     ]
   },
+  // Project 6
   {
     id: "personal-website",
     title: "Personal Website",

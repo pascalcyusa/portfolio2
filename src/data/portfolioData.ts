@@ -4,7 +4,6 @@ export interface PortfolioItem {
   category: string;
   image: string;
   description: string;
-  longDescription: string;
   features: string[];
   year: string;
   githubUrl?: string;
@@ -15,10 +14,9 @@ export const portfolioData: PortfolioItem[] = [
   {
     id: "pokemon-gripper",
     title: "Pokémon Ball Gripper",
-    category: "Mechanical Design / Robotics",
+    category: "ME 35 / Simple Robotics",
     image: "/images/pokemon-gripper/gripper.jpeg",
     description: "Mechanical gripper system designed to safely handle and transport a Poké Ball using stepper motor actuation.",
-    longDescription: "Engineered a custom mechanical gripper incorporating both linkages and gears, capable of precisely grabbing and transporting Poké Balls. The system features stepper motor actuation and meets strict design constraints for controlled manipulation without direct ball contact.",
     features: [
       "Custom-designed linkage and gear system",
       "Stepper motor-controlled actuation",
@@ -30,12 +28,28 @@ export const portfolioData: PortfolioItem[] = [
     detailsUrl: "/projects/pokemon-gripper"
   },
   {
+    id: "pokemon-ball-sorter",
+    title: "Pokémon Ball Sorter",
+    category: "ME 35 / Simple Robotics",
+    image: "/images/pokemon-gripper/gripper.jpeg",
+    description: "A robot that automatically detects and sorts colored balls using color detection and servo positioning.",
+    features: [
+      "Continuous ball feeding using threaded stepper motor control",
+      "RGB color detection and classification",
+      "Automated servo positioning for ball sorting",
+      "Configurable sorting positions for different colors",
+      "Returns to rest position after each sort"
+    ],
+    year: "Spring 2025",
+    githubUrl: "https://github.com/pascalcyusa/Pokemon-Ball-Sorter",
+    detailsUrl: "/projects/pokemon-ball-sorter"
+  },
+  {
     id: "tdk-ch101",
     title: "TDK CH101 Ultrasonic Sensor Automation",
     category: "Sensors / Data Automation",
     image: "/images/tdk-ch101/ch101sensor.jpeg",
     description: "Data collection automation system for ultrasonic sensors using C and LabVIEW integration.",
-    longDescription: "Tasked with learning and configuring the TDK CH101 chip's source code in C for efficient data collection from ultrasonic sensors. Integrated C code with LabVIEW to automate the data collection process, improving speed and accuracy in sensor data acquisition.",
     features: [
       "C and LabVIEW integration",
       "Automated data collection",
@@ -50,7 +64,6 @@ export const portfolioData: PortfolioItem[] = [
     category: "Education / Robotics",
     image: "https://images.unsplash.com/photo-1551103782-8ab07afd45c1?auto=format&fit=crop&w=800&q=80",
     description: "Educational robotics projects using LEGO Mindstorms and Arduino.",
-    longDescription: "Worked on projects using LEGO Mindstorms and Spike Prime to build sensor-controlled robots and cars, teaching students programming and engineering skills. Implemented Python libraries and Arduino integration for enhanced project functionality.",
     features: [
       "LEGO Mindstorms integration",
       "Python and Arduino programming",
@@ -65,7 +78,6 @@ export const portfolioData: PortfolioItem[] = [
     category: "C++ / Game Development",
     image: "https://images.unsplash.com/photo-1611996575749-79a3a250f948?auto=format&fit=crop&w=800&q=80",
     description: "Terminal-based implementation of the Splendor board game in C++.",
-    longDescription: "Built a terminal-based Splendor game using object-oriented programming in C++, ensuring easy debugging and file handling. Developed custom functions to enforce game rules and enhance user experience.",
     features: [
       "Object-oriented design",
       "Custom game rule enforcement",
@@ -80,7 +92,6 @@ export const portfolioData: PortfolioItem[] = [
     category: "Web Development",
     image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
     description: "Responsive portfolio website built with modern web technologies.",
-    longDescription: "Created a personal website to demonstrate web programming skills, using Bootstrap for responsive and user-friendly design. Implemented version control through GitHub and deployed using Netlify.",
     features: [
       "Responsive design",
       "Bootstrap framework",
