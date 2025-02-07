@@ -6,6 +6,10 @@ export interface PortfolioDetail {
     url: string;
     caption: string;
   }[];
+  video?: {
+    url: string;
+    caption: string;
+  };
   technicalDetails: string[];
   challenges: string[];
   outcomes: string[];
@@ -63,18 +67,26 @@ export const portfolioDetails: PortfolioDetail[] = [
     content: "A robot that automatically detects and sorts colored balls using color detection and servo positioning.",
     images: [
       {
-        url: "/images/pokemon-ball-sorter/cad1.png",
+        url: "/images/pokemon-ball-sorter/cad2.png",
         caption: "CAD design of the ball sorter mechanism"
       },
       {
-        url: "/images/pokemon-ball-sorter/cad2.png",
-        caption: "Another angle of the CAD design"
+        url: "/images/pokemon-ball-sorter/ball-sorter-1.jpeg",
+        caption: "Final assembled system"
       },
       {
-        url: "/images/pokemon-ball-sorter/cad2.png",
-        caption: "Final assembled gripper system"
-      }
+        url: "/images/pokemon-ball-sorter/ball-sorter-2.jpeg",
+        caption: "Final assembled system"
+      },
+      {
+        url: "/images/pokemon-ball-sorter/ball-sorter-3.jpeg",
+        caption: "Final assembled system"
+      },
     ],
+    video: {
+      url: "/images/pokemon-ball-sorter/video.mov",
+      caption: "Ball sorter in action"
+    },
     technicalDetails: [
       "Reads RGB values from color sensor",
       "Classifies colors based on RGB intensity ratios",

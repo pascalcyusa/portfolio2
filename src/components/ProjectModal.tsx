@@ -49,6 +49,17 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ isOpen, onClose, pro
           ))}
         </div>
 
+        {details.video && (
+          <div className="mb-8">
+            <h3 className="text-xl font-semibold mb-3">Video</h3>
+            <video controls width="100%">
+              <source src={details.video.url} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <p className="mt-2 text-sm text-gray-600">{details.video.caption}</p>
+          </div>
+        )}
+
         {details.technicalDetails && (
           <div className="mb-8">
             <h3 className="text-xl font-semibold mb-3">Technical Details</h3>

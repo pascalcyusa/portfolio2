@@ -25,7 +25,7 @@ const PortfolioGrid = () => {
               <h3 className="text-xl sm:text-2xl font-bold mb-2 line-clamp-2">{item.title}</h3>
               <p className="text-gray-300 mb-4 text-sm sm:text-base">{item.category}</p>
               <Link
-                to="/projects"
+                to={`/projects#${item.id}`} // Ensure this matches the project ID
                 className="inline-flex items-center justify-center text-white hover:text-gray-200 text-sm sm:text-base"
               >
                 Learn more <ArrowRight className="ml-2 w-4 h-4" />

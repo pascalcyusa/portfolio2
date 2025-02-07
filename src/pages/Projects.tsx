@@ -14,7 +14,7 @@ const Projects = () => {
           </div>
           
           {portfolioData.map((project, index) => (
-            <div key={project.id}>
+            <div key={project.id} id={project.id}> {/* Ensure this matches the Link's hash */}
               <ProjectEntry 
                 project={project} 
                 isReversed={index % 2 === 0}
