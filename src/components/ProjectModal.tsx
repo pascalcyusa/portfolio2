@@ -1,5 +1,6 @@
 import React from 'react';
 import { PortfolioDetail } from '../data/portfolioDetails';
+import { FaFilePdf } from 'react-icons/fa'; // Import a PDF icon from a library like react-icons
 
 interface ProjectModalProps {
   isOpen: boolean;
@@ -32,10 +33,19 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ isOpen, onClose, pro
         >
           ×
         </button>
-        
+
         <h2 className="text-3xl font-bold mb-4">{details.title}</h2>
         <p className="mb-6 text-gray-700">{details.content}</p>
-        
+
+        {/* PDF Link */}
+        {details.pdfUrl && (
+          <div className="mb-8">
+            <a href={details.pdfUrl} target="_blank" rel="noopener noreferrer" className="flex items-center text-red-600 hover:text-red-800">
+              <FaFilePdf className="mr-2" /> Project-Document
+            </a>
+          </div>
+        )}
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
           {details.images.map((image, index) => (
             <div key={index} className="relative">

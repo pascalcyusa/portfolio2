@@ -16,7 +16,7 @@ const Resume = () => {
       <div className="flex-grow pt-20">
         <div className="container mx-auto px-4">
           <iframe
-            src="/resume.pdf"
+            src="/images/resume/resume.pdf"
             className="w-full h-[calc(100vh-120px)]"
             title="Resume PDF"
           />

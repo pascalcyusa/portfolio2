@@ -1,7 +1,7 @@
 export interface PortfolioDetail {
-  id: string;
   title: string;
   content: string;
+  id: string;
   images: {
     url: string;
     caption: string;
@@ -14,53 +14,53 @@ export interface PortfolioDetail {
   challenges: string[];
   outcomes: string[];
   futureImprovements?: string[];
+  pdfUrl?: string;
 }
 
 export const portfolioDetails: PortfolioDetail[] = [
-  // Project 1
+  // Project 7
   {
-    id: "pokemon-gripper",
-    title: "Pokémon Ball Gripper",
-    content: "Mechanical gripper system designed to safely handle and transport a Poké Ball using stepper motor actuation.",
+    id: "IR-line-follower",
+    title: "Scout A Route (IR Line Follower)",
+    content: "This project involves creating a robot that follows a line using an IR sensor, adhering to specific constraints and utilizing available resources.",
     images: [
       {
-        url: "/images/pokemon-gripper/cad.png",
-        caption: "CAD design of the gripper mechanism"
+        url: "/images/ir-line-follower/design.jpeg",
+        caption: "Design of the IR line follower"
       },
       {
-        url: "/images/pokemon-gripper/gripper.jpeg",
-        caption: "Final assembled gripper system"
+        url: "/images/ir-line-follower/assembly.jpeg",
+        caption: "Assembled IR line follower"
       },
       {
-        url: "/images/pokemon-gripper/gripper.jpeg",
-        caption: "Gripper in action"
+        url: "/images/ir-line-follower/demo.jpeg",
+        caption: "IR line follower in action"
       }
     ],
     technicalDetails: [
-      "Custom-designed 3D printed components using PLA material",
-      "Raspberry Pi 4 Model B",
-      "NEMA 17 stepper motors with 1.8° step angle",
-      "Custom pulley system for closing and opening the gripper cups",
+      "IR sensor for line detection",
+      "Predefined path selection",
+      "Stepper motor control for movement",
+      "Utilization of course kit materials"
     ],
     challenges: [
-      "Maintaining consistent grip during horizontal movement",
-      "Minimizing system weight while ensuring structural integrity",
-      "Calibrating the stepper motors to make sure they operate correctly",
+      "Ensuring accurate line following",
+      "Adhering to project constraints",
+      "Efficient use of available resources"
     ],
     outcomes: [
-      "Successfully achieved 99% grip reliability rate",
-      "Reduced transport time by 40% compared to initial prototype",
-      "Implemented fail-safe mechanisms for emergency stops",
-      "Created detailed documentation for future maintenance",
-      "Developed a user-friendly control interface"
+      "Successful line following demonstration",
+      "Compliance with project constraints",
+      "Effective use of provided materials"
     ],
     futureImprovements: [
-      "Integration with computer vision for autonomous operation",
-      "Wireless control capabilities",
-      "Adding wheels to the system to make the robot move on its own"
+      "Enhancing sensor accuracy",
+      "Exploring alternative path algorithms",
+      "Improving speed and efficiency"
     ]
   },
-  // Project 2
+
+  // Project 6
   {
     id: "pokemon-ball-sorter",
     title: "Pokémon Ball Sorter",
@@ -105,7 +105,203 @@ export const portfolioDetails: PortfolioDetail[] = [
       "Currently the robot doesn't accurately place balls to the corresponfing color bin. We plan to calibrate the servo to make sure it moves each ball to the correct slot"
     ]
   },
-  // Project 3
+  // Project 5
+  {
+    id: "pokemon-gripper",
+    title: "Pokémon Ball Gripper",
+    content: "Mechanical gripper system designed to safely handle and transport a Poké Ball using stepper motor actuation.",
+    images: [
+      {
+        url: "/images/pokemon-gripper/cad.png",
+        caption: "CAD design of the gripper mechanism"
+      },
+      {
+        url: "/images/pokemon-gripper/gripper.jpeg",
+        caption: "Final assembled gripper system"
+      },
+      {
+        url: "/images/pokemon-gripper/gripper.jpeg",
+        caption: "Gripper in action"
+      }
+    ],
+    technicalDetails: [
+      "Custom-designed 3D printed components using PLA material",
+      "Raspberry Pi 4 Model B",
+      "NEMA 17 stepper motors with 1.8° step angle",
+      "Custom pulley system for closing and opening the gripper cups",
+    ],
+    challenges: [
+      "Maintaining consistent grip during horizontal movement",
+      "Minimizing system weight while ensuring structural integrity",
+      "Calibrating the stepper motors to make sure they operate correctly",
+    ],
+    outcomes: [
+      "Successfully achieved 99% grip reliability rate",
+      "Reduced transport time by 40% compared to initial prototype",
+      "Implemented fail-safe mechanisms for emergency stops",
+      "Created detailed documentation for future maintenance",
+      "Developed a user-friendly control interface"
+    ],
+    futureImprovements: [
+      "Integration with computer vision for autonomous operation",
+      "Wireless control capabilities",
+      "Adding wheels to the system to make the robot move on its own"
+    ]
+  },
+
+  // Project 10
+  {
+    id: "ballon-dor-replica",
+    title: "Ballon d’Or Replica",
+    content: "Designed and fabricated a replica of the Ballon d’Or trophy using sand casting and lost wax casting techniques, achieving a high-quality final product closely resembling the original.",
+    images: [
+      {
+        url: "/images/ballon-dor-replica/dor2.jpeg",
+        caption: "Final polished Ballon d’Or replica"
+      },
+      {
+        url: "/images/ballon-dor-replica/dor1.jpeg",
+        caption: undefined
+      },
+      {
+        url: "/images/ballon-dor-replica/dor3.jpeg",
+        caption: undefined
+      },
+      {
+        url: "/images/ballon-dor-replica/dor4.jpeg",
+        caption: undefined
+      },
+      {
+        url: "/images/ballon-dor-replica/dor5.jpeg",
+        caption: undefined
+      },
+      {
+        url: "/images/ballon-dor-replica/dor6.jpeg",
+        caption: undefined
+      },
+      {
+        url: "/images/ballon-dor-replica/dor7.jpeg",
+        caption: undefined
+      },
+      {
+        url: "/images/ballon-dor-replica/dor8.jpeg",
+        caption: undefined
+      }
+    ],
+    technicalDetails: [
+      "Designed using SolidWorks",
+      "Used sand casting for one half of the ball",
+      "Applied lost wax casting and welding to join halves",
+      "Refined surface finish for authenticity"
+    ],
+    challenges: [
+      "Achieving accurate proportions and details",
+      "Ensuring proper fusion of cast parts",
+      "Refining the final surface for an authentic look"
+    ],
+    outcomes: [
+      "Successfully created a visually accurate Ballon d’Or replica",
+      "Demonstrated advanced casting techniques",
+      "Achieved a well-polished final product"
+    ],
+    futureImprovements: [
+      "Enhancing detail precision in casting",
+      "Exploring alternative finishing techniques",
+      "Experimenting with different metal compositions"
+    ]
+  },
+
+  // Project 9
+  {
+    id: "hip-truss-bridge",
+    title: "Hip Truss Bridge",
+    content: "Built a hip truss bridge to better understand trusses, internal load calculations, and structural stability using both theoretical and computational methods.",
+    images: [
+      {
+        url: "/images/hip-truss-bridge/truss2.png",
+        caption: "SolidWorks model of the truss bridge"
+      },
+      {
+        url: "/images/hip-truss-bridge/truss3.png",
+        caption: "FEA analysis of the truss bridge"
+      },
+      {
+        url: "/images/hip-truss-bridge/truss4.png",
+        caption: "Bridge assembly using acrylic and glue"
+      },
+      {
+        url: "/images/hip-truss-bridge/truss1.png",
+        caption: "Load testing on the assembled bridge"
+      }
+    ],
+    technicalDetails: [
+      "Designed using SolidWorks",
+      "Built using acrylic components joined with glue",
+      "Calculated internal loads using theoretical methods",
+      "Performed FEA analysis for verification"
+    ],
+    challenges: [
+      "Ensuring structural integrity under load",
+      "Aligning theoretical calculations with FEA results",
+      "Accurate assembly of acrylic components"
+    ],
+    outcomes: [
+      "Bridge successfully supported ~200g of load",
+      "Theoretical internal load calculations matched FEA analysis",
+      "Demonstrated structural stability and feasibility"
+    ],
+    futureImprovements: [
+      "Exploring alternative materials for increased load capacity",
+      "Refining FEA models for greater accuracy",
+      "Introducing joint reinforcements for improved durability"
+    ],
+    pdfUrl: "/images/hipp-truss-bridge/hip-truss.pdf"
+  },
+
+  // Project 8
+  {
+    id: "dog-treat-dispenser",
+    title: "Dog Treat Dispenser",
+    content: "Designed a wheelchair-mounted dog treat dispenser for Ryan, a user with a spinal cord injury. The goal was to create a user-friendly dispenser requiring minimal physical effort while preventing unintended access by the dog.",
+    images: [
+      {
+        url: "/images/dog-treat-dispenser/dispens1.png",
+        caption: "CAD model of the dog treat dispenser"
+      },
+      {
+        url: "/images/dog-treat-dispenser/blueprint.png",
+        caption: "Blueprint of the dog treat dispenser"
+      }
+    ],
+    video: {
+      url: "/images/dog-treat-dispenser/video.MOV",
+      caption: "Treat Dispenser in action"
+    },
+    technicalDetails: [
+      "3D printing and laser cutting for prototyping",
+      "Clamping mechanism for easy attachment",
+      "Controlled treat release to prevent multiple dispenses",
+      "Focus on affordability, durability, and functionality"
+    ],
+    challenges: [
+      "Ensuring minimal physical effort for operation",
+      "Preventing unintended access by the dog",
+      "Adjusting the opening size to prevent multiple treats from dispensing"
+    ],
+    outcomes: [
+      "Successfully delivered a functional prototype",
+      "Resolved initial dispensing issues",
+      "Met user needs for secure and easy treat dispensing"
+    ],
+    futureImprovements: [
+      "Adding motorization for automated dispensing",
+      "Increasing storage capacity",
+      "Enhancing aesthetics for better usability and appearance"
+    ],
+    pdfUrl: "/images/dog-treat-dispenser/blueprint.pdf"
+  },
+
+  // Project 4
   {
     id: "tdk-ch101",
     title: "TDK CH101 Ultrasonic Sensor Automation",
@@ -153,7 +349,7 @@ export const portfolioDetails: PortfolioDetail[] = [
       "Mobile app development for remote control"
     ]
   },
-  // Project 4
+  // Project 3
   {
     id: "lego-arduino",
     title: "LEGO & Arduino Education",
@@ -201,7 +397,7 @@ export const portfolioDetails: PortfolioDetail[] = [
       "Extended hardware compatibility"
     ]
   },
-  // Project 5
+  // Project 2
   {
     id: "splendor-game",
     title: "Splendor Game",
@@ -249,7 +445,7 @@ export const portfolioDetails: PortfolioDetail[] = [
       "Additional game modes"
     ]
   },
-  // Project 6
+  // Project 1
   {
     id: "personal-website",
     title: "Personal Website",

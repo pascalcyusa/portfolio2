@@ -10,28 +10,29 @@ export interface PortfolioItem {
 }
 
 export const portfolioData: PortfolioItem[] = [
-  // Project 1
+  // Project 7
   {
-    id: "pokemon-gripper",
-    title: "Pokémon Ball Gripper",
-    category: "ME 35 / Simple Robotics",
+    id: "IR-line-follower",
+    title: "Scout A Route (IR Line Follower)",
+    category: "ME35 / Simple Robotics",
     image: "/images/pokemon-gripper/gripper.jpeg",
-    description: "Mechanical gripper system designed to safely handle and transport a Poké Ball using stepper motor actuation.",
+    description: "This week's task is to follow a line using an IR sensor. Project Constraints: 1. You must use the provided IR sensor. Cameras and other sensors for line tracking are not permitted. 2. You may choose any of the 3 provided paths to follow, but you cannot create your own path. 3. No tape or hot glue!",
     features: [
-      "Custom-designed linkage and gear system",
-      "Stepper motor-controlled actuation",
-      "2ft transport capability",
-      "Non-contact ball manipulation"
+      "Use of provided IR sensor for line following",
+      "Selection from 3 predefined paths",
+      "Compliance with project constraints",
+      "Utilization of course kit materials and additional resources"
     ],
     year: "Spring 2025",
-    githubUrl: "https://github.com/pascalcyusa/Pokmon-Gripper",
+    githubUrl: "https://github.com/pascalcyusa/IR-line-follower.git",
   },
-  // Project 2
+
+  // Project 6
   {
     id: "pokemon-ball-sorter",
     title: "Pokémon Ball Sorter",
-    category: "ME 35 / Simple Robotics",
-    image: "/images/pokemon-ball-sorter/cad2.png",
+    category: "ME35 / Simple Robotics",
+    image: "/images/pokemon-ball-sorter/ball-sorter-1.jpeg",
     description: "A robot that automatically detects and sorts colored balls using color detection and servo positioning.",
     features: [
       "Continuous ball feeding using threaded stepper motor control",
@@ -43,7 +44,76 @@ export const portfolioData: PortfolioItem[] = [
     year: "Spring 2025",
     githubUrl: "https://github.com/pascalcyusa/Pokemon-Ball-Sorter",
   },
-  // Project 3
+
+  // Project 5
+  {
+    id: "pokemon-gripper",
+    title: "Pokémon Ball Gripper",
+    category: "ME35 / Simple Robotics",
+    image: "/images/pokemon-gripper/gripper.jpeg",
+    description: "Mechanical gripper system designed to safely handle and transport a Poké Ball using stepper motor actuation.",
+    features: [
+      "Custom-designed linkage and gear system",
+      "Stepper motor-controlled actuation",
+      "2ft transport capability",
+      "Non-contact ball manipulation"
+    ],
+    year: "Spring 2025",
+    githubUrl: "https://github.com/pascalcyusa/Pokmon-Gripper",
+  },
+
+  // Project 10
+  {
+    id: "ballon-dor-replica",
+    title: "Ballon d’Or Replica",
+    category: "ME10 / Materials & Manufacturing I",
+    image: "/images/ballon-dor-replica/dor2.jpeg",
+    description: "Designed and fabricated a replica of the Ballon d’Or using sand casting and lost wax casting, achieving a close resemblance to the real trophy.",
+    features: [
+      "SolidWorks design for accurate modeling",
+      "Sand casting and lost wax casting techniques",
+      "Welding for structural integrity",
+      "Polished finishing for a realistic look"
+    ],
+    year: "Fall 2023",
+    githubUrl: undefined
+  },
+
+  // Project 9
+  {
+    id: "hip-truss-bridge",
+    title: "Hip Truss Bridge",
+    category: "ME20 / Mechanics",
+    image: "/images/hip-truss-bridge/truss1.png",
+    description: "Designed and built a hip truss bridge to understand structural loads. The project involved SolidWorks modeling, acrylic assembly, and internal force analysis through theoretical calculations and FEA.",
+    features: [
+      "Truss bridge design using SolidWorks",
+      "Acrylic structure assembled with glue",
+      "Theoretical load calculations and FEA validation",
+      "Load-bearing capacity analysis"
+    ],
+    year: "Fall 2023",
+    githubUrl: undefined
+  },
+
+  // Project 8
+  {
+    id: "dog-treat-dispenser",
+    title: "Dog Treat Dispenser",
+    category: "ME40 / Engineering Design I",
+    image: "/images/dog-treat-dispenser/dispens1.png",
+    description: "Designed a wheelchair-mounted dog treat dispenser for Ryan, a user with a spinal cord injury, ensuring minimal effort in dispensing and preventing unintended access by the dog.",
+    features: [
+      "User-friendly design requiring minimal effort",
+      "Secure dispensing mechanism for controlled treat release",
+      "Affordable and durable materials",
+      "Clamp-based attachment for easy wheelchair integration"
+    ],
+    year: "Spring 2024",
+    githubUrl: undefined
+  },
+
+  // Project 4
   {
     id: "tdk-ch101",
     title: "TDK CH101 Ultrasonic Sensor Automation",
@@ -58,7 +128,7 @@ export const portfolioData: PortfolioItem[] = [
     ],
     year: "Summer 2024"
   },
-  // Project 4
+  // Project 3
   {
     id: "lego-arduino",
     title: "LEGO & Arduino Education",
@@ -73,7 +143,7 @@ export const portfolioData: PortfolioItem[] = [
     ],
     year: "Summer 2023"
   },
-  // Project 5
+  // Project 2
   {
     id: "splendor-game",
     title: "Splendor Game",
@@ -89,7 +159,7 @@ export const portfolioData: PortfolioItem[] = [
     year: "Spring 2023",
     githubUrl: "https://github.com/pascalcyusa/cs11",
   },
-  // Project 6
+  // Project 1
   {
     id: "personal-website",
     title: "Personal Website",
