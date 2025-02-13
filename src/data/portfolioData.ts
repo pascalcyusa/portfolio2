@@ -15,8 +15,8 @@ export const portfolioData: PortfolioItem[] = [
     id: "IR-line-follower",
     title: "Scout A Route (IR Line Follower)",
     category: "ME35 / Simple Robotics",
-    image: "/images/pokemon-gripper/gripper.jpeg",
-    description: "This week's task is to follow a line using an IR sensor. Project Constraints: 1. You must use the provided IR sensor. Cameras and other sensors for line tracking are not permitted. 2. You may choose any of the 3 provided paths to follow, but you cannot create your own path. 3. No tape or hot glue!",
+    image: "/images/IR-line-follower/img1.png",
+    description: "This robot follows a line using an IR sensor.",
     features: [
       "Use of provided IR sensor for line following",
       "Selection from 3 predefined paths",

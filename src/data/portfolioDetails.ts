@@ -6,10 +6,10 @@ export interface PortfolioDetail {
     url: string;
     caption: string;
   }[];
-  video?: {
+  videos?: {
     url: string;
     caption: string;
-  };
+  }[];
   technicalDetails: string[];
   challenges: string[];
   outcomes: string[];
@@ -22,20 +22,16 @@ export const portfolioDetails: PortfolioDetail[] = [
   {
     id: "IR-line-follower",
     title: "Scout A Route (IR Line Follower)",
-    content: "This project involves creating a robot that follows a line using an IR sensor, adhering to specific constraints and utilizing available resources.",
+    content: "This robot follows a line using an IR sensor.",
     images: [
       {
-        url: "/images/ir-line-follower/design.jpeg",
-        caption: "Design of the IR line follower"
-      },
-      {
-        url: "/images/ir-line-follower/assembly.jpeg",
+        url: "/images/IR-line-follower/img1.png",
         caption: "Assembled IR line follower"
       },
       {
-        url: "/images/ir-line-follower/demo.jpeg",
-        caption: "IR line follower in action"
-      }
+        url: "/images/IR-line-follower/img2.png",
+        caption: undefined
+      },
     ],
     technicalDetails: [
       "IR sensor for line detection",
@@ -57,6 +53,16 @@ export const portfolioDetails: PortfolioDetail[] = [
       "Enhancing sensor accuracy",
       "Exploring alternative path algorithms",
       "Improving speed and efficiency"
+    ],
+    videos: [
+      {
+        url: "/images/IR-line-follower/video1.MOV",
+        caption: "IR line follower in action"
+      },
+      {
+        url: "/images/IR-line-follower/video2.MOV",
+        caption: undefined
+      }
     ]
   },
 
@@ -83,10 +89,12 @@ export const portfolioDetails: PortfolioDetail[] = [
         caption: "Final assembled system"
       },
     ],
-    video: {
-      url: "/images/pokemon-ball-sorter/video.mov",
-      caption: "Ball sorter in action"
-    },
+    videos: [
+      {
+        url: "/images/pokemon-ball-sorter/video.mov",
+        caption: "Ball sorter in action"
+      }
+    ],
     technicalDetails: [
       "Reads RGB values from color sensor",
       "Classifies colors based on RGB intensity ratios",
@@ -255,7 +263,7 @@ export const portfolioDetails: PortfolioDetail[] = [
       "Refining FEA models for greater accuracy",
       "Introducing joint reinforcements for improved durability"
     ],
-    pdfUrl: "/images/hipp-truss-bridge/hip-truss.pdf"
+    pdfUrl: "https://drive.google.com/file/d/18hf8kmzOOd0wp9jBr4RTQsGvo0u0M9H_/view?usp=sharing"
   },
 
   // Project 8
@@ -273,10 +281,12 @@ export const portfolioDetails: PortfolioDetail[] = [
         caption: "Blueprint of the dog treat dispenser"
       }
     ],
-    video: {
-      url: "/images/dog-treat-dispenser/video.MOV",
-      caption: "Treat Dispenser in action"
-    },
+    videos: [
+      {
+        url: "/images/dog-treat-dispenser/video.MOV",
+        caption: "Treat Dispenser in action"
+      }
+    ],
     technicalDetails: [
       "3D printing and laser cutting for prototyping",
       "Clamping mechanism for easy attachment",
@@ -298,7 +308,7 @@ export const portfolioDetails: PortfolioDetail[] = [
       "Increasing storage capacity",
       "Enhancing aesthetics for better usability and appearance"
     ],
-    pdfUrl: "/images/dog-treat-dispenser/blueprint.pdf"
+    pdfUrl: "https://tufts.box.com/s/3f1i93cj1kykrx0lybhsyjb9i06axet7"
   },
 
   // Project 4
