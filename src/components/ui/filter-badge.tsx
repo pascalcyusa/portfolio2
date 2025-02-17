@@ -22,11 +22,11 @@ const filterBadgeVariants = cva(
 interface FilterBadgeProps
   extends React.HTMLAttributes<HTMLSpanElement>,
   VariantProps<typeof filterBadgeVariants> {
-  label?: string
-  value?: string
-  avatar?: string
-  children?: React.ReactNode
-  onRemove?: () => void
+  label?: string;
+  value?: string;
+  avatar?: string;
+  children?: React.ReactNode;
+  selected?: boolean;
 }
 
 export function FilterBadge({
@@ -36,7 +36,7 @@ export function FilterBadge({
   value,
   avatar,
   children,
-  onRemove,
+  selected, // Keep this line
   ...props
 }: FilterBadgeProps) {
   if (variant === "avatar") {
@@ -50,40 +50,25 @@ export function FilterBadge({
           />
         )}
         {children}
-        {onRemove && (
-          <button
-            type="button"
-            onClick={onRemove}
-            className="flex size-5 items-center justify-center rounded-tremor-full text-muted-foreground hover:bg-muted hover:text-foreground"
-            aria-label="Remove"
-          >
-            <RiCloseFill className="size-4 shrink-0" aria-hidden={true} />
-          </button>
-        )}
+        {/* Remove the onRemove button logic */}
       </span>
     )
   }
 
   return (
-    <span className={cn(filterBadgeVariants({ variant }), className)} {...props}>
+    <span
+      className={cn(
+        filterBadgeVariants({ variant }),
+        className,
+        "rounded-full", // Ensure badges are rounded
+        selected ? "bg-primary text-white" : "" // Highlight selected filters
+      )}
+      {...props}
+    >
       {label}
-      <span className="h-4 w-px bg-border" />
       <span className="font-medium text-foreground">
         {value}
       </span>
-      {onRemove && (
-        <button
-          type="button"
-          onClick={onRemove}
-          className={cn(
-            "-ml-1.5 flex size-5 items-center justify-center text-muted-foreground hover:bg-muted hover:text-foreground",
-            variant === "pill" ? "rounded-tremor-full" : "rounded"
-          )}
-          aria-label="Remove"
-        >
-          <RiCloseFill className="size-4 shrink-0" aria-hidden={true} />
-        </button>
-      )}
     </span>
-  )
+  );
 }
