@@ -22,7 +22,7 @@ export const researchData: ResearchProject[] = [
     ],
     lab: "Microscale Sensors and Systems Lab",
     period: "Jun 2024 - Present",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
+    image: "/images/tdk-ch101/ch101sensor.jpeg"
   },
   {
     id: "stem-education",
@@ -36,7 +36,7 @@ export const researchData: ResearchProject[] = [
     ],
     lab: "Tufts Center for Engineering Education and Outreach",
     period: "Mar 2023 - Present",
-    image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80",
+    image: "/images/lego-arduino/ceeo1.jpg",
     link: "https://sites.tufts.edu/pebl/2023/10/02/rwandan-tufts-students-return-home-to-inspire-young-makers/"
   }
 ];
