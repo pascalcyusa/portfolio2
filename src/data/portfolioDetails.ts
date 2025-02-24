@@ -407,6 +407,55 @@ export const portfolioDetails: PortfolioDetail[] = [
       "Extended hardware compatibility"
     ]
   },
+
+  // Zina
+  {
+    "id": "contact-network-app",
+    "title": "Zina",
+    "content": "This app helps users manage and visualize their social or professional network by adding, editing, and connecting with people.",
+    "images": [
+      {
+        "url": "/images/Zina/img1.png",
+        "caption": "Main interface showing connections"
+      },
+      {
+        "url": "/images/Zina/img1.png",
+        "caption": "Graph view of connections"
+      }
+    ],
+    "technicalDetails": [
+      "SwiftUI for user interface",
+      "State management with @StateObject and @State",
+      "Bidirectional connection management",
+      "Dark mode support"
+    ],
+    "challenges": [
+      "Ensuring smooth UI transitions",
+      "Managing bidirectional connections efficiently",
+      "Providing a user-friendly interface"
+    ],
+    "outcomes": [
+      "User-friendly contact management",
+      "Visual representation of connections",
+      "Efficient state management"
+    ],
+    "futureImprovements": [
+      "Enhancing UI animations",
+      "Adding more visualization options",
+      "Improving performance with larger datasets"
+    ],
+    "videos": [
+      {
+        "url": "/images/Zina/img1.png",
+        "caption": "App walkthrough"
+      },
+      {
+        "url": "/images/Zina/img1.png",
+        "caption": "Editing a contact"
+      }
+    ]
+  },
+
   // Project 2
   {
     id: "splendor-game",

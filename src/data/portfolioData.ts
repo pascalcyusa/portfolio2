@@ -143,6 +143,27 @@ export const portfolioData: PortfolioItem[] = [
     ],
     year: "Summer 2023"
   },
+  // Zina
+  {
+    id: "contact-network-app",
+    title: "Zina",
+    category: "Web Development",
+    image: "/images/Zina/img1.png",
+    description: "This app helps users manage and visualize their social or professional network by adding, editing, and connecting with people.",
+    features: [
+      "Manage a list of contacts with add, edit, and delete functionality",
+      "Visualize connections in a grid or network graph view",
+      "Toggle between different views with smooth animations",
+      "Support for dark mode interface",
+      "Multi-step wizard for adding new contacts",
+      "Bidirectional connection management between contacts",
+      "Integration with SwiftUI for a modern user interface",
+      "Persistent storage of contacts using JSON encoding and decoding"
+    ],
+    year: undefined,
+    githubUrl: "https://github.com/pascalcyusa/Zina",
+  },
+
   // Project 2
   {
     id: "splendor-game",
