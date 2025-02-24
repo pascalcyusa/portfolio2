@@ -10,7 +10,24 @@ export interface PortfolioItem {
 }
 
 export const portfolioData: PortfolioItem[] = [
-  // Project 7
+  // Project 12
+  {
+    id: "camera-line-follower",
+    title: "Traverse Victory Road (Camera Line Follower)",
+    category: "ME35 / Simple Robotics",
+    image: "/images/camera-line-follower/img1.png",
+    description: "A line-following robot designed to navigate paths using a Pi Camera for line detection.",
+    features: [
+      "Line detection using Pi Camera",
+      "Motor control with Raspberry Pi",
+      "Real-time image processing with OpenCV",
+      "GPIO control for motor movement"
+    ],
+    year: "Spring 2025",
+    githubUrl: "https://github.com/pascalcyusa/camera-line-follower"
+  },
+
+  // Project 11
   {
     id: "IR-line-follower",
     title: "Scout A Route (IR Line Follower)",
@@ -24,10 +41,10 @@ export const portfolioData: PortfolioItem[] = [
       "Utilization of course kit materials and additional resources"
     ],
     year: "Spring 2025",
-    githubUrl: "https://github.com/pascalcyusa/IR-line-follower.git",
+    githubUrl: "https://github.com/pascalcyusa/IR-line-follower",
   },
 
-  // Project 6
+  // Project 10
   {
     id: "pokemon-ball-sorter",
     title: "Pokémon Ball Sorter",
@@ -45,7 +62,7 @@ export const portfolioData: PortfolioItem[] = [
     githubUrl: "https://github.com/pascalcyusa/Pokemon-Ball-Sorter",
   },
 
-  // Project 5
+  // Project 9
   {
     id: "pokemon-gripper",
     title: "Pokémon Ball Gripper",
@@ -62,7 +79,7 @@ export const portfolioData: PortfolioItem[] = [
     githubUrl: "https://github.com/pascalcyusa/Pokmon-Gripper",
   },
 
-  // Project 10
+  // Project 8
   {
     id: "ballon-dor-replica",
     title: "Ballon d’Or Replica",
@@ -79,7 +96,7 @@ export const portfolioData: PortfolioItem[] = [
     githubUrl: undefined
   },
 
-  // Project 9
+  // Project 7
   {
     id: "hip-truss-bridge",
     title: "Hip Truss Bridge",
@@ -96,7 +113,7 @@ export const portfolioData: PortfolioItem[] = [
     githubUrl: undefined
   },
 
-  // Project 8
+  // Project 6
   {
     id: "dog-treat-dispenser",
     title: "Dog Treat Dispenser",
@@ -113,7 +130,7 @@ export const portfolioData: PortfolioItem[] = [
     githubUrl: undefined
   },
 
-  // Project 4
+  // Project 5
   {
     id: "tdk-ch101",
     title: "TDK CH101 Ultrasonic Sensor Automation",
@@ -128,7 +145,7 @@ export const portfolioData: PortfolioItem[] = [
     ],
     year: "Summer 2024"
   },
-  // Project 3
+  // Project 4
   {
     id: "lego-arduino",
     title: "LEGO & Arduino Education",
@@ -143,13 +160,14 @@ export const portfolioData: PortfolioItem[] = [
     ],
     year: "Summer 2023"
   },
-  // Zina
+
+  // Project 3
   {
-    id: "contact-network-app",
+    id: "social-networking-app",
     title: "Zina",
     category: "Web Development",
     image: "/images/Zina/img1.png",
-    description: "This app helps users manage and visualize their social or professional network by adding, editing, and connecting with people.",
+    description: "Zina is a social networking application designed to help users manage and visualize their personal and professional connections. The app allows users to add, edit, and delete contacts, and provides a graphical representation of their network.",
     features: [
       "Manage a list of contacts with add, edit, and delete functionality",
       "Visualize connections in a grid or network graph view",

@@ -18,7 +18,53 @@ export interface PortfolioDetail {
 }
 
 export const portfolioDetails: PortfolioDetail[] = [
-  // Project 7
+  // Project 12
+  {
+    title: "Traverse Victory Road (Camera Line Follower)",
+    content: "A line-following robot designed to navigate paths using a Pi Camera for line detection. ",
+    id: "camera-line-follower",
+    images: [
+      {
+        url: "/images/camera-line-follower/img1.png", // Replace with the actual path to your project image
+        caption: "Front view of the line follower robot"
+      },
+      {
+        url: "/images/camera-line-follower/img1.png", // Replace with another image path
+        caption: "Robot navigating a path"
+      }
+    ],
+    videos: [
+      {
+        url: "/images/camera-line-follower/video.MOV", // Replace with the actual path to your project video
+        caption: "Video demonstration of the robot in action"
+      }
+    ],
+    technicalDetails: [
+      "Utilizes a Raspberry Pi for processing",
+      "Pi Camera for line detection",
+      "OpenCV for image processing",
+      "Custom chassis design",
+      "GPIO control for motor operations"
+    ],
+    challenges: [
+      "Calibrating the camera for accurate line detection",
+      "Designing a stable and functional chassis",
+      "Ensuring smooth motor control and movement"
+    ],
+    outcomes: [
+      "Successfully built a functional line-following robot",
+      "Gained experience in real-time image processing",
+      "Improved skills in robotics and hardware integration"
+    ],
+    futureImprovements: [
+      "Enhance line detection accuracy with advanced algorithms",
+      "Improve chassis design for better stability",
+      "Integrate additional sensors for obstacle detection"
+    ],
+    pdfUrl: "path/to/documentation.pdf"
+  },
+
+  // Project 11
   {
     id: "IR-line-follower",
     title: "Scout A Route (IR Line Follower)",
@@ -66,7 +112,7 @@ export const portfolioDetails: PortfolioDetail[] = [
     ]
   },
 
-  // Project 6
+  // Project 10
   {
     id: "pokemon-ball-sorter",
     title: "Pokémon Ball Sorter",
@@ -113,7 +159,7 @@ export const portfolioDetails: PortfolioDetail[] = [
       "Currently the robot doesn't accurately place balls to the corresponfing color bin. We plan to calibrate the servo to make sure it moves each ball to the correct slot"
     ]
   },
-  // Project 5
+  // Project 9
   {
     id: "pokemon-gripper",
     title: "Pokémon Ball Gripper",
@@ -157,7 +203,7 @@ export const portfolioDetails: PortfolioDetail[] = [
     ]
   },
 
-  // Project 10
+  // Project 8
   {
     id: "ballon-dor-replica",
     title: "Ballon d’Or Replica",
@@ -219,7 +265,7 @@ export const portfolioDetails: PortfolioDetail[] = [
     ]
   },
 
-  // Project 9
+  // Project 7
   {
     id: "hip-truss-bridge",
     title: "Hip Truss Bridge",
@@ -266,7 +312,7 @@ export const portfolioDetails: PortfolioDetail[] = [
     pdfUrl: "https://drive.google.com/file/d/18hf8kmzOOd0wp9jBr4RTQsGvo0u0M9H_/view?usp=sharing"
   },
 
-  // Project 8
+  // Project 6
   {
     id: "dog-treat-dispenser",
     title: "Dog Treat Dispenser",
@@ -311,7 +357,7 @@ export const portfolioDetails: PortfolioDetail[] = [
     pdfUrl: "https://tufts.box.com/s/3f1i93cj1kykrx0lybhsyjb9i06axet7"
   },
 
-  // Project 4
+  // Project 5
   {
     id: "tdk-ch101",
     title: "TDK CH101 Ultrasonic Sensor Automation",
@@ -359,7 +405,7 @@ export const portfolioDetails: PortfolioDetail[] = [
       "Mobile app development for remote control"
     ]
   },
-  // Project 3
+  // Project 4
   {
     id: "lego-arduino",
     title: "LEGO & Arduino Education",
@@ -408,51 +454,41 @@ export const portfolioDetails: PortfolioDetail[] = [
     ]
   },
 
-  // Zina
+  // Project 3
   {
-    "id": "contact-network-app",
     "title": "Zina",
-    "content": "This app helps users manage and visualize their social or professional network by adding, editing, and connecting with people.",
+    "content": "Zina is a social networking application designed to help users manage and visualize their personal and professional connections. The app allows users to add, edit, and delete contacts, and provides a graphical representation of their network.",
+    "id": "social-networking-app",
     "images": [
       {
         "url": "/images/Zina/img1.png",
-        "caption": "Main interface showing connections"
+        "caption": "Main Interface"
       },
       {
         "url": "/images/Zina/img1.png",
-        "caption": "Graph view of connections"
+        "caption": "Add Person Wizard"
       }
     ],
     "technicalDetails": [
-      "SwiftUI for user interface",
-      "State management with @StateObject and @State",
-      "Bidirectional connection management",
-      "Dark mode support"
+      "Developed using Swift and SwiftUI",
+      "Supports iOS platform",
+      "Utilizes Core Data for persistent storage",
+      "Includes unit and UI tests for reliability"
     ],
     "challenges": [
-      "Ensuring smooth UI transitions",
-      "Managing bidirectional connections efficiently",
-      "Providing a user-friendly interface"
+      "Implementing a smooth and intuitive user interface",
+      "Ensuring data consistency across the network graph and list views",
+      "Managing bidirectional connections efficiently"
     ],
     "outcomes": [
-      "User-friendly contact management",
-      "Visual representation of connections",
-      "Efficient state management"
+      "Successfully created a user-friendly app for managing connections",
+      "Provided a visual representation of the user's network",
+      "Enabled easy addition and editing of contacts"
     ],
     "futureImprovements": [
-      "Enhancing UI animations",
-      "Adding more visualization options",
-      "Improving performance with larger datasets"
-    ],
-    "videos": [
-      {
-        "url": "/images/Zina/img1.png",
-        "caption": "App walkthrough"
-      },
-      {
-        "url": "/images/Zina/img1.png",
-        "caption": "Editing a contact"
-      }
+      "Enhance the graphical representation with more interactive features",
+      "Add support for importing contacts from external sources",
+      "Improve performance for large networks"
     ]
   },
 
