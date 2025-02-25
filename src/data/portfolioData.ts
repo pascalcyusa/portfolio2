@@ -15,7 +15,7 @@ export const portfolioData: PortfolioItem[] = [
     id: "camera-line-follower",
     title: "Traverse Victory Road (Camera Line Follower)",
     category: "ME35 / Simple Robotics",
-    image: "/images/camera-line-follower/img1.png",
+    image: "/images/camera-line-follower/img1.jpeg",
     description: "A line-following robot designed to navigate paths using a Pi Camera for line detection.",
     features: [
       "Line detection using Pi Camera",

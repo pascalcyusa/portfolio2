@@ -25,17 +25,21 @@ export const portfolioDetails: PortfolioDetail[] = [
     id: "camera-line-follower",
     images: [
       {
-        url: "/images/camera-line-follower/img1.png", // Replace with the actual path to your project image
-        caption: "Front view of the line follower robot"
+        url: "/images/camera-line-follower/img1.jpeg",
+        caption: "Left view of the line follower robot"
       },
       {
-        url: "/images/camera-line-follower/img1.png", // Replace with another image path
-        caption: "Robot navigating a path"
+        url: "/images/camera-line-follower/img2.jpeg",
+        caption: undefined
+      },
+      {
+        url: "/images/camera-line-follower/img3.jpeg",
+        caption: undefined
       }
     ],
     videos: [
       {
-        url: "/images/camera-line-follower/video.MOV", // Replace with the actual path to your project video
+        url: "/images/camera-line-follower/video.MOV",
         caption: "Video demonstration of the robot in action"
       }
     ],
@@ -61,7 +65,7 @@ export const portfolioDetails: PortfolioDetail[] = [
       "Improve chassis design for better stability",
       "Integrate additional sensors for obstacle detection"
     ],
-    pdfUrl: "path/to/documentation.pdf"
+    pdfUrl: undefined
   },
 
   // Project 11
