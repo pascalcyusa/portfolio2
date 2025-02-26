@@ -465,12 +465,12 @@ export const portfolioDetails: PortfolioDetail[] = [
     "id": "social-networking-app",
     "images": [
       {
-        "url": "/images/Zina/img1.png",
+        "url": "/images/social-networking-app/img1.jpeg",
         "caption": "Main Interface"
       },
       {
-        "url": "/images/Zina/img1.png",
-        "caption": "Add Person Wizard"
+        "url": "/images/social-networking-app/img2.jpeg",
+        "caption": "Graph Display"
       }
     ],
     "technicalDetails": [
@@ -500,19 +500,11 @@ export const portfolioDetails: PortfolioDetail[] = [
   {
     id: "splendor-game",
     title: "Splendor Game",
-    content: "A comprehensive C++ implementation of the popular board game Splendor, featuring a terminal-based interface and robust game mechanics. The project demonstrates strong object-oriented programming principles and game state management.",
+    content: "Terminal-based implementation of the Splendor board game in C++.",
     images: [
       {
         url: "https://images.unsplash.com/photo-1611996575749-79a3a250f948?auto=format&fit=crop&w=800&q=80",
         caption: "Terminal gameplay interface"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=80",
-        caption: "Game architecture diagram"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=800&q=80",
-        caption: "Save/Load system implementation"
       }
     ],
     technicalDetails: [
@@ -547,20 +539,16 @@ export const portfolioDetails: PortfolioDetail[] = [
   // Project 1
   {
     id: "personal-website",
-    title: "Personal Website",
+    title: "Portfolio",
     content: "A modern, responsive portfolio website built using React and TypeScript, showcasing professional experience and projects. The site features a clean, user-friendly design with optimal performance and accessibility considerations.",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
+        url: "/images/personal-website/img1.png",
         caption: "Homepage design"
       },
       {
-        url: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+        url: "/images/personal-website/img2.png",
         caption: "Portfolio section"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1526498460520-4c246339dccb?auto=format&fit=crop&w=800&q=80",
-        caption: "Mobile responsive design"
       }
     ],
     technicalDetails: [
