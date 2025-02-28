@@ -10,6 +10,46 @@ interface ProjectModalProps {
 
 export const ProjectModal: React.FC<ProjectModalProps> = ({ isOpen, onClose, projectId }) => {
   const [details, setDetails] = React.useState<PortfolioDetail | null>(null);
+  const [selectedImageIndex, setSelectedImageIndex] = React.useState<number | null>(null);
+
+  const handleImageClick = (index: number) => {
+    setSelectedImageIndex(index);
+  };
+
+  const handleCloseImageView = () => {
+    setSelectedImageIndex(null);
+  };
+
+  const handleNextImage = () => {
+    if (selectedImageIndex === null || !details.images) return;
+    setSelectedImageIndex((selectedImageIndex + 1) % details.images.length);
+  };
+
+  const handlePrevImage = () => {
+    if (selectedImageIndex === null || !details.images) return;
+    setSelectedImageIndex((selectedImageIndex - 1 + details.images.length) % details.images.length);
+  };
+
+  React.useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (selectedImageIndex === null) return;
+
+      switch (event.key) {
+        case 'ArrowLeft':
+          handlePrevImage();
+          break;
+        case 'ArrowRight':
+          handleNextImage();
+          break;
+        case 'Escape':
+          handleCloseImageView();
+          break;
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [selectedImageIndex]);
 
   React.useEffect(() => {
     if (isOpen && projectId) {
@@ -48,7 +88,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ isOpen, onClose, pro
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
           {details.images.map((image, index) => (
-            <div key={index} className="relative">
+            <div key={index} className="relative cursor-pointer" onClick={() => handleImageClick(index)}>
               <img
                 src={image.url}
                 alt={image.caption}
@@ -58,6 +98,37 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ isOpen, onClose, pro
             </div>
           ))}
         </div>
+
+        {selectedImageIndex !== null && (
+          <div className="fixed inset-0 z-[60] flex items-center justify-center bg-black bg-opacity-75 backdrop-blur-sm" onClick={handleCloseImageView}>
+            <button
+              className="absolute top-4 right-4 text-white hover:text-gray-300 text-3xl"
+              onClick={handleCloseImageView}
+            >
+              ×
+            </button>
+            <button
+              className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white hover:text-gray-300 text-3xl"
+              onClick={handlePrevImage}
+            >
+              ‹
+            </button>
+            <button
+              className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white hover:text-gray-300 text-3xl"
+              onClick={handleNextImage}
+            >
+              ›
+            </button>
+            <div className="max-w-[90vw] max-h-[90vh]" onClick={(e) => e.stopPropagation()}>
+              <img
+                src={details.images[selectedImageIndex].url}
+                alt={details.images[selectedImageIndex].caption}
+                className="max-w-full max-h-[90vh] object-contain"
+              />
+              <p className="text-center text-white mt-4">{details.images[selectedImageIndex].caption}</p>
+            </div>
+          </div>
+        )}
 
         {details.videos && details.videos.length > 0 && (
           <div className="mb-8">

@@ -176,10 +176,6 @@ export const portfolioDetails: PortfolioDetail[] = [
       {
         url: "/images/pokemon-gripper/gripper.jpeg",
         caption: "Final assembled gripper system"
-      },
-      {
-        url: "/images/pokemon-gripper/gripper.jpeg",
-        caption: "Gripper in action"
       }
     ],
     technicalDetails: [
@@ -193,13 +189,7 @@ export const portfolioDetails: PortfolioDetail[] = [
       "Minimizing system weight while ensuring structural integrity",
       "Calibrating the stepper motors to make sure they operate correctly",
     ],
-    outcomes: [
-      "Successfully achieved 99% grip reliability rate",
-      "Reduced transport time by 40% compared to initial prototype",
-      "Implemented fail-safe mechanisms for emergency stops",
-      "Created detailed documentation for future maintenance",
-      "Developed a user-friendly control interface"
-    ],
+    outcomes: undefined,
     futureImprovements: [
       "Integration with computer vision for autonomous operation",
       "Wireless control capabilities",
