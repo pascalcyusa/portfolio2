@@ -5,14 +5,14 @@ const Summary = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-16">
       <div className="animate-fade-in">
-        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 sm:mb-8">SUMMARY</h2>
+        {/* <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 sm:mb-8">SUMMARY</h2> */}
         <p className="text-center text-base sm:text-lg text-gray-600 mb-8 sm:mb-12">
-          Thanks for checking out my portfolio! 
+          Welcome to my portfolio!
         </p>
       </div>
-      
+
       {/* Desktop Timeline */}
-      <div className="hidden md:block relative animate-fade-in">
+      {/* <div className="hidden md:block relative animate-fade-in">
         <div className="h-0.5 bg-gray-200 absolute top-10 left-0 right-0" />
         <div className="flex justify-between relative">
           {timelineData.map((item, index) => (
@@ -39,10 +39,10 @@ const Summary = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
 
       {/* Mobile Timeline */}
-      <div className="md:hidden space-y-4">
+      {/* <div className="md:hidden space-y-4">
         {timelineData.map((item, index) => (
           <div 
             key={item.id}
@@ -62,7 +62,7 @@ const Summary = () => {
             </p>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };
