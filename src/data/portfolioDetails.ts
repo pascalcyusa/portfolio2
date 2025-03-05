@@ -39,7 +39,7 @@ export const portfolioDetails: PortfolioDetail[] = [
     ],
     videos: [
       {
-        url: "/images/camera-line-follower/video.MOV",
+        url: "https://youtube.com/shorts/kxjFOwbjV9U",
         caption: "Video demonstration of the robot in action"
       }
     ],
@@ -102,11 +102,11 @@ export const portfolioDetails: PortfolioDetail[] = [
     ],
     videos: [
       {
-        url: "/images/IR-line-follower/video1.MOV",
+        url: "https://youtu.be/Y7LEzXW6B6A",
         caption: "IR line follower in action"
       },
       {
-        url: "/images/IR-line-follower/video2.MOV",
+        url: "https://youtu.be/IzmCanhjyl0",
         caption: undefined
       }
     ]
@@ -137,7 +137,7 @@ export const portfolioDetails: PortfolioDetail[] = [
     ],
     videos: [
       {
-        url: "/images/pokemon-ball-sorter/video.mov",
+        url: "https://youtu.be/UhgyvbBYM8Y",
         caption: "Ball sorter in action"
       }
     ],
@@ -319,7 +319,7 @@ export const portfolioDetails: PortfolioDetail[] = [
     ],
     videos: [
       {
-        url: "/images/dog-treat-dispenser/video.MOV",
+        url: "https://youtube.com/shorts/POaRSqfHcnQ",
         caption: "Treat Dispenser in action"
       }
     ],

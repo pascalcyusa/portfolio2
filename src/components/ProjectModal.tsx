@@ -132,15 +132,27 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ isOpen, onClose, pro
 
         {details.videos && details.videos.length > 0 && (
           <div className="mb-8">
-            {details.videos.map((video, index) => (
-              <div key={index} className="mb-4">
-                <video controls width="100%">
-                  <source src={video.url} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-                <p className="mt-2 text-sm text-gray-600">{video.caption}</p>
-              </div>
-            ))}
+            {details.videos.map((video, index) => {
+              const videoId = video.url.includes('youtu.be/')
+                ? video.url.split('youtu.be/')[1]
+                : video.url.includes('watch?v=')
+                  ? video.url.split('watch?v=')[1]
+                  : video.url.split('/').pop();
+              return (
+                <div key={index} className="mb-4">
+                  <div className="relative pt-[56.25%]">
+                    <iframe
+                      className="absolute top-0 left-0 w-full h-full"
+                      src={`https://www.youtube.com/embed/${videoId}`}
+                      title="YouTube video player"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  </div>
+                  <p className="mt-2 text-sm text-gray-600">{video.caption}</p>
+                </div>
+              );
+            })}
           </div>
         )}
 
