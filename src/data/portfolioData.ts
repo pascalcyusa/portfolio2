@@ -135,7 +135,7 @@ export const portfolioData: PortfolioItem[] = [
     id: "tdk-ch101",
     title: "TDK CH101 Ultrasonic Sensor Automation",
     category: "Sensors / Data Automation",
-    image: "/images/tdk-ch101/ch101sensor.jpeg",
+    image: "/images/tdk-ch101/img1.jpeg",
     description: "Data collection automation system for ultrasonic sensors using C and LabVIEW integration.",
     features: [
       "C and LabVIEW integration",

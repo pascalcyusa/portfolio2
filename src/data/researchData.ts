@@ -22,7 +22,7 @@ export const researchData: ResearchProject[] = [
     ],
     lab: "Microscale Sensors and Systems Lab",
     period: "Jun 2024 - Present",
-    image: "/images/tdk-ch101/ch101sensor.jpeg"
+    image: "/images/tdk-ch101/img1.jpeg"
   },
   {
     id: "stem-education",

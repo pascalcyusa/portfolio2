@@ -77,11 +77,7 @@ export const portfolioDetails: PortfolioDetail[] = [
       {
         url: "/images/IR-line-follower/img1.png",
         caption: "Assembled IR line follower"
-      },
-      {
-        url: "/images/IR-line-follower/img2.png",
-        caption: undefined
-      },
+      }
     ],
     technicalDetails: [
       "IR sensor for line detection",
@@ -358,16 +354,16 @@ export const portfolioDetails: PortfolioDetail[] = [
     content: "This project focused on developing an automated data collection system for TDK's CH101 ultrasonic sensors, streamlining the testing and validation process through sophisticated software integration.",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1517420879524-86d64ac2f339?auto=format&fit=crop&w=800&q=80",
-        caption: "Testing setup with multiple sensors"
+        url: "/images/tdk-ch101/img1.jpeg",
+        caption: "Sensor Mount"
       },
       {
-        url: "https://images.unsplash.com/photo-1580894908361-967195033215?auto=format&fit=crop&w=800&q=80",
-        caption: "LabVIEW interface design"
+        url: "https://invensense.tdk.com/wp-content/uploads/2019/09/rp-mod-ch101.png",
+        caption: "CH101 Sensor © TDK Invensense"
       },
       {
-        url: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
-        caption: "Real-time data visualization"
+        url: "/images/tdk-ch101/img2.jpeg",
+        caption: "Experiment Setup"
       }
     ],
     technicalDetails: [
@@ -392,12 +388,7 @@ export const portfolioDetails: PortfolioDetail[] = [
       "Generated comprehensive test reports automatically",
       "Created reusable software modules for future projects"
     ],
-    futureImprovements: [
-      "Cloud integration for remote monitoring",
-      "Machine learning for predictive maintenance",
-      "Extended sensor compatibility",
-      "Mobile app development for remote control"
-    ]
+    futureImprovements: undefined
   },
   // Project 4
   {
@@ -407,11 +398,7 @@ export const portfolioDetails: PortfolioDetail[] = [
     images: [
       {
         url: "/images/lego-arduino/ceeo1.jpg",
-        caption: "Students assembling robots"
-      },
-      {
-        url: "/images/lego-arduino/ceeo2.jpg",
-        caption: "Programming workshop in action"
+        caption: "Robot car controlled with Arduino"
       },
       {
         url: "/images/lego-arduino/ceeo2.jpg",
@@ -563,11 +550,6 @@ export const portfolioDetails: PortfolioDetail[] = [
       "Established efficient deployment workflow",
       "Integrated analytics tracking"
     ],
-    futureImprovements: [
-      "Blog section integration",
-      "Dark mode implementation",
-      "Interactive project previews",
-      "Advanced animation effects"
-    ]
+    futureImprovements: undefined
   }
 ];
