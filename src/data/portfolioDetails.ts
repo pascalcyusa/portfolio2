@@ -18,7 +18,56 @@ export interface PortfolioDetail {
 }
 
 export const portfolioDetails: PortfolioDetail[] = [
-  // Project 12
+  // roomba-gym-battle
+  {
+    title: "Gym Battle - Learning to Dodge (Airtable Remote Operation)",
+    content: "A Create 3 Robot ™️ robot that can be controlled remotely using an Airtable.",
+    id: "roomba-gym-battle",
+    images: [
+      {
+        url: "/images/roomba-gym-battle/img1.jpeg",
+        caption: "Left view of the line follower robot"
+      },
+      {
+        url: "/images/roomba-gym-battle/img1.jpeg",
+        caption: "Left view of the line follower robot"
+      },
+    ],
+    videos: [
+      {
+        url: "https://youtube.com/shorts/kxjFOwbjV9U",
+        caption: "Video demonstration of the robot in action"
+      }
+    ],
+    technicalDetails: [
+      "Create 3 robot integration",
+      "Airtable-based remote control system",
+      "Real-time camera streaming setup",
+      "Obstacle detection and avoidance logic",
+      "Remote command processing and execution"
+    ],
+    challenges: [
+      "Implementing reliable remote control through Airtable",
+      "Setting up stable video streaming from Nolop",
+      "Coordinating robot movement without direct visual contact",
+      "Managing network latency and command timing"
+    ],
+    outcomes: [
+      "Successfully implemented remote robot control system",
+      "Achieved reliable obstacle avoidance in maze navigation",
+      "Established effective remote visual feedback system",
+      "Demonstrated remote operation capabilities"
+    ],
+    futureImprovements: [
+      "Enhance command response time and precision",
+      "Implement autonomous obstacle avoidance features",
+      "Add multiple camera angles for better navigation",
+      "Develop more sophisticated control interface"
+    ],
+    pdfUrl: undefined
+  },
+
+  // camera-line-follower
   {
     title: "Traverse Victory Road (Camera Line Follower)",
     content: "A line-following robot designed to navigate paths using a Pi Camera for line detection. ",
@@ -39,31 +88,34 @@ export const portfolioDetails: PortfolioDetail[] = [
     ],
     videos: [
       {
-        url: "https://youtube.com/shorts/kxjFOwbjV9U",
+        url: "[link to yt]",
         caption: "Video demonstration of the robot in action"
       }
     ],
     technicalDetails: [
-      "Utilizes a Raspberry Pi for processing",
-      "Pi Camera for line detection",
-      "OpenCV for image processing",
-      "Custom chassis design",
-      "GPIO control for motor operations"
+      "Create 3 robot integration",
+      "Airtable-based remote control system",
+      "Real-time camera streaming setup",
+      "Obstacle detection and avoidance logic",
+      "Remote command processing and execution"
     ],
     challenges: [
-      "Calibrating the camera for accurate line detection",
-      "Designing a stable and functional chassis",
-      "Ensuring smooth motor control and movement"
+      "Implementing reliable remote control through Airtable",
+      "Setting up stable video streaming from Nolop",
+      "Coordinating robot movement without direct visual contact",
+      "Managing network latency and command timing"
     ],
     outcomes: [
-      "Successfully built a functional line-following robot",
-      "Gained experience in real-time image processing",
-      "Improved skills in robotics and hardware integration"
+      "Successfully implemented remote robot control system",
+      "Achieved reliable obstacle avoidance in maze navigation",
+      "Established effective remote visual feedback system",
+      "Demonstrated remote operation capabilities"
     ],
     futureImprovements: [
-      "Enhance line detection accuracy with advanced algorithms",
-      "Improve chassis design for better stability",
-      "Integrate additional sensors for obstacle detection"
+      "Enhance command response time and precision",
+      "Implement autonomous obstacle avoidance features",
+      "Add multiple camera angles for better navigation",
+      "Develop more sophisticated control interface"
     ],
     pdfUrl: undefined
   },

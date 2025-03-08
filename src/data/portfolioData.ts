@@ -10,6 +10,23 @@ export interface PortfolioItem {
 }
 
 export const portfolioData: PortfolioItem[] = [
+  // 
+  {
+    id: "roomba-gym-battle",
+    title: "Gym Battle - Learning to Dodge (Airtable Remote Operation)",
+    category: "ME35 / Simple Robotics",
+    image: "/images/roomba-gym-battle/img1.jpeg",
+    description: "A Create 3 Robot ™️ robot that can be controlled remotely using an Airtable.",
+    features: [
+      "Remote control through Airtable integration",
+      "Real-time visual feedback via camera streaming",
+      "Obstacle avoidance navigation",
+      "Create 3 robot command interface",
+      "Remote operation from classroom to Nolop"
+    ],
+    year: "Spring 2025",
+    githubUrl: "https://github.com/pascalcyusa/roomba-gym-battle"
+  },
   // Project 12
   {
     id: "camera-line-follower",
@@ -18,10 +35,11 @@ export const portfolioData: PortfolioItem[] = [
     image: "/images/camera-line-follower/img1.jpeg",
     description: "A line-following robot designed to navigate paths using a Pi Camera for line detection.",
     features: [
-      "Line detection using Pi Camera",
-      "Motor control with Raspberry Pi",
-      "Real-time image processing with OpenCV",
-      "GPIO control for motor movement"
+      "Remote control through Airtable integration",
+      "Real-time visual feedback via camera streaming",
+      "Obstacle avoidance navigation",
+      "Create 3 robot command interface",
+      "Remote operation from classroom to Nolop"
     ],
     year: "Spring 2025",
     githubUrl: "https://github.com/pascalcyusa/camera-line-follower"
