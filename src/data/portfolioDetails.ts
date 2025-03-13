@@ -18,6 +18,79 @@ export interface PortfolioDetail {
 }
 
 export const portfolioDetails: PortfolioDetail[] = [
+  // navigate-to-pewter-city
+  {
+    title: "Navigate Back to Pewter City (Navigation Using Object Recognition)",
+    content: "A Create 3 Robot ™️ robot designed to navigate through a maze with 90-degree turns based on object detection.",
+    id: "navigate-to-pewter-city",
+    images: [
+      {
+        url: "/images/navigate-to-pewter-city/img1.jpeg",
+        caption: undefined
+      },
+      {
+        url: "/images/navigate-to-pewter-city/img2.jpeg",
+        caption: undefined
+      },
+      {
+        url: "/images/navigate-to-pewter-city/img3.jpeg",
+        caption: undefined
+      },
+      {
+        url: "/images/navigate-to-pewter-city/img4.jpeg",
+        caption: undefined
+      },
+      {
+        url: "/images/navigate-to-pewter-city/img5.jpeg",
+        caption: undefined
+      },
+      {
+        url: "/images/navigate-to-pewter-city/img6.jpeg",
+        caption: undefined
+      },
+    ],
+    videos: [
+      {
+        url: "https://youtube.com/shorts/U1IJRvnf8W8?feature=share",
+        caption: "Video demonstration of the robot in action"
+      },
+      {
+        url: "https://youtube.com/shorts/m2KWtcken6A?feature=share",
+        caption: undefined,
+      }
+    ],
+    technicalDetails: [
+      "Create 3 robot platform integration",
+      "Object detection system for 6-inch proximity sensing",
+      "90-degree turn calibration system",
+      "Real-time path adjustment capabilities",
+      "Custom navigation algorithm implementation",
+      "Sensor fusion for accurate positioning"
+    ],
+    challenges: [
+      "Implementing precise 90-degree turns without prior directional knowledge",
+      "Developing reliable object detection at 6-inch distance",
+      "Creating adaptive navigation system for unknown object orientations",
+      "Integrating object recognition for the Nidoran challenge",
+      "Optimizing response time for real-time decision making",
+      "Ensuring consistent performance without tape or hot glue attachments"
+    ],
+    outcomes: [
+      "Successfully implemented dynamic turn decision system",
+      "Achieved accurate object detection and distance measurement",
+      "Developed robust navigation algorithm for maze completion",
+      "Created engaging final interaction at maze completion",
+      "Implemented optional Nidoran recognition capability",
+      "Demonstrated reliable performance in competition conditions"
+    ],
+    futureImprovements: [
+      "Enhance object recognition accuracy for similar-looking objects",
+      "Implement machine learning for improved decision making",
+      "Add multi-sensor fusion for more precise navigation",
+      "Develop advanced path optimization algorithms",
+      "Create more interactive end-of-maze celebrations"
+    ]
+  },
   // roomba-gym-battle
   {
     title: "Gym Battle - Learning to Dodge (Airtable Remote Operation)",
@@ -25,17 +98,17 @@ export const portfolioDetails: PortfolioDetail[] = [
     id: "roomba-gym-battle",
     images: [
       {
-        url: "/images/roomba-gym-battle/img1.jpeg",
-        caption: "Left view of the line follower robot"
+        url: "/images/navigate-to-pewter-city/img1.jpeg",
+        caption: undefined
       },
       {
-        url: "/images/roomba-gym-battle/img1.jpeg",
-        caption: "Left view of the line follower robot"
+        url: "/images/navigate-to-pewter-city/img2.jpeg",
+        caption: undefined
       },
     ],
     videos: [
       {
-        url: "https://youtube.com/shorts/kxjFOwbjV9U",
+        url: "https://youtube.com/shorts/04uJjxwYFIk?feature=share",
         caption: "Video demonstration of the robot in action"
       }
     ],

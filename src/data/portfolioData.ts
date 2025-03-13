@@ -10,12 +10,29 @@ export interface PortfolioItem {
 }
 
 export const portfolioData: PortfolioItem[] = [
-  // 
+  {
+    id: "navigate-to-pewter-city",
+    title: "Navigate Back to Pewter City (Navigation Using Object Recognition)",
+    category: "ME35 / Simple Robotics",
+    image: "/images/navigate-to-pewter-city/img5.jpeg",
+    description: "A Create 3 Robot ™️ robot designed to navigate through a maze with 90-degree turns based on object detection.",
+    features: [
+      "Object detection system for 6-inch proximity sensing",
+      "90-degree turn calibration system",
+      "Real-time path adjustment capabilities",
+      "Custom navigation algorithm implementation",
+      "Sensor fusion for accurate positioning"
+    ],
+    year: "Spring 2025",
+    githubUrl: "https://github.com/pascalcyusa/navigate-to-pewter-city"
+  },
+  // roomba-gym-battle
+
   {
     id: "roomba-gym-battle",
     title: "Gym Battle - Learning to Dodge (Airtable Remote Operation)",
     category: "ME35 / Simple Robotics",
-    image: "/images/roomba-gym-battle/img1.jpeg",
+    image: "/images/navigate-to-pewter-city/img6.jpeg",
     description: "A Create 3 Robot ™️ robot that can be controlled remotely using an Airtable.",
     features: [
       "Remote control through Airtable integration",
@@ -25,7 +42,7 @@ export const portfolioData: PortfolioItem[] = [
       "Remote operation from classroom to Nolop"
     ],
     year: "Spring 2025",
-    githubUrl: "https://github.com/pascalcyusa/roomba-gym-battle"
+    githubUrl: undefined
   },
   // Project 12
   {
