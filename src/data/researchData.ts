@@ -22,7 +22,8 @@ export const researchData: ResearchProject[] = [
     ],
     lab: "Microscale Sensors and Systems Lab",
     period: "Jun 2024 - Present",
-    image: "/images/tdk-ch101/img1.jpeg"
+    image: "/images/tdk-ch101/img1.jpeg",
+    link: "https://sites.tufts.edu/senselab/research/#:~:text=Miniaturized%20Ultrasonic%20Anemometer"
   },
   {
     id: "stem-education",
