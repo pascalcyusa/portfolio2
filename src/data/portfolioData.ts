@@ -44,7 +44,7 @@ export const portfolioData: PortfolioItem[] = [
     year: "Spring 2025",
     githubUrl: undefined
   },
-  // Project 12
+  // camera-line-follower
   {
     id: "camera-line-follower",
     title: "Traverse Victory Road (Camera Line Follower)",
@@ -62,7 +62,7 @@ export const portfolioData: PortfolioItem[] = [
     githubUrl: "https://github.com/pascalcyusa/camera-line-follower"
   },
 
-  // Project 11
+  // IR-line-follower
   {
     id: "IR-line-follower",
     title: "Scout A Route (IR Line Follower)",
@@ -79,7 +79,7 @@ export const portfolioData: PortfolioItem[] = [
     githubUrl: "https://github.com/pascalcyusa/IR-line-follower",
   },
 
-  // Project 10
+  // pokemon-ball-sorter
   {
     id: "pokemon-ball-sorter",
     title: "Pokémon Ball Sorter",
@@ -97,7 +97,7 @@ export const portfolioData: PortfolioItem[] = [
     githubUrl: "https://github.com/pascalcyusa/Pokemon-Ball-Sorter",
   },
 
-  // Project 9
+  // pokemon-gripper
   {
     id: "pokemon-gripper",
     title: "Pokémon Ball Gripper",
@@ -114,7 +114,7 @@ export const portfolioData: PortfolioItem[] = [
     githubUrl: "https://github.com/pascalcyusa/Pokmon-Gripper",
   },
 
-  // Project 8
+  // ballon-dor-replica
   {
     id: "ballon-dor-replica",
     title: "Ballon d’Or Replica",
@@ -131,7 +131,7 @@ export const portfolioData: PortfolioItem[] = [
     githubUrl: undefined
   },
 
-  // Project 7
+  // hip-truss-bridge
   {
     id: "hip-truss-bridge",
     title: "Hip Truss Bridge",
@@ -148,7 +148,7 @@ export const portfolioData: PortfolioItem[] = [
     githubUrl: undefined
   },
 
-  // Project 6
+  // dog-treat-dispenser
   {
     id: "dog-treat-dispenser",
     title: "Dog Treat Dispenser",
@@ -165,7 +165,7 @@ export const portfolioData: PortfolioItem[] = [
     githubUrl: undefined
   },
 
-  // Project 5
+  // tdk-ch101
   {
     id: "tdk-ch101",
     title: "TDK CH101 Ultrasonic Sensor Automation",
@@ -180,7 +180,7 @@ export const portfolioData: PortfolioItem[] = [
     ],
     year: "Summer 2024"
   },
-  // Project 4
+  // lego-arduino
   {
     id: "lego-arduino",
     title: "LEGO & Arduino Education",

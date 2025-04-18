@@ -26,22 +26,10 @@ export const portfolioDetails: PortfolioDetail[] = [
     images: [
       {
         url: "/images/navigate-to-pewter-city/img1.jpeg",
-        caption: undefined
-      },
-      {
-        url: "/images/navigate-to-pewter-city/img2.jpeg",
-        caption: undefined
-      },
-      {
-        url: "/images/navigate-to-pewter-city/img3.jpeg",
-        caption: undefined
+        caption: "The Create 3 Robot with a camera mount",
       },
       {
         url: "/images/navigate-to-pewter-city/img4.jpeg",
-        caption: undefined
-      },
-      {
-        url: "/images/navigate-to-pewter-city/img5.jpeg",
         caption: undefined
       },
       {
@@ -161,39 +149,29 @@ export const portfolioDetails: PortfolioDetail[] = [
     ],
     videos: [
       {
-        url: "[link to yt]",
+        url: "https://youtube.com/watch?v=kxjFOwbjV9U&si=y84Mu_Xj6SeWEQfG",
         caption: "Video demonstration of the robot in action"
       }
     ],
     technicalDetails: [
-      "Create 3 robot integration",
-      "Airtable-based remote control system",
-      "Real-time camera streaming setup",
-      "Obstacle detection and avoidance logic",
-      "Remote command processing and execution"
+      "",
+
     ],
     challenges: [
-      "Implementing reliable remote control through Airtable",
-      "Setting up stable video streaming from Nolop",
-      "Coordinating robot movement without direct visual contact",
-      "Managing network latency and command timing"
+      "",
+
     ],
     outcomes: [
-      "Successfully implemented remote robot control system",
-      "Achieved reliable obstacle avoidance in maze navigation",
-      "Established effective remote visual feedback system",
-      "Demonstrated remote operation capabilities"
+      "",
+
     ],
     futureImprovements: [
-      "Enhance command response time and precision",
-      "Implement autonomous obstacle avoidance features",
-      "Add multiple camera angles for better navigation",
-      "Develop more sophisticated control interface"
+      "",
     ],
     pdfUrl: undefined
   },
 
-  // Project 11
+  // IR-line-follower 
   {
     id: "IR-line-follower",
     title: "Scout A Route (IR Line Follower)",
@@ -253,11 +231,11 @@ export const portfolioDetails: PortfolioDetail[] = [
       },
       {
         url: "/images/pokemon-ball-sorter/ball-sorter-2.jpeg",
-        caption: "Final assembled system"
+        caption: undefined
       },
       {
         url: "/images/pokemon-ball-sorter/ball-sorter-3.jpeg",
-        caption: "Final assembled system"
+        caption: undefined
       },
     ],
     videos: [
