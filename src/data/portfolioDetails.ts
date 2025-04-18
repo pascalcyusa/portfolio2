@@ -149,7 +149,7 @@ export const portfolioDetails: PortfolioDetail[] = [
     ],
     videos: [
       {
-        url: "https://youtube.com/watch?v=kxjFOwbjV9U&si=y84Mu_Xj6SeWEQfG",
+        url: "https://www.youtube.com/watch?v=kxjFOwbjV9U",
         caption: "Video demonstration of the robot in action"
       }
     ],
