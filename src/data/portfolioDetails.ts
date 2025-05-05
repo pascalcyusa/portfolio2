@@ -1,3 +1,13 @@
+import googlePhotosData from './google_photos_data.json';
+
+interface Photo {
+  id: string;
+  url: string;
+  filename: string;
+}
+
+const photos: Photo[] = googlePhotosData;
+
 export interface PortfolioDetail {
   title: string;
   content: string;
@@ -18,6 +28,37 @@ export interface PortfolioDetail {
 }
 
 export const portfolioDetails: PortfolioDetail[] = [
+  // pokemon-cafe
+  {
+    title: "Pokémon Cafe (Final Project)",
+    content: "A completely automated system for cooking pancakes",
+    id: "pokemon-cafe",
+    images: photos.slice(0, 3).map(photo => ({
+      url: photo.url,
+      caption: photo.filename
+    })),
+    videos: [
+      {
+        url: "https://youtu.be/pDoqdQYS55g",
+        caption: "Pokémon Cafe full run"
+      }
+    ],
+    technicalDetails: [
+      "Create 3 robot platform integration",
+
+    ],
+    challenges: [
+      "Implementing precise 90-degree turns without prior directional knowledge",
+
+    ],
+    outcomes: [
+      "Successfully implemented dynamic turn decision system",
+
+    ],
+    futureImprovements: [
+      "Enhance object recognition accuracy for similar-looking objects",
+    ]
+  },
   // navigate-to-pewter-city
   {
     title: "Navigate Back to Pewter City (Navigation Using Object Recognition)",

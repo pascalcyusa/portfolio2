@@ -1,3 +1,5 @@
+import googlePhotosData from './google_photos_data.json';
+
 export interface PortfolioItem {
   id: string;
   title: string;
@@ -10,6 +12,20 @@ export interface PortfolioItem {
 }
 
 export const portfolioData: PortfolioItem[] = [
+  // pokemon-cafe
+  {
+    id: "pokemon-cafe",
+    title: "Pokémon Cafe (Final Project)",
+    category: "ME35 / Simple Robotics",
+    image: googlePhotosData[2].url,
+    description: "A completely automated system for cooking pancakes",
+    features: [
+      "Object detection system for 6-inch proximity sensing",
+    ],
+    year: "Spring 2025",
+    githubUrl: "https://github.com/pascalcyusa/pokemon-cafe"
+  },
+  // navigate-to-pewter-city
   {
     id: "navigate-to-pewter-city",
     title: "Navigate Back to Pewter City (Navigation Using Object Recognition)",
@@ -27,7 +43,6 @@ export const portfolioData: PortfolioItem[] = [
     githubUrl: "https://github.com/pascalcyusa/navigate-to-pewter-city"
   },
   // roomba-gym-battle
-
   {
     id: "roomba-gym-battle",
     title: "Gym Battle - Learning to Dodge (Airtable Remote Operation)",
