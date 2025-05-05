@@ -109,13 +109,13 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ isOpen, onClose, pro
             </button>
             <button
               className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white hover:text-gray-300 text-3xl"
-              onClick={handlePrevImage}
+              onClick={(e) => { e.stopPropagation(); handlePrevImage(); }}
             >
               ‹
             </button>
             <button
               className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white hover:text-gray-300 text-3xl"
-              onClick={handleNextImage}
+              onClick={(e) => { e.stopPropagation(); handleNextImage(); }}
             >
               ›
             </button>

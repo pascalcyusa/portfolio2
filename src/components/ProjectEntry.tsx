@@ -15,8 +15,11 @@ const ProjectEntry = ({ project, isReversed }: ProjectEntryProps) => {
     <div className="mb-20">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-8">
         <div className={`${isReversed ? "md:order-2" : "md:order-1"}`}>
-          <div className="bg-gray-100 rounded-lg h-[400px] flex items-center justify-center">
-            <img 
+          <div
+            className="bg-gray-100 rounded-lg h-[400px] flex items-center justify-center cursor-pointer"
+            onClick={() => setIsModalOpen(true)}
+          >
+            <img
               src={project.image}
               alt={project.title}
               className="w-full h-full object-cover rounded-lg"
@@ -26,7 +29,7 @@ const ProjectEntry = ({ project, isReversed }: ProjectEntryProps) => {
         <div className={`${isReversed ? "md:order-1" : "md:order-2"}`}>
           <h2 className="text-3xl font-bold mb-4">{project.title}</h2>
           <p className="text-gray-700 mb-4">{project.description}</p>
-          
+
           <div className="bg-gray-50 p-4 rounded-lg max-w-md mb-6">
             <h3 className="font-semibold mb-2 text-sm">Key Features</h3>
             <ul className="space-y-1 text-gray-600 text-sm">
@@ -41,7 +44,7 @@ const ProjectEntry = ({ project, isReversed }: ProjectEntryProps) => {
             <p className="mb-4">{project.year}</p>
             <div className="flex items-center gap-4">
               {project.githubUrl && (
-                <a 
+                <a
                   href={project.githubUrl}
                   target="_blank"
                   rel="noopener noreferrer"
