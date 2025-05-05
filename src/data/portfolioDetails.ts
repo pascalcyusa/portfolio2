@@ -21,8 +21,9 @@ export interface PortfolioDetail {
     caption: string;
   }[];
   technicalDetails: string[];
+  personalContribution?: string[];
   challenges: string[];
-  outcomes: string[];
+  outcomes?: string[];
   futureImprovements?: string[];
   pdfUrl?: string;
 }
@@ -31,32 +32,62 @@ export const portfolioDetails: PortfolioDetail[] = [
   // pokemon-cafe
   {
     title: "Pokémon Cafe (Final Project)",
-    content: "A completely automated system for cooking pancakes",
+    content: "A completely automated system for cooking pancakes, featuring autonomous transport.",
     id: "pokemon-cafe",
-    images: photos.slice(0, 3).map(photo => ({
-      url: photo.url,
-      caption: photo.filename
-    })),
+    images: [
+      {
+        url: "/images/pokemon-cafe/img1.jpeg",
+        caption: "The Create 3 Robot at the whipped cream station"
+      },
+      {
+        url: "/images/pokemon-cafe/img2.jpeg",
+        caption: "The Create 3 Robot at the sprinkles station"
+      },
+      {
+        url: "/images/pokemon-cafe/img3.jpeg",
+        caption: "Complete setup with the order website"
+      }
+    ],
     videos: [
       {
         url: "https://youtu.be/pDoqdQYS55g",
-        caption: "Pokémon Cafe full run"
+        caption: "Pokémon Cafe full run" // Video shows full process including batter, cooking, topping, and delivery [00:00:11 - 00:05:52]
       }
     ],
     technicalDetails: [
-      "Create 3 robot platform integration",
-
+      "Software Tools: Used common software for robot control, computer vision (seeing), web communication, and interacting with the hardware.",
+      "Navigation Method: Followed a line on the floor using infrared sensors and spotted station locations using a camera looking for colored markers.",
+      "Finding Stations: Recognized stations by seeing colored markers and counting them in order along the path.",
+      "Getting Orders: Connected to an online spreadsheet (Airtable) to receive pancake orders and update the robot's progress.",
+      "Task Tracking: Kept track of what the robot was doing (like moving, waiting, or idle) using a simple internal system."
+    ],
+    personalContribution: [
+      "Online Order System: Built the connection to the online spreadsheet (Airtable) so the robot could get orders and send back status updates.",
+      "Station Spotting: Programmed the robot's camera vision to recognize the colored markers identifying each station.",
+      "Line Following: Wrote the main code that allowed the robot to follow the line on the floor using its sensors and steer correctly."
     ],
     challenges: [
-      "Implementing precise 90-degree turns without prior directional knowledge",
-
+      "Reliable Station Identification: Relying only on color and counting made it tricky if the robot missed a marker.",
+      "Robust Line Following: Making sure the robot stayed on the line reliably, especially if the path wasn't perfect.",
+      "Teamwork Between Systems: Coordinating the transport robot with other automated parts of the pancake maker via the online spreadsheet.",
+      "Consistent Color Vision: Ensuring the robot saw colors correctly even if lighting changed.",
+      "Real-time Updates: Getting status updates to and from the online spreadsheet quickly enough.",
+      "Handling Glitches: Creating basic backups for when hardware or communication failed."
     ],
     outcomes: [
-      "Successfully implemented dynamic turn decision system",
-
+      "Built a Working Transport Robot: The robot successfully moved between stations using line following and camera vision.",
+      "Connected to Order System: Successfully linked the robot to the online spreadsheet for orders and status updates.",
+      "Part of a Full Automated System: Showcased how the transport robot worked within the complete automated pancake-making process (as part of a team effort).",
+      "Followed Order Steps: The robot visited the necessary stations in the right sequence for each order.",
+      "Completed Project Goal: Delivered a functional robot system for the final class presentation."
     ],
-    futureImprovements: [
-      "Enhance object recognition accuracy for similar-looking objects",
+    futureImprovements: [ // Kept as is from previous version
+      "Smarter Station Signs: Use QR codes or similar unique markers instead of just colors so the robot always knows exactly which station it's at.",
+      "Better Navigation Skills: Give the robot better ways to understand its location (like mapping) to handle complex paths or getting lost.",
+      "Smarter Error Handling: Teach the robot better ways to recover if it gets stuck or loses the line.",
+      "Faster Communication: Allow the robot to talk directly to stations instead of only through the online spreadsheet.",
+      "Improved Controls: Create a better interface for ordering pancakes and watching the robot.",
+      "More Robots: Design the system to potentially handle multiple delivery robots at once."
     ]
   },
   // navigate-to-pewter-city
@@ -256,7 +287,7 @@ export const portfolioDetails: PortfolioDetail[] = [
     ]
   },
 
-  // Project 10
+  // pokemon-ball-sorter
   {
     id: "pokemon-ball-sorter",
     title: "Pokémon Ball Sorter",
@@ -303,7 +334,7 @@ export const portfolioDetails: PortfolioDetail[] = [
       "Currently the robot doesn't accurately place balls to the corresponfing color bin. We plan to calibrate the servo to make sure it moves each ball to the correct slot"
     ]
   },
-  // Project 9
+  // pokemon-gripper
   {
     id: "pokemon-gripper",
     title: "Pokémon Ball Gripper",
@@ -337,7 +368,7 @@ export const portfolioDetails: PortfolioDetail[] = [
     ]
   },
 
-  // Project 8
+  // ballon-dor-replica
   {
     id: "ballon-dor-replica",
     title: "Ballon d’Or Replica",
@@ -399,7 +430,7 @@ export const portfolioDetails: PortfolioDetail[] = [
     ]
   },
 
-  // Project 7
+  // hip-truss-bridge
   {
     id: "hip-truss-bridge",
     title: "Hip Truss Bridge",
@@ -446,7 +477,7 @@ export const portfolioDetails: PortfolioDetail[] = [
     pdfUrl: "https://drive.google.com/file/d/18hf8kmzOOd0wp9jBr4RTQsGvo0u0M9H_/view?usp=sharing"
   },
 
-  // Project 6
+  // dog-treat-dispenser
   {
     id: "dog-treat-dispenser",
     title: "Dog Treat Dispenser",
@@ -491,7 +522,7 @@ export const portfolioDetails: PortfolioDetail[] = [
     pdfUrl: "https://tufts.box.com/s/3f1i93cj1kykrx0lybhsyjb9i06axet7"
   },
 
-  // Project 5
+  // tdk-ch101
   {
     id: "tdk-ch101",
     title: "TDK CH101 Ultrasonic Sensor Automation",
@@ -534,7 +565,7 @@ export const portfolioDetails: PortfolioDetail[] = [
     ],
     futureImprovements: undefined
   },
-  // Project 4
+  // lego-arduino
   {
     id: "lego-arduino",
     title: "LEGO & Arduino Education",
@@ -579,7 +610,7 @@ export const portfolioDetails: PortfolioDetail[] = [
     ]
   },
 
-  // Project 3
+  // social-networking-app
   {
     "title": "Zina",
     "content": "Zina is a social networking application designed to help users manage and visualize their personal and professional connections. The app allows users to add, edit, and delete contacts, and provides a graphical representation of their network.",
@@ -617,14 +648,14 @@ export const portfolioDetails: PortfolioDetail[] = [
     ]
   },
 
-  // Project 2
+  // splendor-game
   {
     id: "splendor-game",
     title: "Splendor Game",
     content: "Terminal-based implementation of the Splendor board game in C++.",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1611996575749-79a3a250f948?auto=format&fit=crop&w=800&q=80",
+        url: "/images/splendor-game/img1.png",
         caption: "Terminal gameplay interface"
       }
     ],
@@ -657,18 +688,18 @@ export const portfolioDetails: PortfolioDetail[] = [
       "Additional game modes"
     ]
   },
-  // Project 1
+  // personal-website
   {
     id: "personal-website",
     title: "Portfolio",
     content: "A modern, responsive portfolio website built using React and TypeScript, showcasing professional experience and projects. The site features a clean, user-friendly design with optimal performance and accessibility considerations.",
     images: [
       {
-        url: "/images/personal-website/img1.png",
+        url: "/images/personal-website/img3.png",
         caption: "Homepage design"
       },
       {
-        url: "/images/personal-website/img2.png",
+        url: "/images/personal-website/img4.png",
         caption: "Portfolio section"
       }
     ],

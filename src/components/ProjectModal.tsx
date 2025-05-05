@@ -167,6 +167,17 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ isOpen, onClose, pro
           </div>
         )}
 
+        {details.personalContribution && (
+          <div className="mb-8">
+            <h3 className="text-xl font-semibold mb-3">Personal Contribution</h3>
+            <ul className="list-disc pl-5 space-y-2 text-gray-700">
+              {details.personalContribution.map((detail, index) => (
+                <li key={index}>{detail}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
         {details.challenges && (
           <div className="mb-8">
             <h3 className="text-xl font-semibold mb-3">Challenges</h3>

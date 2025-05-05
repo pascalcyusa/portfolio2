@@ -17,13 +17,19 @@ export const portfolioData: PortfolioItem[] = [
     id: "pokemon-cafe",
     title: "Pokémon Cafe (Final Project)",
     category: "ME35 / Simple Robotics",
-    image: googlePhotosData[2].url,
+    image: "/images/pokemon-cafe/img3.jpeg",
+    // image: googlePhotosData[2].url,
     description: "A completely automated system for cooking pancakes",
     features: [
-      "Object detection system for 6-inch proximity sensing",
+      "Automated Order Fetching: Connects to Airtable to retrieve new pancake orders.",
+      "Line Following Navigation: Uses IR sensors to autonomously follow a designated path.",
+      "Camera-Based Station Detection: Identifies processing stations using OpenCV to detect green markers.",
+      "Sequential Station Processing: Visits cooking and topping stations based on the specific requirements of each order.",
+      "Real-Time Status Updates: Reports robot arrival and order completion back to Airtable.",
+      "Modular Component: Acts as the transport element within a larger automated pancake production line (including batter, cooking, topping stages)."
     ],
     year: "Spring 2025",
-    githubUrl: "https://github.com/pascalcyusa/pokemon-cafe"
+    githubUrl: "https://github.com/pascalcyusa/Pokemon-Cafe"
   },
   // navigate-to-pewter-city
   {
@@ -126,14 +132,14 @@ export const portfolioData: PortfolioItem[] = [
       "Non-contact ball manipulation"
     ],
     year: "Spring 2025",
-    githubUrl: "https://github.com/pascalcyusa/Pokmon-Gripper",
+    githubUrl: "https://github.com/pascalcyusa/Pokemon-Gripper",
   },
 
   // ballon-dor-replica
   {
     id: "ballon-dor-replica",
     title: "Ballon d’Or Replica",
-    category: "ME10 / Materials & Manufacturing I",
+    category: "ME10 / Materials & Manufacturing",
     image: "/images/ballon-dor-replica/dor2.jpeg",
     description: "Designed and fabricated a replica of the Ballon d’Or using sand casting and lost wax casting, achieving a close resemblance to the real trophy.",
     features: [
@@ -167,7 +173,7 @@ export const portfolioData: PortfolioItem[] = [
   {
     id: "dog-treat-dispenser",
     title: "Dog Treat Dispenser",
-    category: "ME40 / Engineering Design I",
+    category: "ME40 / Engineering Design",
     image: "/images/dog-treat-dispenser/dispens1.png",
     description: "Designed a wheelchair-mounted dog treat dispenser for Ryan, a user with a spinal cord injury, ensuring minimal effort in dispensing and preventing unintended access by the dog.",
     features: [
@@ -184,7 +190,7 @@ export const portfolioData: PortfolioItem[] = [
   {
     id: "tdk-ch101",
     title: "TDK CH101 Ultrasonic Sensor Automation",
-    category: "Sensors / Data Automation",
+    category: "MEMS / Sensors",
     image: "/images/tdk-ch101/img1.jpeg",
     description: "Data collection automation system for ultrasonic sensors using C and LabVIEW integration.",
     features: [
@@ -199,7 +205,7 @@ export const portfolioData: PortfolioItem[] = [
   {
     id: "lego-arduino",
     title: "LEGO & Arduino Education",
-    category: "Education / Robotics",
+    category: "Education",
     image: "/images/lego-arduino/ceeo1.jpg",
     description: "Educational robotics projects using LEGO Mindstorms and Arduino.",
     features: [
@@ -211,7 +217,7 @@ export const portfolioData: PortfolioItem[] = [
     year: "Summer 2023"
   },
 
-  // Project 3
+  // social-networking-app
   {
     id: "social-networking-app",
     title: "Zina",
@@ -232,12 +238,12 @@ export const portfolioData: PortfolioItem[] = [
     githubUrl: "https://github.com/pascalcyusa/Zina",
   },
 
-  // Project 2
+  // splendor-game
   {
     id: "splendor-game",
     title: "Splendor Game",
-    category: "C++ / Game Development",
-    image: "https://images.unsplash.com/photo-1611996575749-79a3a250f948?auto=format&fit=crop&w=800&q=80",
+    category: "C++ Projects",
+    image: "/images/splendor-game/img1.png",
     description: "Terminal-based implementation of the Splendor board game in C++.",
     features: [
       "Object-oriented design",
@@ -248,7 +254,7 @@ export const portfolioData: PortfolioItem[] = [
     year: "Spring 2023",
     githubUrl: "https://github.com/pascalcyusa/cs11",
   },
-  // Project 1
+  // personal-website
   {
     id: "personal-website",
     title: "Portfolio",

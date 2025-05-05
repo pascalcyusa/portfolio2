@@ -35,7 +35,7 @@ const Summary = () => {
         <div className="w-64 h-64 md:w-80 md:h-80 relative rounded-[2rem] overflow-hidden group transition-transform duration-300 hover:scale-105 hover:shadow-xl" style={{ background: 'linear-gradient(45deg, #a5c8cf, #e3cdb8)' }}>
           <div className="absolute inset-0 bg-gradient-to-br from-[#a5c8cf]/20 to-[#e3cdb8]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           <img
-            src="/images/profile2.jpg"
+            src="/images/profile.jpg"
             alt="Profile"
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
           />
