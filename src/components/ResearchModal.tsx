@@ -158,7 +158,7 @@ export const ResearchModal: React.FC<ResearchModalProps> = ({ isOpen, onClose, r
 
         {details.achievements && (
           <div className="mb-8">
-            <h3 className="text-xl font-semibold mb-3">Technical Details</h3>
+            <h3 className="text-xl font-semibold mb-3">Achievements</h3>
             <ul className="list-disc pl-5 space-y-2 text-gray-700">
               {details.achievements.map((detail, index) => (
                 <li key={index}>{detail}</li>

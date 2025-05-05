@@ -8,10 +8,12 @@ const Resume = () => {
       <div className="flex-grow pt-20">
         <div className="container mx-auto px-4">
           <iframe
-            src="https://tufts.box.com/v/pascal-resume"
+            src="https://tufts.app.box.com/embed/s/9pzi0bz9fvg906gihf2uxnzhy0iiaf88?sortColumn=date"
             className="w-full h-[calc(100vh-120px)] border-0"
             title="Resume PDF"
-            allowFullScreen
+            frameBorder="0"
+            allowFullScreen={true}
+            allow="fullscreen"
           />
         </div>
       </div>
