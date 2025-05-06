@@ -37,7 +37,7 @@ export const portfolioData: PortfolioItem[] = [
     title: "Navigate Back to Pewter City (Navigation Using Object Recognition)",
     category: "ME35 / Simple Robotics",
     image: "/images/navigate-to-pewter-city/img5.jpeg",
-    description: "A Create 3 Robot ™️ robot designed to navigate through a maze with 90-degree turns based on object detection.",
+    description: "A iRobot ™️ Create3 ™️ programmed to navigate through a maze with 90-degree turns based on object detection.",
     features: [
       "Object detection system for 6-inch proximity sensing",
       "90-degree turn calibration system",
@@ -54,12 +54,12 @@ export const portfolioData: PortfolioItem[] = [
     title: "Gym Battle - Learning to Dodge (Airtable Remote Operation)",
     category: "ME35 / Simple Robotics",
     image: "/images/navigate-to-pewter-city/img6.jpeg",
-    description: "A Create 3 Robot ™️ robot that can be controlled remotely using an Airtable.",
+    description: "A iRobot ™️ Create3™️ that can be controlled remotely using Airtable.",
     features: [
       "Remote control through Airtable integration",
       "Real-time visual feedback via camera streaming",
       "Obstacle avoidance navigation",
-      "Create 3 robot command interface",
+      "Create 3 command interface",
       "Remote operation from classroom to Nolop"
     ],
     year: "Spring 2025",
@@ -73,11 +73,11 @@ export const portfolioData: PortfolioItem[] = [
     image: "/images/camera-line-follower/img1.jpeg",
     description: "A line-following robot designed to navigate paths using a Pi Camera for line detection.",
     features: [
-      "Remote control through Airtable integration",
-      "Real-time visual feedback via camera streaming",
-      "Obstacle avoidance navigation",
-      "Create 3 robot command interface",
-      "Remote operation from classroom to Nolop"
+      "Uses computer vision (OpenCV) to detect and follow lines from a camera feed.",
+      "Controls two motors for autonomous robot movement (forward, backward, turns).",
+      "Processes camera input in real-time for navigation decisions.",
+      "Interfaces directly with Raspberry Pi hardware (GPIO) for motor control.",
+      "Includes visual debugging displays for monitoring performance."
     ],
     year: "Spring 2025",
     githubUrl: "https://github.com/pascalcyusa/camera-line-follower"

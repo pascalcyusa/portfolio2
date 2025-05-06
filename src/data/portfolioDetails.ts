@@ -97,7 +97,7 @@ export const portfolioDetails: PortfolioDetail[] = [
   // navigate-to-pewter-city
   {
     title: "Navigate Back to Pewter City (Navigation Using Object Recognition)",
-    content: "A Create 3 Robot ™️ robot designed to navigate through a maze with 90-degree turns based on object detection.",
+    content: "A iRobot ™️ Create3 ™️ programmed to navigate through a maze with 90-degree turns based on object detection.",
     id: "navigate-to-pewter-city",
     images: [
       {
@@ -212,7 +212,7 @@ export const portfolioDetails: PortfolioDetail[] = [
     images: [
       {
         url: "/images/camera-line-follower/img1.jpeg",
-        caption: "Left view of the line follower robot"
+        caption: undefined
       },
       {
         url: "/images/camera-line-follower/img2.jpeg",
@@ -230,19 +230,31 @@ export const portfolioDetails: PortfolioDetail[] = [
       }
     ],
     technicalDetails: [
-      "",
-
+      "Developed in Python on a Raspberry Pi platform.",
+      "Utilizes key libraries: OpenCV for image processing, RPi.GPIO for hardware control.",
+      "Core hardware: Raspberry Pi, PiCamera, motors, motor driver.",
+      "Control System: Simple proportional control based on the detected line's center position.",
+      "Motor Management: Controls speed via PWM and direction via digital signals."
     ],
     challenges: [
-      "",
-
+      "Sensitivity to variations in ambient lighting and shadows.",
+      "Difficulty navigating complex line features like sharp turns or breaks.",
+      "Requires careful manual tuning of vision and control parameters.",
+      "Balancing robot speed against real-time processing limitations.",
+      "Basic error recovery strategy when the line is lost."
     ],
     outcomes: [
-      "",
-
+      "Successfully built a Raspberry Pi robot that autonomously follows a visual line.",
+      "Demonstrated practical application of real-time computer vision for robotic navigation.",
+      "Robot effectively steers to maintain its course along the detected line."
     ],
     futureImprovements: [
-      "",
+      "Enhance steering precision and smoothness using PID control.",
+      "Improve robustness to lighting conditions (adaptive thresholding/color filtering).",
+      "Develop smarter line recovery strategies (e.g., search patterns).",
+      "Improve turn anticipation by analyzing the path further ahead.",
+      "Integrate distance sensors for obstacle detection and avoidance.",
+      "Add a calibration routine for easier parameter tuning."
     ],
     pdfUrl: undefined
   },
@@ -304,15 +316,7 @@ export const portfolioDetails: PortfolioDetail[] = [
       {
         url: "/images/pokemon-ball-sorter/ball-sorter-1.jpeg",
         caption: "Final assembled system"
-      },
-      {
-        url: "/images/pokemon-ball-sorter/ball-sorter-2.jpeg",
-        caption: undefined
-      },
-      {
-        url: "/images/pokemon-ball-sorter/ball-sorter-3.jpeg",
-        caption: undefined
-      },
+      }
     ],
     videos: [
       {

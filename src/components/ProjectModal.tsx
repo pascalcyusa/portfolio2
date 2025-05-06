@@ -138,12 +138,16 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ isOpen, onClose, pro
                 : video.url.includes('watch?v=')
                   ? video.url.split('watch?v=')[1]
                   : video.url.split('/').pop();
+
+              // Always add mute=1 to the embed URL
+              const embedUrl = `https://www.youtube.com/embed/${videoId}?mute=1`;
+
               return (
                 <div key={index} className="mb-4">
                   <div className="relative pt-[56.25%]">
                     <iframe
                       className="absolute top-0 left-0 w-full h-full"
-                      src={`https://www.youtube.com/embed/${videoId}`}
+                      src={embedUrl}
                       title="YouTube video player"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
