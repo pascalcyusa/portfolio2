@@ -2,20 +2,20 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Separator } from "@/components/ui/separator";
 import ProjectEntry from "@/components/ProjectEntry";
-import { portfolioData } from "@/data/portfolioData";
+import { projectData } from "@/data/projectData";
 import { FilterBadge } from "@/components/ui/filter-badge";
 import { useState } from "react";
 
 const Projects = () => {
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
 
-  // Get unique categories from portfolioData
-  const categories = Array.from(new Set(portfolioData.map(project => project.category)));
+  // Get unique categories from projectData
+  const categories = Array.from(new Set(projectData.map(project => project.category)));
 
   // Filter projects based on selected categories
   const filteredProjects = selectedCategories.length > 0
-    ? portfolioData.filter(project => selectedCategories.includes(project.category))
-    : portfolioData;
+    ? projectData.filter(project => selectedCategories.includes(project.category))
+    : projectData;
 
   const toggleCategory = (category: string) => {
     setSelectedCategories(prev =>

@@ -55,8 +55,8 @@ export const ResearchModal: React.FC<ResearchModalProps> = ({ isOpen, onClose, r
     if (isOpen && researchID) {
       // Import details dynamically
       import('../data/researchDetails').then(({ researchDetails }) => {
-        const researchfieldDetails = researchDetails.find(p => p.id === researchID);
-        setDetails(researchfieldDetails || null);
+        const researchFieldDetails = researchDetails.find(p => p.id === researchID);
+        setDetails(researchFieldDetails || null);
       });
     }
   }, [isOpen, researchID]);

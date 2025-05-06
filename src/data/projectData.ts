@@ -1,6 +1,6 @@
 import googlePhotosData from './google_photos_data.json';
 
-export interface PortfolioItem {
+export interface ProjectItem {
   id: string;
   title: string;
   category: string;
@@ -11,7 +11,7 @@ export interface PortfolioItem {
   githubUrl?: string;
 }
 
-export const portfolioData: PortfolioItem[] = [
+export const projectData: ProjectItem[] = [
   // pokemon-cafe
   {
     id: "pokemon-cafe",
@@ -260,12 +260,13 @@ export const portfolioData: PortfolioItem[] = [
     title: "Portfolio",
     category: "Web Development",
     image: "/images/personal-website/img1.png",
-    description: "Responsive portfolio website built with modern web technologies.",
+    description: "A modern, responsive portfolio website that features a clean and user-friendly design.",
     features: [
-      "Responsive design",
-      "Bootstrap framework",
-      "GitHub integration",
-      "Netlify deployment"
+      "Fully Responsive Design: Optimal viewing experience on desktops, tablets, and mobile devices.",
+      "Detailed Project Showcase: Features project descriptions, images, and videos via interactive modals.",
+      "Project Filtering: Allows users to easily browse projects by category.",
+      "Clean, Modern UI: Built with React, TypeScript, and Tailwind CSS for a polished look and feel.",
+      "User-Friendly Interface: Intuitive navigation and a smooth Browse experience.",
     ],
     year: "Sept 2022",
     githubUrl: "https://github.com/pascalcyusa/portfolio2",

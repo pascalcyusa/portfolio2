@@ -1,7 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import Summary from "@/components/Summary";
-import PortfolioGrid from "@/components/PortfolioGrid";
+import ProjectGrid from "@/components/ProjectGrid";
 import Footer from "../components/Footer";
 
 const Index = () => {
@@ -15,7 +15,7 @@ const Index = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
             <h2 className="text-4xl font-bold mb-8 text-center">PROJECTS</h2>
           </div>
-          <PortfolioGrid />
+          <ProjectGrid />
         </div>
       </div>
       <Footer />

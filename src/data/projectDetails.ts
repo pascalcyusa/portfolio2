@@ -8,7 +8,7 @@ interface Photo {
 
 const photos: Photo[] = googlePhotosData;
 
-export interface PortfolioDetail {
+export interface ProjectDetail {
   title: string;
   content: string;
   id: string;
@@ -22,13 +22,13 @@ export interface PortfolioDetail {
   }[];
   technicalDetails: string[];
   personalContribution?: string[];
-  challenges: string[];
+  challenges?: string[];
   outcomes?: string[];
   futureImprovements?: string[];
   pdfUrl?: string;
 }
 
-export const portfolioDetails: PortfolioDetail[] = [
+export const projectDetails: ProjectDetail[] = [
   // pokemon-cafe
   {
     title: "Pokémon Cafe (Final Project)",
@@ -625,7 +625,7 @@ export const portfolioDetails: PortfolioDetail[] = [
     "id": "social-networking-app",
     "images": [
       {
-        "url": "/images/social-networking-app/img3.png",
+        "url": "/images/social-networking-app/icon.png",
         "caption": "App Icon"
       },
       {
@@ -704,7 +704,7 @@ export const portfolioDetails: PortfolioDetail[] = [
   {
     id: "personal-website",
     title: "Portfolio",
-    content: "A modern, responsive portfolio website built using React and TypeScript, showcasing professional experience and projects. The site features a clean, user-friendly design with optimal performance and accessibility considerations.",
+    content: "A modern, responsive portfolio website that features a clean and user-friendly design.",
     images: [
       {
         url: "/images/personal-website/img3.png",
@@ -716,27 +716,35 @@ export const portfolioDetails: PortfolioDetail[] = [
       }
     ],
     technicalDetails: [
-      "React 18 with TypeScript",
-      "Tailwind CSS for styling",
-      "Responsive design implementation",
-      "SEO optimization",
-      "Performance optimization techniques",
-      "Automated deployment pipeline"
+      "Frontend Stack: Built with React and TypeScript for a robust, modern foundation.",
+      "Styling: Utility-first styling using Tailwind CSS, enhanced with shadcn/ui components.",
+      "Architecture: Component-based, Single-Page Application (SPA) using client-side routing for seamless navigation.",
+      "Build & Development: Utilizes Vite for optimized builds and a fast development workflow.",
+      "Performance: Leverages dynamic imports ('code splitting') to improve initial page load speed.",
+      "Version Control: Source code managed with Git and hosted on GitHub.",
     ],
     challenges: [
-      "Ensuring cross-browser compatibility",
-      "Optimizing load times",
-      "Implementing responsive design",
-      "Managing state effectively",
-      "Maintaining code organization"
+      "Designing a cohesive and visually appealing UI to effectively present diverse content (projects, research).",
+      "Achieving fluid responsiveness across a wide range of screen sizes and devices.",
+      "Structuring project and research data in a scalable way for easy updates.",
+      "Optimizing the loading of assets, particularly high-resolution images, for fast performance.",
+      "Ensuring smooth application state management for interactive elements like modals and filtering.",
     ],
     outcomes: [
-      "Achieved 95+ PageSpeed score",
-      "Implemented fully responsive design",
-      "Created maintainable component structure",
-      "Established efficient deployment workflow",
-      "Integrated analytics tracking"
+      "Successfully launched a professional and polished personal portfolio website.",
+      "Effectively showcases technical skills, completed projects, and research experience.",
+      "Demonstrates expertise in modern frontend development technologies (React, TypeScript, Tailwind CSS).",
+      "Achieved a responsive, performant, and user-friendly design.",
+      "Developed a maintainable and extensible codebase suitable for future updates.",
     ],
-    futureImprovements: undefined
+    futureImprovements: [
+      "Adding a Blog/Articles section to share technical insights and updates.",
+      "Implementing user-selectable Dark/Light mode theme options.",
+      "Integrating backend functionality for features like a dynamic contact form.",
+      "Connecting to a Headless CMS for easier content management.",
+      "Enhancing the user experience with subtle animations and micro-interactions.",
+      "Implementing further Search Engine Optimization (SEO) techniques.",
+      "Adding ability to host images through a hosting service instead of within the repo.",
+    ]
   }
 ];

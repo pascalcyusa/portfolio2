@@ -1,5 +1,5 @@
 import React from 'react';
-import { PortfolioDetail } from '../data/portfolioDetails';
+import { ProjectDetail } from '../data/projectDetails';
 import { FaFilePdf } from 'react-icons/fa'; // Import a PDF icon from a library like react-icons
 
 interface ProjectModalProps {
@@ -9,7 +9,7 @@ interface ProjectModalProps {
 }
 
 export const ProjectModal: React.FC<ProjectModalProps> = ({ isOpen, onClose, projectId }) => {
-  const [details, setDetails] = React.useState<PortfolioDetail | null>(null);
+  const [details, setDetails] = React.useState<ProjectDetail | null>(null);
   const [selectedImageIndex, setSelectedImageIndex] = React.useState<number | null>(null);
 
   const handleImageClick = (index: number) => {
@@ -54,9 +54,9 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ isOpen, onClose, pro
   React.useEffect(() => {
     if (isOpen && projectId) {
       // Import details dynamically
-      import('../data/portfolioDetails').then(({ portfolioDetails }) => {
-        const projectDetails = portfolioDetails.find(p => p.id === projectId);
-        setDetails(projectDetails || null);
+      import('../data/projectDetails').then(({ projectDetails }) => {
+        const projectFieldDetails = projectDetails.find(p => p.id === projectId);
+        setDetails(projectFieldDetails || null);
       });
     }
   }, [isOpen, projectId]);

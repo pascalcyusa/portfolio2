@@ -1,14 +1,14 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import { portfolioData } from "@/data/portfolioData";
+import { projectData } from "@/data/projectData";
 
-const PortfolioGrid = () => {
+const ProjectGrid = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {portfolioData.map((item, index) => (
-          <div 
-            key={item.id} 
+        {projectData.map((item, index) => (
+          <div
+            key={item.id}
             className="portfolio-item"
             style={{
               animation: `fade-in 0.5s ease-out ${index * 0.2}s`,
@@ -38,4 +38,4 @@ const PortfolioGrid = () => {
   );
 };
 
-export default PortfolioGrid;
+export default ProjectGrid;
