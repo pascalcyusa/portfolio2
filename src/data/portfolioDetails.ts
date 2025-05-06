@@ -48,7 +48,7 @@ export const portfolioDetails: PortfolioDetail[] = [
         caption: "Complete setup with the order website"
       },
       {
-        url: "/images/pokemon-cafe/img4.jpeg",
+        url: "/images/pokemon-cafe/img4.png",
         caption: "The orders in airtable"
       }
     ],
