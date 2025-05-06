@@ -222,7 +222,7 @@ export const portfolioData: PortfolioItem[] = [
     id: "social-networking-app",
     title: "Zina",
     category: "Web Development",
-    image: "/images/social-networking-app/icon.png",
+    image: "/images/social-networking-app/img3.png",
     description: "Zina is a social networking application designed to help users manage and visualize their personal and professional connections. The app allows users to add, edit, and delete contacts, and provides a graphical representation of their network.",
     features: [
       "Manage a list of contacts with add, edit, and delete functionality",

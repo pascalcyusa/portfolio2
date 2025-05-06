@@ -4,15 +4,17 @@ const Hero = () => {
   return (
     <div className="relative h-[63vh] w-full overflow-hidden">
       {/* Video */}
-      <iframe
-        src="https://www.youtube.com/embed/pDoqdQYS55g?start=180&end=480&autoplay=1&mute=1&loop=1&playlist=pDoqdQYS55g&controls=0"
-        className="absolute inset-0 h-full w-full object-cover"
-        style={{ border: 'none' }}
-        allowFullScreen
-      ></iframe>
-
+      <div className="absolute inset-0 w-full h-full">
+        <iframe
+          src="https://www.youtube.com/embed/_pSYopTb36M?start=25&end=114&autoplay=1&mute=1&loop=1&playlist=_pSYopTb36M&controls=0"
+          className="w-[177.78vh] h-full min-w-full min-h-full absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+          style={{ border: 'none' }}
+          allow="autoplay; fullscreen; encrypted-media"
+          allowFullScreen
+          title="CNC Machining Video"
+        ></iframe>
+      </div>
       <div className="absolute inset-0 bg-black/30" />
-
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight text-white mb-4 break-words sm:whitespace-nowrap">
           Jean Pascal Cyusa Shyaka

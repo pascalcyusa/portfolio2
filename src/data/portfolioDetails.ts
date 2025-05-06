@@ -46,6 +46,10 @@ export const portfolioDetails: PortfolioDetail[] = [
       {
         url: "/images/pokemon-cafe/img3.jpeg",
         caption: "Complete setup with the order website"
+      },
+      {
+        url: "/images/pokemon-cafe/img4.jpeg",
+        caption: "The orders in airtable"
       }
     ],
     videos: [
@@ -616,6 +620,10 @@ export const portfolioDetails: PortfolioDetail[] = [
     "content": "Zina is a social networking application designed to help users manage and visualize their personal and professional connections. The app allows users to add, edit, and delete contacts, and provides a graphical representation of their network.",
     "id": "social-networking-app",
     "images": [
+      {
+        "url": "/images/social-networking-app/img3.png",
+        "caption": "App Icon"
+      },
       {
         "url": "/images/social-networking-app/img1.jpeg",
         "caption": "Main Interface"
