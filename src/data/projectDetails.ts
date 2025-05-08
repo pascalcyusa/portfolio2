@@ -11,6 +11,7 @@ const photos: Photo[] = googlePhotosData;
 export interface ProjectDetail {
   title: string;
   content: string;
+  designProcess?: string;
   id: string;
   images: {
     url: string;
@@ -98,6 +99,7 @@ export const projectDetails: ProjectDetail[] = [
   {
     title: "Navigate Back to Pewter City (Navigation Using Object Recognition)",
     content: "A iRobot ™️ Create3 ™️ programmed to navigate through a maze with 90-degree turns based on object detection.",
+    designProcess: "This project focused on navigating a maze using object detection instead of line following or predefined paths. I mounted a camera to the Create 3 robot using a custom CAD design and began writing Python code to detect objects placed in the maze. Each object acted as a directional cue. I developed a routine to turn based on object detection and tuned the turning function using sensor feedback. I tested movement, detection accuracy, and reaction timing extensively to make sure the robot handled real-time decisions reliably without needing visual markers like tape.",
     id: "navigate-to-pewter-city",
     images: [
       {
@@ -107,11 +109,7 @@ export const projectDetails: ProjectDetail[] = [
       {
         url: "/images/navigate-to-pewter-city/img4.jpeg",
         caption: undefined
-      },
-      {
-        url: "/images/navigate-to-pewter-city/img6.jpeg",
-        caption: undefined
-      },
+      }
     ],
     videos: [
       {
@@ -129,23 +127,13 @@ export const projectDetails: ProjectDetail[] = [
       "90-degree turn calibration system",
       "Real-time path adjustment capabilities",
       "Custom navigation algorithm implementation",
-      "Sensor fusion for accurate positioning"
     ],
     challenges: [
-      "Implementing precise 90-degree turns without prior directional knowledge",
-      "Developing reliable object detection at 6-inch distance",
-      "Creating adaptive navigation system for unknown object orientations",
-      "Integrating object recognition for the Nidoran challenge",
-      "Optimizing response time for real-time decision making",
-      "Ensuring consistent performance without tape or hot glue attachments"
-    ],
-    outcomes: [
-      "Successfully implemented dynamic turn decision system",
-      "Achieved accurate object detection and distance measurement",
-      "Developed robust navigation algorithm for maze completion",
-      "Created engaging final interaction at maze completion",
-      "Implemented optional Nidoran recognition capability",
-      "Demonstrated reliable performance in competition conditions"
+      "Implementing precise 90-degree turns without prior directional knowledge — I used timing and gyroscope feedback, tested it repeatedly, and adjusted motor power and time until turns became accurate.",
+      "Developing reliable object detection at 6-inch distance — I improved the camera angle, added image filters, and resized templates to improve match accuracy.",
+      "Creating adaptive navigation system for unknown object orientations — I trained the template matcher on rotated views and partial visibility.",
+      "Optimizing response time for real-time decision making — I lowered image resolution and narrowed the field of view to reduce processing lag.",
+      "Ensuring consistent performance without tape or hot glue attachments — I used 3D printed brackets and zip ties to securely hold the components."
     ],
     futureImprovements: [
       "Enhance object recognition accuracy for similar-looking objects",
@@ -159,16 +147,21 @@ export const projectDetails: ProjectDetail[] = [
   {
     title: "Gym Battle - Learning to Dodge (Airtable Remote Operation)",
     content: "A Create 3 Robot ™️ robot that can be controlled remotely using an Airtable.",
-    id: "roomba-gym-battle",
+    designProcess: "This project aimed at designing a robot remote control system. I used Airtable as a control interface, setting up a polling loop in Python to check for new commands. For remote visibility, I mounted a phone to the robot and streamed live video through Zoom to someone in a different room. That person would enter commands in Airtable to move the robot around obstacles. Since there was no direct line of sight and some network lag, I had to carefully time each command and add logic to ignore repeated inputs. The focus was making the robot easy to control even with limited feedback.",
+    id: "gym-battle",
     images: [
       {
-        url: "/images/navigate-to-pewter-city/img1.jpeg",
-        caption: undefined
+        url: "/images/navigate-to-pewter-city/img6.jpeg",
+        caption: "The Create 3 Robot"
       },
       {
-        url: "/images/navigate-to-pewter-city/img2.jpeg",
-        caption: undefined
+        url: "/images/gym-battle/img1.jpeg",
+        caption: "Airtable Commands"
       },
+      {
+        url: "/images/gym-battle/img2.jpg",
+        caption: "Obstacles in the robot's path"
+      }
     ],
     videos: [
       {
@@ -179,21 +172,15 @@ export const projectDetails: ProjectDetail[] = [
     technicalDetails: [
       "Create 3 robot integration",
       "Airtable-based remote control system",
-      "Real-time camera streaming setup",
+      "Phone-based Zoom video streaming setup",
       "Obstacle detection and avoidance logic",
       "Remote command processing and execution"
     ],
     challenges: [
-      "Implementing reliable remote control through Airtable",
-      "Setting up stable video streaming from Nolop",
-      "Coordinating robot movement without direct visual contact",
-      "Managing network latency and command timing"
-    ],
-    outcomes: [
-      "Successfully implemented remote robot control system",
-      "Achieved reliable obstacle avoidance in maze navigation",
-      "Established effective remote visual feedback system",
-      "Demonstrated remote operation capabilities"
+      "Implementing reliable remote control through Airtable — I added time stamps and cleared commands after execution to prevent duplicates.",
+      "Setting up stable video streaming using a phone — I used a phone mounted to the robot and streamed live to a Zoom call for visual feedback.",
+      "Coordinating robot movement without direct visual contact — I tuned command durations and spaced them out with buffer times.",
+      "Managing network latency and command timing — I tested in different network conditions and adjusted timing to reduce delays."
     ],
     futureImprovements: [
       "Enhance command response time and precision",
@@ -208,19 +195,16 @@ export const projectDetails: ProjectDetail[] = [
   {
     title: "Traverse Victory Road (Camera Line Follower)",
     content: "A line-following robot designed to navigate paths using a Pi Camera for line detection. ",
+    designProcess: "This project used computer vision to detect a black line on the floor with a Pi Camera. I used OpenCV for image processing and programmed a proportional controller to adjust steering based on the line's center. Early tests showed inconsistent performance due to lighting changes, so I adjusted the camera angle and image resolution. I also tested different thresholding techniques and created a simple line recovery system. Most of the debugging came from trying things over and over — watching the robot fail, and tweaking small parts of the code until it worked better.",
     id: "camera-line-follower",
     images: [
       {
         url: "/images/camera-line-follower/img1.jpeg",
-        caption: undefined
-      },
-      {
-        url: "/images/camera-line-follower/img2.jpeg",
-        caption: undefined
+        caption: "Robot's side view"
       },
       {
         url: "/images/camera-line-follower/img3.jpeg",
-        caption: undefined
+        caption: "Robot's top view"
       }
     ],
     videos: [
@@ -231,30 +215,22 @@ export const projectDetails: ProjectDetail[] = [
     ],
     technicalDetails: [
       "Developed in Python on a Raspberry Pi platform.",
-      "Utilizes key libraries: OpenCV for image processing, RPi.GPIO for hardware control.",
+      "Libraries: OpenCV for image processing, RPi.GPIO for hardware control.",
       "Core hardware: Raspberry Pi, PiCamera, motors, motor driver.",
       "Control System: Simple proportional control based on the detected line's center position.",
       "Motor Management: Controls speed via PWM and direction via digital signals."
     ],
     challenges: [
-      "Sensitivity to variations in ambient lighting and shadows.",
-      "Difficulty navigating complex line features like sharp turns or breaks.",
-      "Requires careful manual tuning of vision and control parameters.",
-      "Balancing robot speed against real-time processing limitations.",
-      "Basic error recovery strategy when the line is lost."
-    ],
-    outcomes: [
-      "Successfully built a Raspberry Pi robot that autonomously follows a visual line.",
-      "Demonstrated practical application of real-time computer vision for robotic navigation.",
-      "Robot effectively steers to maintain its course along the detected line."
+      "Sensitivity to variations in ambient lighting and shadows — I used adaptive thresholding and filtering to stabilize detection.",
+      "Difficulty navigating complex line features like sharp turns or breaks — I increased the region of interest and added a recovery routine.",
+      "Balancing robot speed against real-time processing limitations — I reduced frame rate and matched motor speed with image processing delay.",
+      "Basic error recovery strategy when the line is lost — I added a fallback routine where the robot slowly rotates to search for the line."
     ],
     futureImprovements: [
       "Enhance steering precision and smoothness using PID control.",
-      "Improve robustness to lighting conditions (adaptive thresholding/color filtering).",
       "Develop smarter line recovery strategies (e.g., search patterns).",
       "Improve turn anticipation by analyzing the path further ahead.",
       "Integrate distance sensors for obstacle detection and avoidance.",
-      "Add a calibration routine for easier parameter tuning."
     ],
     pdfUrl: undefined
   },
@@ -264,32 +240,12 @@ export const projectDetails: ProjectDetail[] = [
     id: "IR-line-follower",
     title: "Scout A Route (IR Line Follower)",
     content: "This robot follows a line using an IR sensor.",
+    designProcess: "The goal here was to follow a black line using an IR sensor and basic hardware. I started by placing the sensor too high, so readings were bad. I tested different mounting heights and angles until the readings were more stable. Since we were limited to the course kit, I built the chassis using simple parts and focused on getting one thing right — following the line accurately. I attempted two of the three paths, and the robot managed to follow the line without any issues.",
     images: [
       {
         url: "/images/IR-line-follower/img1.png",
-        caption: "Assembled IR line follower"
+        caption: "Assembled IR line follower robot"
       }
-    ],
-    technicalDetails: [
-      "IR sensor for line detection",
-      "Predefined path selection",
-      "Stepper motor control for movement",
-      "Utilization of course kit materials"
-    ],
-    challenges: [
-      "Ensuring accurate line following",
-      "Adhering to project constraints",
-      "Efficient use of available resources"
-    ],
-    outcomes: [
-      "Successful line following demonstration",
-      "Compliance with project constraints",
-      "Effective use of provided materials"
-    ],
-    futureImprovements: [
-      "Enhancing sensor accuracy",
-      "Exploring alternative path algorithms",
-      "Improving speed and efficiency"
     ],
     videos: [
       {
@@ -300,6 +256,22 @@ export const projectDetails: ProjectDetail[] = [
         url: "https://youtu.be/IzmCanhjyl0",
         caption: undefined
       }
+    ],
+    technicalDetails: [
+      "IR sensors detect black line using GPIO input (active low)",
+      "Two DC motors controlled with PWM for variable speed",
+      "Differential steering via independent motor control (left/right turn logic)",
+      "Implemented using RPi.GPIO in BOARD mode",
+      "Control loop with 10ms refresh for smooth navigation response"
+    ],
+    challenges: [
+      "Ensuring accurate line following — I adjusted the sensor height and motor speed after trial runs to improve responsiveness.",
+      "Adhering to project constraints — I limited parts to the course kit and built mounts using provided materials.",
+    ],
+    futureImprovements: [
+      "Enhancing sensor accuracy",
+      "Exploring alternative path algorithms",
+      "Improving speed and efficiency"
     ]
   },
 
@@ -308,6 +280,7 @@ export const projectDetails: ProjectDetail[] = [
     id: "pokemon-ball-sorter",
     title: "Pokémon Ball Sorter",
     content: "A robot that automatically detects and sorts colored balls using color detection and servo positioning.",
+    designProcess: "I designed this robot to sort Poké Balls by color using an RGB sensor and servo motor. My first tests were checking how reliable the color sensor was, especially under classroom lighting conditions. Once I locked in the thresholds, I connected a servo that would rotate to the correct box based on the color detected. The early version dropped balls in the wrong spots, so I reworked the servo timing and adjusted bin positions. It took a bunch of trial runs to get it all working together.",
     images: [
       {
         url: "/images/pokemon-ball-sorter/cad2.png",
@@ -333,11 +306,10 @@ export const projectDetails: ProjectDetail[] = [
       "Servo returns to rest position after each sort"
     ],
     challenges: [
-      "Calibrating the color sensor to work in most lighting conditions",
-      "Implementing a very accurate sorting mechanism",
-      "Making sure all processes are running smoothly and that the ball feeding mechanism doesn't jam"
+      "Calibrating the color sensor to work in most lighting conditions — I tested readings under different lights and set thresholds based on averaged values.",
+      "Implementing a very accurate sorting mechanism — I fine-tuned servo angles through trial and error and matched each color to a specific bin.",
+      "Making sure all processes are running smoothly and that the ball feeding mechanism doesn't jam — I narrowed the feed ramp and added delays to space out ball entry."
     ],
-    outcomes: undefined,
     futureImprovements: [
       "Currently the robot doesn't accurately place balls to the corresponfing color bin. We plan to calibrate the servo to make sure it moves each ball to the correct slot"
     ]
@@ -347,6 +319,7 @@ export const projectDetails: ProjectDetail[] = [
     id: "pokemon-gripper",
     title: "Pokémon Ball Gripper",
     content: "Mechanical gripper system designed to safely handle and transport a Poké Ball using stepper motor actuation.",
+    designProcess: "I wanted to make a mechanical system that could pick up and move a Poké Ball without dropping it. Our group decided on using a pulley system to control the gripper cups, and I adjusted motor timing in the code. Most of the design choices came down to trial and improvement — watching the robot fail, then changing a part until it got better.",
     images: [
       {
         url: "/images/pokemon-gripper/cad.png",
@@ -358,17 +331,14 @@ export const projectDetails: ProjectDetail[] = [
       }
     ],
     technicalDetails: [
-      "Custom-designed 3D printed components using PLA material",
-      "Raspberry Pi 4 Model B",
+      "Custom-designed linkage and gear system",
       "NEMA 17 stepper motors with 1.8° step angle",
-      "Custom pulley system for closing and opening the gripper cups",
+      "Pulley system for closing and opening the gripper cups",
     ],
     challenges: [
-      "Maintaining consistent grip during horizontal movement",
-      "Minimizing system weight while ensuring structural integrity",
-      "Calibrating the stepper motors to make sure they operate correctly",
+      "Maintaining consistent grip during horizontal movement — I increased pulley tension and tested the system under motion to keep the grip secure.",
+      "Calibrating the stepper motors to make sure they operate correctly — I wrote a script to sync motor start positions and adjusted timing."
     ],
-    outcomes: undefined,
     futureImprovements: [
       "Integration with computer vision for autonomous operation",
       "Wireless control capabilities",

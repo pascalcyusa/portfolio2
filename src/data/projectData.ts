@@ -48,22 +48,22 @@ export const projectData: ProjectItem[] = [
     year: "Spring 2025",
     githubUrl: "https://github.com/pascalcyusa/navigate-to-pewter-city"
   },
-  // roomba-gym-battle
+  // gym-battle
   {
-    id: "roomba-gym-battle",
+    id: "gym-battle",
     title: "Gym Battle - Learning to Dodge (Airtable Remote Operation)",
     category: "ME35 / Simple Robotics",
     image: "/images/navigate-to-pewter-city/img6.jpeg",
     description: "A iRobot ™️ Create3™️ that can be controlled remotely using Airtable.",
     features: [
-      "Remote control through Airtable integration",
-      "Real-time visual feedback via camera streaming",
-      "Obstacle avoidance navigation",
-      "Create 3 command interface",
-      "Remote operation from classroom to Nolop"
+      "Remote control via Airtable with real-time feedback",
+      "Live video streaming using phone and Zoom",
+      "Obstacle avoidance logic built into robot behavior",
+      "Command timing and processing loop in Python",
+      "Tested across rooms with no direct line of sight"
     ],
     year: "Spring 2025",
-    githubUrl: undefined
+    githubUrl: "https://github.com/pascalcyusa/gym-battle"
   },
   // camera-line-follower
   {
@@ -91,10 +91,11 @@ export const projectData: ProjectItem[] = [
     image: "/images/IR-line-follower/img1.png",
     description: "This robot follows a line using an IR sensor.",
     features: [
-      "Use of provided IR sensor for line following",
-      "Selection from 3 predefined paths",
-      "Compliance with project constraints",
-      "Utilization of course kit materials and additional resources"
+      "Use an IR sensor for real-time line detection",
+      "Control two DC motors with PWM-based speed tuning",
+      "Selection from 3 predefined paths with varying difficulty levels",
+      "Implements basic turning logic based on sensor feedback",
+      "Uses GPIO input readings for direct line interaction"
     ],
     year: "Spring 2025",
     githubUrl: "https://github.com/pascalcyusa/IR-line-follower",
@@ -129,7 +130,7 @@ export const projectData: ProjectItem[] = [
       "Custom-designed linkage and gear system",
       "Stepper motor-controlled actuation",
       "2ft transport capability",
-      "Non-contact ball manipulation"
+      "Pulley system for closing and opening the gripper cups"
     ],
     year: "Spring 2025",
     githubUrl: "https://github.com/pascalcyusa/Pokemon-Gripper",

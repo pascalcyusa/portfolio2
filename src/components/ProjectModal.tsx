@@ -160,6 +160,12 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ isOpen, onClose, pro
           </div>
         )}
 
+        {details.designProcess && (
+          <div className="mb-8">
+            <p className="mb-6 text-gray-700">{details.designProcess}</p>
+          </div>
+        )}
+
         {details.technicalDetails && (
           <div className="mb-8">
             <h3 className="text-xl font-semibold mb-3">Technical Details</h3>

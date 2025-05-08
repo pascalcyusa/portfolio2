@@ -1,10 +1,10 @@
 import { ArrowUpRight } from "lucide-react";
-import { PortfolioItem } from "@/data/portfolioData";
+import { ProjectItem } from "@/data/projectData";
 import { useState } from "react";
 import { ProjectModal } from "./ProjectModal";
 
 interface ProjectEntryProps {
-  project: PortfolioItem;
+  project: ProjectItem;
   isReversed: boolean;
 }
 
