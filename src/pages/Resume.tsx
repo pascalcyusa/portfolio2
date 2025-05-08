@@ -11,7 +11,7 @@ const Resume = () => {
             src="https://tufts.app.box.com/embed/s/9pzi0bz9fvg906gihf2uxnzhy0iiaf88?sortColumn=date"
             className="w-full h-[calc(100vh-120px)] border-0"
             title="Resume PDF"
-            frameBorder="0"
+            style={{ border: 'none' }}
             allowFullScreen={true}
             allow="fullscreen"
           />

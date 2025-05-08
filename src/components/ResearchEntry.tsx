@@ -55,7 +55,7 @@ const ResearchEntry = ({ research, isReversed }: ResearchEntryProps) => {
                                     onMouseOver={(e) => e.currentTarget.style.color = '#e3cdb8'}
                                     onMouseLeave={(e) => e.currentTarget.style.color = '#a5c8cf'}
                                 >
-                                    GitHub <ArrowUpRight className="ml-1 h-4 w-4" />
+                                    Publication <ArrowUpRight className="ml-1 h-4 w-4" />
                                 </a>
                             )}
                             <button
