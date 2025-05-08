@@ -1,36 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+
 @layer base {
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
-    
+
     --popover: 222.2 13% 19%;
     --popover-foreground: 195 24% 73%;
- 
+
     --primary: 195 24% 73%;
     --primary-foreground: 222.2 13% 19%;
- 
+
     --secondary: 25 38% 81%;
     --secondary-foreground: 222.2 13% 19%;
- 
+
     --muted: 223 13% 25%;
     --muted-foreground: 195 24% 73%;
- 
+
     --accent: 25 38% 81%;
     --accent-foreground: 222.2 13% 19%;
- 
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 195 24% 73%;
 
     --border: 195 24% 73%;
     --input: 195 24% 73%;
     --ring: 195 24% 73%;
- 
+
     --radius: 0.5rem;
   }
 
@@ -122,6 +122,7 @@
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -136,15 +137,19 @@
   0% {
     transform: scale(1.2) translate(0, 0);
   }
+
   25% {
     transform: scale(1.2) translate(-5%, 0);
   }
+
   50% {
     transform: scale(1.2) translate(0, -5%);
   }
+
   75% {
     transform: scale(1.2) translate(5%, 0);
   }
+
   100% {
     transform: scale(1.2) translate(0, 0);
   }
@@ -152,4 +157,31 @@
 
 .animate-pan {
   animation: pan 20s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(3px, -5px);
+  }
+
+  50% {
+    transform: translate(0, -8px);
+  }
+
+  75% {
+    transform: translate(-3px, -5px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.animate-float {
+  animation: float 12s ease-in-out infinite;
+  transform-origin: center center;
 }

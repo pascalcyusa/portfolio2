@@ -3,16 +3,22 @@ import { Cog } from "lucide-react";
 const Hero = () => {
   return (
     <div className="relative h-[63vh] w-full overflow-hidden">
-      {/* Video */}
-      <div className="absolute inset-0 w-full h-full">
-        <iframe
+      <div className="absolute inset-0 w-full h-full overflow-hidden">
+        {/* Hero Video */}
+        {/* <iframe
           src="https://www.youtube.com/embed/_pSYopTb36M?start=25&end=114&autoplay=1&mute=1&loop=1&playlist=_pSYopTb36M&controls=0"
           className="w-[177.78vh] h-full min-w-full min-h-full absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
           style={{ border: 'none' }}
           allow="autoplay; fullscreen; encrypted-media"
           allowFullScreen
           title="CNC Machining Video"
-        ></iframe>
+        ></iframe> */}
+        {/* Hero Image*/}
+        <img
+          src="/images/hero-bg.jpeg"
+          alt="Homepage background"
+          className="object-cover object-center w-full h-full animate-float"
+        />
       </div>
       <div className="absolute inset-0 bg-black/30" />
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center">

@@ -42,7 +42,7 @@ const Summary = () => {
         </div>
         <div className="flex-1 flex items-center justify-center text-center md:text-left space-y-4">
           {/* <h2 className="text-2xl md:text-3xl font-bold">Pascal Cyusa</h2> */}
-          <p className="text-lg md:text-xl lg:text-2xl text-center text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl lg:text-2xl text-justify text-gray-600 max-w-2xl mx-auto">
             I'm Pascal, a rising junior at Tufts University majoring in Mechanical Engineering and a minor in Computer Science. My interests range from robotics, MEMS devices, and building web applications.
             Outside the classroom, I love playing soccer and I enjoy watching sci-fi/thriller movies and series.
           </p>
