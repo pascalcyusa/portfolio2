@@ -30,11 +30,11 @@ const ResearchEntry = ({ research, isReversed }: ResearchEntryProps) => {
                     <h2 className="text-3xl font-bold mb-4">{research.title}</h2>
                     <p className="text-gray-700 mb-4">{research.description}</p>
 
-                    {research.features && research.features.length > 0 && (
+                    {research.overview && research.overview.length > 0 && (
                         <div className="bg-gray-50 p-4 rounded-lg max-w-md mb-6">
-                            <h3 className="font-semibold mb-2 text-sm">Key Features</h3>
+                            <h3 className="font-semibold mb-2 text-sm">Overview</h3>
                             <ul className="space-y-1 text-gray-600 text-sm">
-                                {research.features.map((feature, i) => (
+                                {research.overview.map((feature, i) => (
                                     <li key={i}>• {feature}</li>
                                 ))}
                             </ul>

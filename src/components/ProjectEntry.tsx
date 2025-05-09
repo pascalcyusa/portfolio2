@@ -31,9 +31,9 @@ const ProjectEntry = ({ project, isReversed }: ProjectEntryProps) => {
           <p className="text-gray-700 mb-4">{project.description}</p>
 
           <div className="bg-gray-50 p-4 rounded-lg max-w-md mb-6">
-            <h3 className="font-semibold mb-2 text-sm">Key Features</h3>
+            <h3 className="font-semibold mb-2 text-sm">Overview</h3>
             <ul className="space-y-1 text-gray-600 text-sm">
-              {project.features.map((feature, i) => (
+              {project.overview.map((feature, i) => (
                 <li key={i}>• {feature}</li>
               ))}
             </ul>

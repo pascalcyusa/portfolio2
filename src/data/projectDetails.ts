@@ -108,7 +108,15 @@ export const projectDetails: ProjectDetail[] = [
       },
       {
         url: "/images/navigate-to-pewter-city/img4.jpeg",
-        caption: undefined
+        caption: "Front view of the Create 3 Robot"
+      },
+      {
+        url: "/images/navigate-to-pewter-city/img7.png",
+        caption: "CAD Model of the camera mount"
+      },
+      {
+        url: "/images/navigate-to-pewter-city/img9.jpeg",
+        caption: "Objects to be detected"
       }
     ],
     videos: [
@@ -550,12 +558,12 @@ export const projectDetails: ProjectDetail[] = [
     content: "An innovative educational initiative combining LEGO Mindstorms with Arduino technology to create engaging STEM learning experiences for students. The project focused on hands-on learning and practical application of programming concepts.",
     images: [
       {
-        url: "/images/lego-arduino/ceeo1.jpg",
-        caption: "Robot car controlled with Arduino"
+        url: "/images/ceeo-outreach/img5.jpeg",
+        caption: "Robot car controlled with SPIKE Prime ™️ Hub"
       },
       {
-        url: "/images/lego-arduino/ceeo2.jpg",
-        caption: "Student project showcase"
+        url: "/images/ceeo-outreach/img1.jpeg",
+        caption: undefined
       }
     ],
     technicalDetails: [
@@ -563,7 +571,6 @@ export const projectDetails: ProjectDetail[] = [
       "LEGO Mindstorms EV3 platform",
       "Python programming with ev3dev",
       "Custom sensor integration modules",
-      "Wireless communication implementation",
       "Interactive learning materials"
     ],
     challenges: [
@@ -637,8 +644,8 @@ export const projectDetails: ProjectDetail[] = [
     content: "Terminal-based implementation of the Splendor board game in C++.",
     images: [
       {
-        url: "/images/splendor-game/img1.png",
-        caption: "Terminal gameplay interface"
+        url: "/images/splendor-game/img2.png",
+        caption: "Mockup of the terminal gameplay interface"
       }
     ],
     technicalDetails: [
