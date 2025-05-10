@@ -4,10 +4,12 @@ import { Separator } from "@/components/ui/separator";
 import ProjectEntry from "@/components/ProjectEntry";
 import { projectData } from "@/data/projectData";
 import { FilterBadge } from "@/components/ui/filter-badge";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const Projects = () => {
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
+  const location = useLocation();
 
   // Get unique categories from projectData
   const categories = Array.from(new Set(projectData.map(project => project.category)));
@@ -24,6 +26,16 @@ const Projects = () => {
         : [...prev, category]
     );
   };
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace("#", "");
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location.hash]);
 
   return (
     <div className="min-h-screen flex flex-col justify-between">
@@ -44,7 +56,7 @@ const Projects = () => {
           </div>
 
           {filteredProjects.map((project, index) => (
-            <div key={project.id} id={project.id}>
+            <div key={project.id}>
               <ProjectEntry
                 project={project}
                 isReversed={index % 2 === 0}

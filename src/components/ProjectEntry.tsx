@@ -12,7 +12,7 @@ const ProjectEntry = ({ project, isReversed }: ProjectEntryProps) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <div className="mb-20">
+    <div id={project.id} className="mb-20">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-8">
         <div className={`${isReversed ? "md:order-2" : "md:order-1"}`}>
           <div
