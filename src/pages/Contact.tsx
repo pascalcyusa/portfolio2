@@ -11,11 +11,31 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    window.location.href = `mailto:cyusashyakapascal@gmail.com?subject=Portfolio Contact&body=${message}`;
-    setEmail("");
-    setMessage("");
+
+    const formData = new FormData(e.currentTarget);
+    const body = new URLSearchParams();
+    for (const [key, value] of formData.entries()) {
+      body.append(key, value as string);
+    }
+
+    try {
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: body.toString(),
+      });
+      // Optionally, show a success message to the user here
+      // For example, using a toast notification or setting a state variable
+      alert("Message sent successfully!"); 
+      setEmail("");
+      setMessage("");
+    } catch (error) {
+      // Optionally, show an error message to the user here
+      alert("Error sending message. Please try again.");
+      console.error("Form submission error:", error);
+    }
   };
 
   return (
@@ -60,9 +80,17 @@ const Contact = () => {
                 </div>
               </div>
 
-              <form onSubmit={handleSubmit} className="flex-grow flex flex-col gap-4">
+              <form 
+                name="contact" 
+                method="POST" 
+                data-netlify="true" 
+                onSubmit={handleSubmit} 
+                className="flex-grow flex flex-col gap-4"
+              >
+                <input type="hidden" name="form-name" value="contact" />
                 <Input
                   type="email"
+                  name="email" // Added name attribute
                   placeholder="Your Email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
@@ -70,6 +98,7 @@ const Contact = () => {
                   className="bg-gray-50"
                 />
                 <Textarea
+                  name="message" // Added name attribute
                   placeholder="Your Message"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
