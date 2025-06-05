@@ -2,8 +2,9 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 const Resume = () => {
-  // https://drive.google.com/file/d/1s3L5grvRg_KRZl2agJieaTiFwRV5NHoV/view?usp=sharing
-  const googleDriveFileId = "1s3L5grvRg_KRZl2agJieaTiFwRV5NHoV";
+  // https://drive.google.com/file/d/1bu-mJW9SFioMDwHTTl5-MDVr7xDeS7L6/view?usp=drive_link
+
+  const googleDriveFileId = "1bu-mJW9SFioMDwHTTl5-MDVr7xDeS7L6";
   const googleDriveEmbedUrl = `https://drive.google.com/file/d/${googleDriveFileId}/preview`;
 
   return (
