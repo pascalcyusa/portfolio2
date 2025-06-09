@@ -63,25 +63,24 @@ export const projectDetails: ProjectDetail[] = [
       "Software Tools: Used common software for robot control, computer vision (seeing), web communication, and interacting with the hardware.",
       "Navigation Method: Followed a line on the floor using infrared sensors and spotted station locations using a camera looking for colored markers.",
       "Finding Stations: Recognized stations by seeing colored markers and counting them in order along the path.",
-      "Getting Orders: Connected to an online spreadsheet (Airtable) to receive pancake orders and update the robot's progress.",
+      "Getting Orders: Connected to Airtable to receive pancake orders and update the robot's progress.",
       "Task Tracking: Kept track of what the robot was doing (like moving, waiting, or idle) using a simple internal system."
     ],
     personalContribution: [
-      "Online Order System: Built the connection to the online spreadsheet (Airtable) so the robot could get orders and send back status updates.",
+      "Online Order System: Built the connection to Airtable so the robot could get orders and send back status updates.",
       "Station Spotting: Programmed the robot's camera vision to recognize the colored markers identifying each station.",
       "Line Following: Wrote the main code that allowed the robot to follow the line on the floor using its sensors and steer correctly."
     ],
     challenges: [
       "Reliable Station Identification: Relying only on color and counting made it tricky if the robot missed a marker.",
       "Robust Line Following: Making sure the robot stayed on the line reliably, especially if the path wasn't perfect.",
-      "Teamwork Between Systems: Coordinating the transport robot with other automated parts of the pancake maker via the online spreadsheet.",
+      "Teamwork Between Systems: Coordinating the transport robot with other automated parts of the pancake maker via the online.",
       "Consistent Color Vision: Ensuring the robot saw colors correctly even if lighting changed.",
-      "Real-time Updates: Getting status updates to and from the online spreadsheet quickly enough.",
-      "Handling Glitches: Creating basic backups for when hardware or communication failed."
+      "Real-time Updates: Getting status updates to and from Airtable quickly enough."
     ],
     outcomes: [
       "Built a Working Transport Robot: The robot successfully moved between stations using line following and camera vision.",
-      "Connected to Order System: Successfully linked the robot to the online spreadsheet for orders and status updates.",
+      "Connected to Order System: Successfully linked the robot to Airtable for orders and status updates.",
       "Part of a Full Automated System: Showcased how the transport robot worked within the complete automated pancake-making process (as part of a team effort).",
       "Followed Order Steps: The robot visited the necessary stations in the right sequence for each order.",
       "Completed Project Goal: Delivered a functional robot system for the final class presentation."
@@ -90,8 +89,7 @@ export const projectDetails: ProjectDetail[] = [
       "Smarter Station Signs: Use QR codes or similar unique markers instead of just colors so the robot always knows exactly which station it's at.",
       "Better Navigation Skills: Give the robot better ways to understand its location (like mapping) to handle complex paths or getting lost.",
       "Smarter Error Handling: Teach the robot better ways to recover if it gets stuck or loses the line.",
-      "Faster Communication: Allow the robot to talk directly to stations instead of only through the online spreadsheet.",
-      "Improved Controls: Create a better interface for ordering pancakes and watching the robot.",
+      "Faster Communication: Allow the robot to talk directly to stations instead of only through Airtable.",
       "More Robots: Design the system to potentially handle multiple delivery robots at once."
     ]
   },
@@ -154,7 +152,7 @@ export const projectDetails: ProjectDetail[] = [
   // roomba-gym-battle
   {
     title: "Gym Battle - Learning to Dodge (Airtable Remote Operation)",
-    content: "A Create 3 Robot ™️ robot that can be controlled remotely using an Airtable.",
+    content: "A Create 3 Robot ™️ robot that can be controlled remotely using Airtable.",
     designProcess: "This project aimed at designing a robot remote control system. I used Airtable as a control interface, setting up a polling loop in Python to check for new commands. For remote visibility, I mounted a phone to the robot and streamed live video through Zoom to someone in a different room. That person would enter commands in Airtable to move the robot around obstacles. Since there was no direct line of sight and some network lag, I had to carefully time each command and add logic to ignore repeated inputs. The focus was making the robot easy to control even with limited feedback.",
     id: "gym-battle",
     images: [

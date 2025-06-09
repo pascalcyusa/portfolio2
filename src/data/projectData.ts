@@ -21,12 +21,12 @@ export const projectData: ProjectItem[] = [
     // image: googlePhotosData[2].url,
     description: "A completely automated system for cooking pancakes",
     overview: [
-      "Automated Order Fetching: Connects to Airtable to retrieve new pancake orders.",
-      "Line Following Navigation: Uses IR sensors to autonomously follow a designated path.",
-      "Camera-Based Station Detection: Identifies processing stations using OpenCV to detect green markers.",
-      "Sequential Station Processing: Visits cooking and topping stations based on the specific requirements of each order.",
-      "Real-Time Status Updates: Reports robot arrival and order completion back to Airtable.",
-      "Modular Component: Acts as the transport element within a larger automated pancake production line (including batter, cooking, topping stages)."
+      "Connects to Airtable to retrieve new pancake orders.",
+      "Uses IR sensors to autonomously follow a designated path.",
+      "Identifies processing stations using OpenCV to detect green markers.",
+      "Visits cooking and topping stations based on the specific requirements of each order.",
+      "Reports robot arrival and order completion back to Airtable.",
+      "Acts as the transport element within a larger automated pancake production line (including batter, cooking, topping stages)."
     ],
     year: "Spring 2025",
     githubUrl: "https://github.com/pascalcyusa/Pokemon-Cafe"
@@ -37,7 +37,7 @@ export const projectData: ProjectItem[] = [
     title: "Navigate Back to Pewter City (Navigation Using Object Recognition)",
     category: "ME35 / Simple Robotics",
     image: "/images/navigate-to-pewter-city/img5.jpeg",
-    description: "A iRobot ™️ Create3 ™️ programmed to navigate through a maze with 90-degree turns based on object detection.",
+    description: "A iRobot ™️ Create3 programmed to navigate through a maze with 90-degree turns based on object detection.",
     overview: [
       "Object detection system for 6-inch proximity sensing",
       "90-degree turn calibration system",
