@@ -2,9 +2,9 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 const Resume = () => {
-  // https://drive.google.com/file/d/1bu-mJW9SFioMDwHTTl5-MDVr7xDeS7L6/view?usp=drive_link
+  // https://drive.google.com/file/d/1Ml43bkGwuq9RDWQ6aOD3KcOjGCrV6B4P/view?usp=drive_link
 
-  const googleDriveFileId = "1bu-mJW9SFioMDwHTTl5-MDVr7xDeS7L6";
+  const googleDriveFileId = "1Ml43bkGwuq9RDWQ6aOD3KcOjGCrV6B4P";
   const googleDriveEmbedUrl = `https://drive.google.com/file/d/${googleDriveFileId}/preview`;
 
   return (
