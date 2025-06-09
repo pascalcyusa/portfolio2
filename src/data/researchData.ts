@@ -20,7 +20,7 @@ export const researchData: ResearchItem[] = [
     category: "MEMS / Sensors",
     lab: "Microscale Sensors and Systems Lab",
     image: "/images/tdk-ch101/img1.jpeg",
-    description: "The Microscale Sensors and Systems Lab is a state of the art lab at Tufts that focuses on the design, fabrication, and testing of microscale sensors and systems. My research has area has been on the development of a miniature ultrasonic anemometer using the TDK CH101 sensor. This has potential applications in Navy high-altitude UAVs, and low-pressure environments on Mars.",
+    description: "The Microscale Sensors and Systems Lab is a state of the art lab at Tufts that focuses on the design, fabrication, and testing of microscale sensors and systems. My research area has been on the development of a miniature ultrasonic anemometer using the TDK CH101 sensor. This has potential applications in Navy high-altitude UAVs, and low-pressure environments on Mars.",
     overview: [
       "Distance measurements within ± 0.1878 mm error margin",
       "Wind velocity measurements at ± 0.6454 m/s accuracy",
